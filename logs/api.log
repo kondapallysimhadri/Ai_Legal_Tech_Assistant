@@ -16378,3 +16378,12 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 19:08:12,824 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0122s
 2026-05-26 19:08:13,436 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.0905s
 2026-05-26 19:08:13,550 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2268s
+2026-05-26 19:17:17,551 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0310s
+2026-05-26 19:17:18,447 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.1184s
+2026-05-26 19:17:18,559 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2334s
+2026-05-26 19:17:25,938 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-05-26 19:31:55,451 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-26 19:31:55,455 - apscheduler.scheduler - INFO - Added job "run_pipeline" to job store "default"
+2026-05-26 19:31:55,457 - apscheduler.scheduler - INFO - Scheduler started
+2026-05-26 19:32:02,389 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3798s
+2026-05-26 19:32:02,486 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.4771s

@@ -16401,3 +16401,18 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 19:46:09,591 - ML_API - INFO - Prediction made | Input: {'breach_type': 'finance', 'data_exposed': 'SSN', 'records_affected': 500000, 'company_type': 'bank', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'high', 'past_case_similarity_score': 0.85} | Result: Highly Eligible | Confidence: 0.99
 2026-05-26 19:46:09,593 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0073s
 2026-05-26 19:46:17,291 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 3.2060s
+2026-05-26 19:49:07,418 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 1.3204s
+2026-05-26 19:49:12,412 - ML_API - INFO - Request: GET /cases/6a1301f9fad8066f0f8226a9 | Status: 200 | Time: 0.1330s
+2026-05-26 19:49:13,995 - ML_API - INFO - Prediction made | Input: {'breach_type': 'Data Breach', 'data_exposed': 'Data Breach', 'records_affected': 1000, 'company_type': 'Lumio Dental Data Breach Exposes Sensitive Personal and Health Information', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'medium', 'past_case_similarity_score': 0.75} | Result: Possibly Eligible | Confidence: 0.41
+2026-05-26 19:49:14,001 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0117s
+2026-05-26 19:50:03,785 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-05-26 19:59:26,320 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-26 19:59:26,327 - apscheduler.scheduler - INFO - Added job "run_pipeline" to job store "default"
+2026-05-26 19:59:26,331 - apscheduler.scheduler - INFO - Scheduler started
+2026-05-26 19:59:34,736 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3731s
+2026-05-26 19:59:34,810 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.4493s
+2026-05-26 19:59:42,247 - ML_API - INFO - Request: GET /cases/6a1301f9fad8066f0f8226a9 | Status: 200 | Time: 0.0400s
+2026-05-26 19:59:44,163 - ML_API - INFO - Request: OPTIONS /predict | Status: 200 | Time: 0.0016s
+2026-05-26 19:59:44,192 - ML_API - INFO - Prediction made | Input: {'breach_type': 'Data Breach', 'data_exposed': 'Data Breach', 'records_affected': 1000, 'company_type': 'Lumio Dental Data Breach Exposes Sensitive Personal and Health Information', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'medium', 'past_case_similarity_score': 0.75} | Result: Possibly Eligible | Confidence: 0.41
+2026-05-26 19:59:44,197 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0181s
+2026-05-26 19:59:54,840 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 2.5613s

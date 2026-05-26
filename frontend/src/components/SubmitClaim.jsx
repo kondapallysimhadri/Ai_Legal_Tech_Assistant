@@ -1,29 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  CheckCircle2, 
-  AlertCircle, 
-  Upload, 
-  ShieldCheck, 
-  FileText, 
-  ArrowRight, 
-  ArrowLeft, 
-  BrainCircuit, 
-  Zap, 
+import { AnimatePresence, motion } from 'framer-motion';
+import {
+  ArrowLeft,
+  ArrowRight,
+  BrainCircuit,
+  CheckCircle2,
   Clock,
-  User,
-  MapPin,
-  Lock
+  ShieldCheck,
+  Upload,
+  Zap
 } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import Button from './Button';
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "";
 
 const SubmitClaim = ({ caseData, onBack }) => {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [trackingId, setTrackingId] = useState(null);
-  
+
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -100,9 +95,8 @@ const SubmitClaim = ({ caseData, onBack }) => {
     <div className="flex justify-between items-center mb-12">
       {steps.map((s, i) => (
         <div key={i} className="flex flex-col items-center relative flex-1">
-          <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black z-10 transition-all duration-500 ${
-            step > i + 1 ? 'bg-emerald-500 text-white' : step === i + 1 ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/30' : 'bg-slate-800 text-slate-500'
-          }`}>
+          <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black z-10 transition-all duration-500 ${step > i + 1 ? 'bg-emerald-500 text-white' : step === i + 1 ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/30' : 'bg-slate-800 text-slate-500'
+            }`}>
             {step > i + 1 ? <CheckCircle2 size={14} /> : i + 1}
           </div>
           <span className={`text-[9px] mt-2 uppercase tracking-widest font-black transition-colors ${step === i + 1 ? 'text-brand-400' : 'text-slate-600'}`}>{s}</span>
@@ -117,7 +111,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
   return (
     <div className="min-h-screen bg-dark-950 text-slate-200 py-12 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12">
-        
+
         {/* Left Column: Form Content */}
         <div className="lg:col-span-3">
           <div className="mb-8 flex items-center gap-4">
@@ -146,13 +140,13 @@ const SubmitClaim = ({ caseData, onBack }) => {
                     <h2 className="text-2xl font-black text-white mb-2">AI Claim Qualification</h2>
                     <p className="text-slate-400 text-sm">Verify your legal standing using our automated criteria.</p>
                   </div>
-                  
+
                   <div className="space-y-6">
                     <div>
                       <label className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-3">1. Were you affected by this data breach?</label>
                       <div className="flex gap-4">
                         {['Yes', 'No'].map(opt => (
-                          <button key={opt} onClick={() => setFormData({...formData, affected: opt === 'Yes'})} 
+                          <button key={opt} onClick={() => setFormData({ ...formData, affected: opt === 'Yes' })}
                             className={`px-8 py-4 rounded-2xl border transition-all ${formData.affected === (opt === 'Yes') ? 'bg-brand-500/20 border-brand-500 text-brand-400' : 'bg-slate-900 border-slate-800 text-slate-500'}`}>{opt}</button>
                         ))}
                       </div>
@@ -162,7 +156,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                       <label className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-3">2. How were you notified?</label>
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                         {['Email', 'Physical Letter', 'SMS', 'Identity Service', 'Other'].map(opt => (
-                          <button key={opt} onClick={() => setFormData({...formData, notification_method: opt})}
+                          <button key={opt} onClick={() => setFormData({ ...formData, notification_method: opt })}
                             className={`px-4 py-3 rounded-xl border text-xs transition-all ${formData.notification_method === opt ? 'bg-brand-500/20 border-brand-500 text-brand-400' : 'bg-slate-900 border-slate-800 text-slate-500'}`}>{opt}</button>
                         ))}
                       </div>
@@ -172,7 +166,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                       <label className="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-3">3. Relationship to organization</label>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                         {['Customer', 'Employee', 'Vendor', 'Other'].map(opt => (
-                          <button key={opt} onClick={() => setFormData({...formData, relationship: opt})}
+                          <button key={opt} onClick={() => setFormData({ ...formData, relationship: opt })}
                             className={`px-4 py-3 rounded-xl border text-xs transition-all ${formData.relationship === opt ? 'bg-brand-500/20 border-brand-500 text-brand-400' : 'bg-slate-900 border-slate-800 text-slate-500'}`}>{opt}</button>
                         ))}
                       </div>
@@ -188,18 +182,18 @@ const SubmitClaim = ({ caseData, onBack }) => {
                     <h2 className="text-2xl font-black text-white mb-2">Identity Verification</h2>
                     <p className="text-slate-400 text-sm">Our AI utilizes smart validation to prevent fraud and ensure accuracy.</p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-4">
                       {['First Name', 'Last Name', 'Phone', 'Email'].map((field, i) => (
                         <div key={i}>
                           <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">{field}</label>
-                          <input 
-                            type="text" 
-                            className="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:border-brand-500 outline-none placeholder:text-slate-700" 
+                          <input
+                            type="text"
+                            className="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:border-brand-500 outline-none placeholder:text-slate-700"
                             placeholder={`Enter ${field.toLowerCase()}`}
                             value={formData[field.toLowerCase().replace(' ', '_')]}
-                            onChange={(e) => setFormData({...formData, [field.toLowerCase().replace(' ', '_')]: e.target.value})}
+                            onChange={(e) => setFormData({ ...formData, [field.toLowerCase().replace(' ', '_')]: e.target.value })}
                           />
                         </div>
                       ))}
@@ -208,12 +202,12 @@ const SubmitClaim = ({ caseData, onBack }) => {
                       {['Address', 'City', 'State', 'Zip'].map((field, i) => (
                         <div key={i}>
                           <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">{field}</label>
-                          <input 
-                            type="text" 
-                            className="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:border-brand-500 outline-none placeholder:text-slate-700" 
+                          <input
+                            type="text"
+                            className="w-full bg-slate-900/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:border-brand-500 outline-none placeholder:text-slate-700"
                             placeholder={`Enter ${field.toLowerCase()}`}
                             value={formData[field.toLowerCase()]}
-                            onChange={(e) => setFormData({...formData, [field.toLowerCase()]: e.target.value})}
+                            onChange={(e) => setFormData({ ...formData, [field.toLowerCase()]: e.target.value })}
                           />
                         </div>
                       ))}
@@ -229,7 +223,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                     <h2 className="text-2xl font-black text-white mb-2">Evidence Upload</h2>
                     <p className="text-slate-400 text-sm">Upload supporting evidence to improve verification confidence.</p>
                   </div>
-                  
+
                   <div className="border-2 border-dashed border-slate-700 rounded-[2rem] p-12 text-center group hover:border-brand-500/50 transition-all cursor-pointer bg-slate-900/20">
                     <div className="w-16 h-16 rounded-full bg-brand-500/10 flex items-center justify-center text-brand-400 mx-auto mb-6 group-hover:scale-110 transition-transform">
                       <Upload size={32} />
@@ -260,7 +254,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                     <h2 className="text-2xl font-black text-white mb-2">AI Analysis Dashboard</h2>
                     <p className="text-slate-400 text-sm">Real-time assessment of your claim strength based on provided data.</p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-6">
                       <div className="glass-panel p-6 rounded-3xl border border-slate-700/30">
@@ -301,7 +295,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                     <h2 className="text-2xl font-black text-white mb-2">Final Protocol Review</h2>
                     <p className="text-slate-400 text-sm">Review your submission data before official filing.</p>
                   </div>
-                  
+
                   <div className="space-y-4">
                     {[
                       { label: "Full Name", val: `${formData.first_name} ${formData.last_name}` },
@@ -334,7 +328,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
                   </div>
                   <h2 className="text-4xl font-black text-white mb-4">Official Claim Submitted</h2>
                   <p className="text-slate-400 mb-12">Your claim is now active in the lead counsel registry.</p>
-                  
+
                   <div className="bg-dark-900 p-8 rounded-[2.5rem] border border-slate-800 max-w-sm mx-auto mb-8 shadow-2xl">
                     <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-4 block">Tracking Identifier</span>
                     <div className="text-2xl font-black text-brand-400 mb-2">{trackingId || "CLM-EF92X4"}</div>
@@ -409,7 +403,7 @@ const SubmitClaim = ({ caseData, onBack }) => {
 
           <div className="text-center py-4">
             <div className="flex justify-center gap-1 mb-4">
-              {[1,2,3,4].map(i => <div key={i} className="w-1 h-1 rounded-full bg-slate-700"></div>)}
+              {[1, 2, 3, 4].map(i => <div key={i} className="w-1 h-1 rounded-full bg-slate-700"></div>)}
             </div>
             <p className="text-[9px] text-slate-600 font-black uppercase tracking-widest">Institutional AI Infrastructure</p>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from './Button';
 
 const PremiumForm = ({ user, onSubmit }) => {
@@ -40,12 +40,12 @@ const PremiumForm = ({ user, onSubmit }) => {
     // Mock backend delay
     setTimeout(async () => {
       try {
-        const response = await fetch('http://localhost:8000/premium-apply', {
+        const response = await fetch('/premium-apply', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)
         });
-        
+
         if (response.ok) {
           alert("Application Submitted! Please wait 10 minutes for admin verification. You will be alerted once accepted.");
           onSubmit();
@@ -81,19 +81,19 @@ const PremiumForm = ({ user, onSubmit }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">Full Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                   placeholder="Enter full name" required
                 />
               </div>
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">Citizen Type</label>
-                <select 
+                <select
                   value={formData.citizen_type}
-                  onChange={(e) => setFormData({...formData, citizen_type: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, citizen_type: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                 >
                   <option>Resident</option>
@@ -105,30 +105,30 @@ const PremiumForm = ({ user, onSubmit }) => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">State</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.state}
-                  onChange={(e) => setFormData({...formData, state: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                   placeholder="State" required
                 />
               </div>
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">District</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.district}
-                  onChange={(e) => setFormData({...formData, district: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, district: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                   placeholder="District" required
                 />
               </div>
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">Village/Town</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.village_town}
-                  onChange={(e) => setFormData({...formData, village_town: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, village_town: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                   placeholder="Village/Town" required
                 />
@@ -146,9 +146,9 @@ const PremiumForm = ({ user, onSubmit }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">Identity Type</label>
-                <select 
+                <select
                   value={formData.identity_type}
-                  onChange={(e) => setFormData({...formData, identity_type: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, identity_type: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                 >
                   <option>Adhar</option>
@@ -159,10 +159,10 @@ const PremiumForm = ({ user, onSubmit }) => {
               </div>
               <div>
                 <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">ID Number</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.identity_number}
-                  onChange={(e) => setFormData({...formData, identity_number: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, identity_number: e.target.value })}
                   className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-white focus:border-brand-500 outline-none"
                   placeholder="Enter ID Number" required
                 />
@@ -194,11 +194,10 @@ const PremiumForm = ({ user, onSubmit }) => {
                     key={option}
                     type="button"
                     onClick={() => handleExposedDataChange(option)}
-                    className={`px-3 py-2 rounded-xl text-[10px] font-bold border transition-all ${
-                      formData.exposed_data.includes(option)
+                    className={`px-3 py-2 rounded-xl text-[10px] font-bold border transition-all ${formData.exposed_data.includes(option)
                         ? 'bg-brand-500/20 border-brand-500 text-brand-400'
                         : 'bg-slate-900 border-slate-700 text-slate-500 hover:border-slate-500'
-                    }`}
+                      }`}
                   >
                     {option}
                   </button>
@@ -211,9 +210,9 @@ const PremiumForm = ({ user, onSubmit }) => {
             </div>
             <div>
               <label className="text-[10px] font-bold text-slate-500 uppercase mb-2 block">Problem Statement (Max 1000 words)</label>
-              <textarea 
+              <textarea
                 value={formData.problem_statement}
-                onChange={(e) => setFormData({...formData, problem_statement: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, problem_statement: e.target.value })}
                 className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-white focus:border-brand-500 outline-none h-32 resize-none text-sm"
                 placeholder="Describe your legal problem or data exposure concerns..."
                 required

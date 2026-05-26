@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from './Button';
 
 const Auth = ({ onLogin }) => {
@@ -9,7 +9,7 @@ const Auth = ({ onLogin }) => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const API_BASE = "http://localhost:8000";
+  const API_BASE = "";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ const Auth = ({ onLogin }) => {
       <div className="max-w-md w-full glass-panel p-10 rounded-[2.5rem] border border-slate-700/50 shadow-2xl relative overflow-hidden group">
         <div className="absolute -top-24 -right-24 w-48 h-48 bg-brand-500/10 rounded-full blur-3xl group-hover:bg-brand-500/20 transition-all duration-700"></div>
         <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-700"></div>
-        
+
         <div className="text-center mb-10">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white font-black text-2xl mx-auto mb-6 shadow-xl shadow-brand-500/20">
             A
@@ -69,8 +69,8 @@ const Auth = ({ onLogin }) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Username</label>
-            <input 
-              type="text" 
+            <input
+              type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full bg-dark-900/50 border border-slate-700 rounded-2xl py-4 px-5 text-white outline-none focus:border-brand-500/50 transition-all placeholder:text-slate-600"
@@ -82,8 +82,8 @@ const Auth = ({ onLogin }) => {
           {!isLogin && (
             <div className="animate-slide-down">
               <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Email Address</label>
-              <input 
-                type="email" 
+              <input
+                type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-dark-900/50 border border-slate-700 rounded-2xl py-4 px-5 text-white outline-none focus:border-brand-500/50 transition-all placeholder:text-slate-600"
@@ -95,8 +95,8 @@ const Auth = ({ onLogin }) => {
 
           <div>
             <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Password</label>
-            <input 
-              type="password" 
+            <input
+              type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full bg-dark-900/50 border border-slate-700 rounded-2xl py-4 px-5 text-white outline-none focus:border-brand-500/50 transition-all placeholder:text-slate-600"
@@ -105,8 +105,8 @@ const Auth = ({ onLogin }) => {
             />
           </div>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             isLoading={loading}
             className="w-full py-5 bg-brand-500 hover:bg-brand-400 shadow-xl shadow-brand-500/20 text-sm font-black uppercase tracking-widest rounded-2xl mt-4"
           >
@@ -115,7 +115,7 @@ const Auth = ({ onLogin }) => {
         </form>
 
         <div className="mt-8 text-center">
-          <button 
+          <button
             onClick={() => setIsLogin(!isLogin)}
             className="text-xs text-slate-500 hover:text-brand-400 transition-colors font-medium"
           >

@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import Navbar from './components/Navbar';
-import CaseCard from './components/CaseCard';
-import Modal from './components/Modal';
-import Button from './components/Button';
-import EmptyState from './components/EmptyState';
-import UserProfile from './components/UserProfile';
-import RiskDashboard from './components/RiskDashboard';
-import MLPredictionForm from './components/MLPredictionForm';
-import RAGChatbot from './components/RAGChatbot';
-import UserRoadmap from './components/UserRoadmap';
+import { useEffect, useMemo, useState } from 'react';
 import Auth from './components/Auth';
+import Button from './components/Button';
+import CaseCard from './components/CaseCard';
+import EmptyState from './components/EmptyState';
+import MLPredictionForm from './components/MLPredictionForm';
+import Modal from './components/Modal';
+import Navbar from './components/Navbar';
 import PremiumForm from './components/PremiumForm';
+import RAGChatbot from './components/RAGChatbot';
+import RiskDashboard from './components/RiskDashboard';
 import SubmitClaim from './components/SubmitClaim';
+import UserProfile from './components/UserProfile';
+import UserRoadmap from './components/UserRoadmap';
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "";
 
 function App() {
   const [view, setView] = useState('home');
@@ -40,7 +40,7 @@ function App() {
       setCurrentUser(user);
       setIsAuthenticated(true);
     }
-    
+
     fetchInitialData();
     const savedProfile = localStorage.getItem('user_profile');
     if (savedProfile) setUserProfile(JSON.parse(savedProfile));
@@ -101,7 +101,7 @@ function App() {
     }
 
     if (!searchQuery) return result;
-    return result.filter(c => 
+    return result.filter(c =>
       (c.title || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
       (c.company || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
       (c.description || '').toLowerCase().includes(searchQuery.toLowerCase())
@@ -128,7 +128,7 @@ function App() {
       });
       if (!res.ok) throw new Error("Prediction failed");
       const data = await res.json();
-      
+
       if (data) {
         if (typeof data.confidence !== 'number' || isNaN(data.confidence)) {
           data.confidence = 0.85;
@@ -155,7 +155,7 @@ function App() {
     setIsModalOpen(true);
     setEligibilityResult(null);
     setShowGuide(false);
-    
+
     if (caseItem && caseItem.id) {
       try {
         const res = await fetch(`${API_BASE}/cases/${caseItem.id}`);
@@ -189,7 +189,7 @@ function App() {
       });
       if (!res.ok) throw new Error("Search failed");
       const data = await res.json();
-      
+
       if (data && Array.isArray(data.results)) {
         setSearchResults(data);
       } else {
@@ -212,7 +212,7 @@ function App() {
           <p className="text-slate-400 text-sm">Gather these essential files to maximize your claim value.</p>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {[
           { t: "Official Breach Letter", d: "The letter sent by the company notifying you of the breach." },
@@ -237,7 +237,7 @@ function App() {
 
       <div className="bg-brand-500/10 p-6 rounded-3xl border border-brand-500/20">
         <p className="text-slate-300 text-sm mb-4">By registering now, you preserve your rights to the settlement pool before the deadline.</p>
-        <Button 
+        <Button
           onClick={() => {
             window.open('https://veritaconnect.com/tj-factasettlement/Claimant', '_blank');
           }}
@@ -255,12 +255,12 @@ function App() {
 
   const renderContent = () => {
     if (view === 'profile') return <UserProfile onSave={handleSaveProfile} />;
-    if (view === 'risk') return <RiskDashboard profile={userProfile || {dataTypes: []}} cases={cases} />;
+    if (view === 'risk') return <RiskDashboard profile={userProfile || { dataTypes: [] }} cases={cases} />;
     if (view === 'ml-checker') return <MLPredictionForm />;
     if (view === 'chat') return <RAGChatbot />;
     if (view === 'roadmap') return <UserRoadmap />;
     if (view === 'submit-claim') return <SubmitClaim caseData={selectedCase} onBack={() => setView('home')} />;
-    
+
     return (
       <>
         <header className="mb-12 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -269,15 +269,15 @@ function App() {
             <p className="text-slate-400 max-w-xl text-lg">Real-world legal cases, scraped in real-time, and analyzed by production-grade AI models.</p>
           </div>
           <div className="flex gap-4">
-            <Button 
-              onClick={triggerEnrichment} 
-              isLoading={enriching} 
+            <Button
+              onClick={triggerEnrichment}
+              isLoading={enriching}
               variant="secondary"
               className="border-brand-500/50 text-brand-400 hover:bg-brand-500/10"
             >
               🔄 Sync & Enrich Pipeline
             </Button>
-            <Button 
+            <Button
               onClick={() => setIsPremiumFormOpen(true)}
               className="bg-gradient-to-r from-amber-500 to-orange-600 shadow-lg shadow-orange-500/20"
             >
@@ -293,9 +293,9 @@ function App() {
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                   <svg className="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </div>
-                <input 
-                  type="text" 
-                  placeholder="Search legal cases, breaches, settlements..." 
+                <input
+                  type="text"
+                  placeholder="Search legal cases, breaches, settlements..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
@@ -326,7 +326,7 @@ function App() {
                 <CaseCard key={idx} caseItem={c} onClick={viewCase} />
               ))}
             </div>
-            {searchResults.results.length === 0 && <EmptyState onClear={() => {setSearchResults(null); setSearchQuery('');}} />}
+            {searchResults.results.length === 0 && <EmptyState onClear={() => { setSearchResults(null); setSearchQuery(''); }} />}
           </div>
         )}
 
@@ -338,13 +338,13 @@ function App() {
                 <span className="bg-brand-500/20 text-brand-400 text-[10px] px-2 py-0.5 rounded-full border border-brand-500/30 animate-pulse">LIVE</span>
               </h3>
               <div className="flex gap-4">
-                <button 
+                <button
                   onClick={() => setFilterType(filterType === 'cases' ? 'all' : 'cases')}
                   className={`text-xs font-mono tracking-widest transition-all px-3 py-1 rounded-lg border ${filterType === 'cases' ? 'bg-brand-500/20 text-brand-400 border-brand-500/50' : 'text-slate-500 border-transparent hover:text-brand-400'}`}
                 >
                   {stats.cases} CASES FOUND
                 </button>
-                <button 
+                <button
                   onClick={() => setFilterType(filterType === 'breaches' ? 'all' : 'breaches')}
                   className={`text-xs font-mono tracking-widest transition-all px-3 py-1 rounded-lg border ${filterType === 'breaches' ? 'bg-brand-500/20 text-brand-400 border-brand-500/50' : 'text-slate-500 border-transparent hover:text-brand-400'}`}
                 >
@@ -360,9 +360,9 @@ function App() {
             ) : filteredCases.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredCases.map((c, idx) => (
-                  <CaseCard 
-                    key={idx} 
-                    caseItem={c} 
+                  <CaseCard
+                    key={idx}
+                    caseItem={c}
                     onClick={viewCase}
                   />
                 ))}
@@ -381,7 +381,7 @@ function App() {
   return (
     <div className="min-h-screen bg-dark-900 text-slate-200 font-sans selection:bg-brand-500/30 overflow-x-hidden">
       <Navbar onNavigate={setView} currentView={view} />
-      
+
       <div className="max-w-6xl mx-auto px-6 pt-4 flex justify-end">
         <button onClick={handleLogout} className="text-[10px] font-black text-slate-500 uppercase tracking-widest hover:text-red-400 transition-colors">
           Log Out: {currentUser?.username}

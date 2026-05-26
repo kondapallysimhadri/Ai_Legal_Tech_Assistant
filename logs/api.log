@@ -16419,3 +16419,22 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 20:01:53,341 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0045s
 2026-05-26 20:01:54,360 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2546s
 2026-05-26 20:01:54,382 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.1708s
+2026-05-26 20:08:05,545 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-05-26 20:08:20,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-26 20:08:20,266 - apscheduler.scheduler - INFO - Added job "run_pipeline" to job store "default"
+2026-05-26 20:08:20,266 - apscheduler.scheduler - INFO - Scheduler started
+2026-05-26 20:08:34,147 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3394s
+2026-05-26 20:08:34,229 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.4257s
+2026-05-26 20:08:43,547 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-05-26 20:15:41,610 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-26 20:15:41,612 - apscheduler.scheduler - INFO - Added job "run_pipeline" to job store "default"
+2026-05-26 20:15:41,614 - apscheduler.scheduler - INFO - Scheduler started
+2026-05-26 20:15:47,045 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3497s
+2026-05-26 20:15:47,192 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.5001s
+2026-05-26 20:16:21,860 - ML_API - INFO - Request: OPTIONS /login | Status: 200 | Time: 0.0034s
+2026-05-26 20:16:21,929 - ML_API - INFO - Request: POST /login | Status: 200 | Time: 0.0510s
+2026-05-26 20:16:31,035 - ML_API - INFO - Request: OPTIONS /login | Status: 200 | Time: 0.0011s
+2026-05-26 20:16:31,083 - ML_API - INFO - Request: POST /login | Status: 200 | Time: 0.0327s
+2026-05-26 20:16:37,807 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.1602s
+2026-05-26 20:16:37,845 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2047s
+2026-05-26 20:16:47,258 - apscheduler.scheduler - INFO - Scheduler has been shut down

@@ -16370,3 +16370,11 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 18:55:33,686 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 160.3829s
 2026-05-26 18:57:56,046 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 0.1398s
 2026-05-26 18:57:59,821 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 0.2042s
+2026-05-26 19:04:05,044 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0253s
+2026-05-26 19:04:07,209 - ML_API - INFO - Request: GET /favicon.svg | Status: 200 | Time: 0.0076s
+2026-05-26 19:04:07,319 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3560s
+2026-05-26 19:04:07,593 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.7348s
+2026-05-26 19:04:28,269 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 0.3633s
+2026-05-26 19:08:12,824 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0122s
+2026-05-26 19:08:13,436 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.0905s
+2026-05-26 19:08:13,550 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2268s

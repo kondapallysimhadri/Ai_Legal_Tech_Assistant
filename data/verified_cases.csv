@@ -1,0 +1,6 @@
+case_id,breach_type,data_exposed,records_affected,compensation_amount,case_type,jurisdiction,time_since_breach,user_impact_level,documents_available,proof_strength,prior_claims,location_match,severity_score,deadline_remaining_days,legal_complexity_score,similarity_to_past_cases,eligibility_label,success_outcome,reasoning_notes
+v1,finance,SSN,1000000,5000,settlement,US,30,high,4,high,0,1,85,150,5,0.9,2,1.0,Clear SSN exposure with strong proof and active settlement.
+v2,healthcare,Medical Records,50000,2000,lawsuit,EU,200,medium,2,medium,0,1,65,40,7,0.7,1,0.6,GDPR case with moderate evidence and tight deadline.
+v3,tech,Email,10000000,50,breach,India,400,low,1,low,1,1,45,0,3,0.3,0,0.0,Deadline expired and low impact data.
+v4,retail,Credit Card,250000,1500,breach,US,10,high,5,high,0,1,75,170,4,0.85,2,0.9,Very recent credit card breach with full documentation.
+v5,finance,Password,10000,500,lawsuit,EU,15,medium,3,medium,0,0,55,165,6,0.5,1,0.45,Jurisdiction mismatch reduces probability but still likely eligible.

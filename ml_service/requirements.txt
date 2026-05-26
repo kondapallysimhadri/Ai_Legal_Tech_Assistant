@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+xgboost
+shap
+joblib
+fastapi
+uvicorn
+pydantic
+matplotlib
+python-dotenv
+pymongo
+google-generativeai
+chromadb
+sentence-transformers

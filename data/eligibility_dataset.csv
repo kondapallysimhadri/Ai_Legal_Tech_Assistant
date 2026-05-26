@@ -1,0 +1,1001 @@
+breach_type,data_exposed,records_affected,company_type,jurisdiction,time_since_breach,user_impact_level,past_case_similarity_score,eligibility_label
+Retail,Credit Card,9959614,Non-profit,India,88,Low,0.6011150117432088,1
+Tech,"SSN,Password",3345769,SME,UK,277,Low,0.3042422429595377,1
+Government,Address,4722339,SME,India,876,High,0.9832308858067882,1
+Healthcare,"Email,Credit Card,SSN",6641913,SME,US,316,Medium,0.8083973481164611,2
+Healthcare,"SSN,Address",4057518,SME,Canada,776,High,0.17336465350777208,2
+Healthcare,"SSN,Password",5559019,Private,Canada,703,Medium,0.7751328233611146,2
+Finance,"SSN,Full Name",9974006,SME,UK,702,Low,0.388677289689482,1
+Finance,"Address,Password,Credit Card",6081526,Public,US,857,High,0.4234014807063696,2
+Healthcare,"Email,Credit Card,Full Name",7470344,Non-profit,Canada,490,High,0.6510770255019445,2
+Retail,"Password,Full Name,Address",3748389,SME,Canada,99,Medium,0.8872127425763265,0
+Healthcare,"Address,Email,Credit Card",6915550,Non-profit,India,393,High,0.42754101835854963,2
+Finance,Address,875371,Private,Canada,407,High,0.41038292303562973,1
+Tech,Email,4575293,SME,EU,682,Low,0.295633685837714,0
+Government,"SSN,Password",1202482,SME,EU,348,Low,0.3180034749718639,1
+Healthcare,Full Name,4323252,Public,India,359,Medium,0.5107473025775657,0
+Healthcare,"Address,Credit Card",8324735,Non-profit,India,374,Low,0.4038361710580408,1
+Healthcare,"SSN,Full Name",5726570,Public,Canada,625,Low,0.266781014275285,1
+Finance,"Email,Password",5501306,Private,EU,53,Medium,0.9856504541106007,0
+Retail,"Credit Card,Email,Full Name",2559231,Public,UK,610,Medium,0.39882444244455306,1
+Healthcare,Address,4507259,SME,India,932,High,0.7111495324380178,1
+Tech,"Address,Email,Password",7614287,Public,India,988,Low,0.11347352124058907,0
+Finance,"Password,Full Name,SSN",9908771,Public,EU,897,Medium,0.8972157579533268,2
+Government,"Full Name,Email,Credit Card",3675515,SME,US,920,High,0.9356349942209475,2
+Retail,"Full Name,SSN",4328576,Public,EU,896,Medium,0.5487337893665861,1
+Tech,Password,5073148,SME,UK,504,High,0.7209399242521293,1
+Healthcare,"SSN,Credit Card,Email",9588994,Non-profit,EU,277,Medium,0.6451033620305648,1
+Healthcare,SSN,3773962,SME,US,512,Low,0.994550510797341,2
+Government,"Email,Address",8520981,Public,India,700,Low,0.07534625600612821,0
+Government,Full Name,689105,Non-profit,EU,323,Medium,0.09717649377076854,0
+Finance,"Address,SSN,Credit Card",4354127,Public,US,811,Medium,0.35949115121975517,1
+Government,"Full Name,Credit Card",5492590,Public,UK,685,Low,0.07094091699992766,1
+Retail,"Address,SSN,Password",3376957,Non-profit,US,698,High,0.9818408883105311,2
+Finance,"Full Name,Password",3504157,Non-profit,UK,613,Low,0.8278690037875887,0
+Retail,Password,1261386,Non-profit,UK,656,Low,0.969536867114159,0
+Finance,"Email,Full Name",6320707,Private,EU,741,Medium,0.9626484146779251,0
+Healthcare,Credit Card,1044233,SME,US,488,Low,0.27993389694594284,1
+Government,"SSN,Email,Credit Card",2165367,Non-profit,Canada,86,Low,0.3418796667164016,1
+Retail,Full Name,9559356,Non-profit,UK,289,Medium,0.43385164923797304,0
+Finance,"SSN,Password",3694305,Non-profit,EU,608,Low,0.5393774484000625,1
+Government,"Full Name,Address,Password",5393023,SME,EU,675,Low,0.45825289049151663,0
+Tech,"Email,Address,SSN",2056723,Public,Canada,12,High,0.37725908322797586,2
+Government,"Credit Card,Address,SSN",4834177,Private,EU,418,High,0.28185477477339993,2
+Retail,"Address,Credit Card",532831,SME,US,277,Low,0.2820345725713065,1
+Finance,Credit Card,3971001,Public,Canada,780,Low,0.6798447799002458,1
+Healthcare,"Credit Card,Password,Email",9616215,Public,Canada,699,High,0.3892016787341631,2
+Retail,Email,3622581,Non-profit,UK,851,Medium,0.6318372121697993,0
+Government,Email,3789340,Non-profit,US,39,Low,0.9309291056872926,0
+Finance,"Full Name,Credit Card,Password",2277360,Private,EU,492,Low,0.10112267612279024,1
+Government,"Address,Credit Card",6904836,Public,India,648,Low,0.3706421470668909,1
+Retail,Address,6312326,Non-profit,Canada,876,Medium,0.7050843642966599,0
+Finance,"Full Name,Email",4985445,Private,UK,476,Low,0.8227903518766931,0
+Healthcare,"Address,Password,SSN",4950499,Public,US,824,Low,0.22359583851945264,1
+Finance,Credit Card,1535837,Public,India,764,Low,0.2529901679892411,1
+Tech,Password,6082950,Public,Canada,566,Medium,0.3842018313792199,0
+Healthcare,"SSN,Password,Full Name",5529983,SME,Canada,8,Medium,0.1881211597237613,1
+Finance,"Full Name,Password",9180875,SME,India,502,High,0.5360963663441204,1
+Healthcare,Email,3312149,Non-profit,Canada,390,Medium,0.4166390577384792,0
+Government,"Address,Password,Credit Card",3465442,Public,Canada,119,Low,0.7776022837352256,2
+Finance,"Full Name,Credit Card,Email",5002045,Non-profit,India,689,Low,0.06351182959000135,1
+Healthcare,"Address,Email,Password",1324483,Public,Canada,863,Low,0.9966368370739054,0
+Government,"Credit Card,Password,Email",5388408,Public,US,878,Low,0.9540510272587224,2
+Government,"Full Name,Password",1187887,Non-profit,EU,250,Medium,0.4762106967890142,0
+Tech,"Full Name,Password,Address",7103173,Non-profit,US,401,High,0.028782676313338973,1
+Government,Full Name,328359,SME,EU,806,Medium,0.5899176868546331,0
+Tech,"Password,Full Name,Address",1354038,SME,EU,563,Low,0.9495206236576421,0
+Retail,"Password,Full Name",1850396,Private,Canada,126,High,0.5796499344717384,1
+Tech,"Credit Card,Full Name,Address",5607594,Non-profit,Canada,672,Medium,0.6019353955409602,1
+Tech,"Password,SSN,Credit Card",2383357,Public,US,645,Low,0.3559914842719861,1
+Finance,Full Name,2907158,Public,India,831,Low,0.0025950243836465603,0
+Retail,Email,9307167,Private,EU,28,High,0.531265753973534,1
+Finance,Address,2902614,Non-profit,India,751,Low,0.8672149810747233,0
+Tech,"Password,Address,Email",7588768,Public,EU,126,Low,0.890527280739895,0
+Retail,Full Name,4222038,SME,EU,623,Low,0.5644585425226413,0
+Finance,Password,2698143,Non-profit,Canada,966,Low,0.9336918237598746,0
+Government,"SSN,Address",5057861,Non-profit,US,759,High,0.5245113895702547,2
+Government,"SSN,Full Name,Password",5987126,Private,US,606,Medium,0.668643219924431,1
+Healthcare,"Credit Card,Full Name",8387180,Private,EU,118,High,0.19950692733831976,2
+Retail,Full Name,5810701,Public,India,511,Low,0.5325894325515859,0
+Healthcare,"Credit Card,Full Name",7212179,Private,Canada,168,Medium,0.08786811124265681,1
+Government,Full Name,2720269,Non-profit,India,606,High,0.9295291442478258,1
+Retail,"Email,SSN",8061833,SME,India,547,Low,0.741120649290059,2
+Retail,Credit Card,3926282,Public,Canada,5,High,0.6651972206962001,2
+Finance,"Password,Address",830735,SME,India,637,Medium,0.539781061914633,0
+Healthcare,Full Name,2509749,Public,India,39,High,0.4315281431364426,1
+Tech,"Full Name,SSN,Address",9497563,Private,India,420,Low,0.15167487973275118,1
+Healthcare,Credit Card,6098091,Private,EU,522,Low,0.8767656367617495,2
+Healthcare,"SSN,Email",9829366,Public,Canada,157,High,0.4089551770854932,2
+Government,"Credit Card,SSN",5898498,Public,UK,11,Medium,0.9084505613336283,2
+Finance,"Address,Full Name",8515493,Private,US,993,High,0.7260955860624008,1
+Tech,Credit Card,9689053,Non-profit,Canada,462,Low,0.9255685129067763,2
+Healthcare,"SSN,Password",6672318,Public,US,831,Medium,0.5188380571260721,1
+Government,"Credit Card,Password,Email",3118172,Private,US,803,High,0.4145045842036277,2
+Finance,"Credit Card,SSN,Full Name",2088258,Public,India,955,High,0.14085702037979986,2
+Healthcare,"Email,Password,SSN",1046482,Private,EU,156,Medium,0.6635373720167106,1
+Healthcare,Address,3353252,SME,US,327,Low,0.3099369262686109,0
+Tech,"Email,Address,Credit Card",2695287,SME,India,18,Low,0.7755276166950106,2
+Finance,"Full Name,Password",4496013,Non-profit,UK,897,Low,0.07550336380388922,0
+Tech,"SSN,Full Name",8371262,Non-profit,UK,800,Medium,0.8669937600115235,2
+Healthcare,Credit Card,3186714,Public,UK,264,Medium,0.8053149673579051,2
+Tech,Credit Card,7751575,Private,EU,775,Low,0.20788625514602732,1
+Tech,Full Name,2009960,Non-profit,Canada,916,High,0.2594234334312925,1
+Finance,"Password,Email,Full Name",1706215,Private,US,226,Low,0.29446575954191767,0
+Retail,"Password,Email",4262946,Private,US,882,High,0.5124576558819216,1
+Healthcare,"Credit Card,Email",2246909,Non-profit,UK,666,Medium,0.9005723012363857,2
+Finance,"SSN,Address,Credit Card",2421564,Private,UK,41,Medium,0.06717539991571009,1
+Government,Full Name,717756,Non-profit,US,287,Medium,0.7321845784590624,0
+Finance,Credit Card,9318776,Private,Canada,476,Medium,0.5189177052828375,1
+Finance,"Credit Card,Email",6248794,Private,Canada,149,High,0.28869373677069987,2
+Retail,Full Name,4132479,Private,Canada,312,Low,0.2699112223921949,0
+Retail,"Full Name,Email,SSN",9069026,Public,India,482,Low,0.7709122037458219,2
+Government,Email,3876754,SME,EU,25,High,0.07593341036962209,1
+Finance,SSN,1662793,SME,India,613,High,0.9173135754622428,2
+Government,Address,3298291,Private,India,776,High,0.8065611478614497,1
+Government,"Password,Credit Card",7598626,Private,US,877,Medium,0.0394268113685059,1
+Finance,"Credit Card,Password,Full Name",1525102,Private,Canada,519,Low,0.19259902778563043,1
+Finance,"SSN,Credit Card,Address",3434382,Non-profit,EU,443,Medium,0.6445466506258222,1
+Tech,Credit Card,9065630,Non-profit,UK,39,High,0.8039769794008976,2
+Retail,Password,4449748,Private,UK,894,Medium,0.02440078155653802,0
+Finance,"Email,Credit Card",4946169,SME,India,891,High,0.009485433628498074,2
+Government,"Password,Credit Card",9259731,Non-profit,US,266,Medium,0.41776678216733376,1
+Retail,Credit Card,550239,Private,EU,324,Medium,0.23360775104990994,1
+Healthcare,Email,3189729,Public,Canada,997,High,0.5885542289732454,1
+Tech,"Credit Card,Address",5167650,SME,UK,861,High,0.230569195805019,2
+Tech,Credit Card,7457985,Public,US,506,High,0.8262056957939659,2
+Government,Credit Card,6847192,Public,India,490,High,0.7582384757040913,2
+Healthcare,"Email,Address,SSN",1676843,Private,Canada,610,High,0.8774608626303804,2
+Tech,"Email,Address,Password",2711241,SME,EU,521,High,0.6552419806390217,1
+Government,"SSN,Full Name,Address",8338735,Non-profit,Canada,176,Medium,0.5326025194007621,1
+Government,Password,403732,SME,Canada,115,Medium,0.5713189419195741,0
+Finance,"Credit Card,Password,Email",2367610,SME,UK,353,High,0.8672942009598024,2
+Healthcare,Address,1570123,Non-profit,India,422,High,0.8816371327703502,1
+Government,"Address,Email",8860060,Private,EU,356,Medium,0.8321341779577419,0
+Government,"Credit Card,SSN,Password",5372112,Public,EU,700,Low,0.7798453951511436,2
+Tech,"Password,Full Name",6556035,SME,Canada,989,Medium,0.9372284872364511,0
+Retail,"Full Name,Email",4056957,Public,EU,886,Low,0.05792046055879829,0
+Tech,"Address,SSN",2774939,Public,UK,7,Low,0.022123551528997254,1
+Tech,"SSN,Password,Credit Card",4428036,SME,US,99,Low,0.854209774461566,2
+Government,Address,3487669,SME,India,539,High,0.9508635622504104,1
+Retail,Credit Card,3341216,Public,India,507,Low,0.32074274043812745,1
+Finance,Address,2378935,Non-profit,UK,430,Low,0.8686231679556108,0
+Government,"Full Name,SSN,Address",5151635,Public,UK,378,High,0.18545887467665434,2
+Healthcare,"Password,Credit Card",2875299,Non-profit,Canada,117,Medium,0.7975591006371882,2
+Tech,Address,4355385,Private,India,301,Low,0.8601223971892046,0
+Healthcare,"Email,Full Name,SSN",5283379,Public,UK,660,Low,0.5596486834869141,1
+Finance,Address,2050949,Public,Canada,116,Medium,0.39692327620159606,0
+Finance,"SSN,Credit Card",9110609,Non-profit,UK,305,High,0.12421996672805935,2
+Tech,"Full Name,Email",8422928,Private,UK,264,Medium,0.6253046602139478,0
+Retail,"SSN,Full Name",1869670,Non-profit,US,700,Medium,0.4386072164895384,1
+Finance,"Email,Password",1993825,Non-profit,UK,685,Low,0.7896985071424791,0
+Tech,"Credit Card,SSN",1032519,SME,US,59,High,0.0815264895524267,2
+Tech,"Credit Card,SSN,Password",2615150,SME,US,862,Low,0.727169069766308,2
+Government,SSN,4032419,SME,EU,689,High,0.5786754085723934,2
+Retail,"Password,SSN",9726345,SME,EU,755,High,0.283854528608645,2
+Government,"Address,Password,SSN",6087368,Non-profit,EU,520,Medium,0.17968310887024197,1
+Retail,"Full Name,Credit Card",389076,Public,UK,381,High,0.5929183998317819,2
+Healthcare,"Email,Credit Card",2614275,Private,India,229,Low,0.3251900642246949,1
+Retail,SSN,1043377,Public,EU,844,Medium,0.1457565682447517,1
+Government,"Address,Password,Email",1943811,Public,India,933,High,0.6638045276218051,1
+Government,Email,3623138,Public,UK,882,Medium,0.05708685608931485,0
+Government,"Address,Email",1387980,Public,India,837,Low,0.5072348086883924,0
+Retail,"Address,SSN",7537765,Private,US,306,Low,0.8679182945200221,2
+Tech,"Full Name,SSN",6682935,Private,EU,892,High,0.1623818946623209,2
+Government,Credit Card,5239561,Public,EU,427,Medium,0.017515990862062236,1
+Finance,Full Name,8705813,SME,US,1,High,0.9408753563380648,1
+Government,Address,5743533,Non-profit,US,161,Low,0.9933369373586285,0
+Government,Email,8909385,Public,UK,614,High,0.8078459419412586,1
+Finance,Email,6530845,Non-profit,US,725,High,0.6302087483291442,1
+Finance,"Email,Address,SSN",9269720,Non-profit,UK,102,Medium,0.587061707701151,1
+Finance,"Credit Card,Email",9706799,SME,EU,454,Low,0.8137662883195864,2
+Healthcare,Address,2087213,Private,EU,364,High,0.5212341324853343,1
+Government,"Email,SSN,Address",5383858,Non-profit,UK,789,Low,0.3516226872396344,1
+Finance,"Password,Email",9137621,Non-profit,Canada,751,High,0.5809320532627977,1
+Finance,"Password,Full Name",3404096,Private,India,263,High,0.8594157932805891,1
+Government,"Credit Card,Password,Full Name",8545291,SME,UK,886,High,0.8157486435042809,2
+Retail,Credit Card,5988029,SME,US,26,Low,0.6466059134228601,1
+Finance,Password,7468866,Public,UK,50,High,0.8511742608527708,1
+Finance,Full Name,8890782,Private,Canada,687,Low,0.7368737449441821,0
+Finance,Credit Card,6981571,Non-profit,India,650,Low,0.39090599590551467,1
+Government,Credit Card,258681,Non-profit,EU,374,Low,0.7175977656581762,2
+Healthcare,"SSN,Full Name,Email",1125905,SME,Canada,36,Low,0.8941908746641183,2
+Tech,Credit Card,4311796,Public,UK,642,Low,0.06993160570943413,1
+Government,"Full Name,Credit Card",4169962,Private,EU,727,Medium,0.362944271845992,1
+Tech,"SSN,Password",2552331,Public,Canada,477,High,0.7548378199408478,2
+Finance,"Credit Card,Email",3648371,SME,UK,515,Medium,0.23464208185545354,1
+Retail,"Email,Password,SSN",6128764,SME,EU,456,High,0.8646861920335402,2
+Government,"Address,Password",3414654,Private,Canada,578,Low,0.08764274676383854,0
+Tech,Full Name,8118654,Private,UK,466,High,0.1617642113521096,1
+Tech,"Full Name,Password,Email",3899606,Public,EU,678,Medium,0.6279500527726358,0
+Finance,"SSN,Email",9516406,Public,India,578,High,0.6949510889024617,2
+Finance,"Password,SSN",4058025,Public,Canada,822,Low,0.9227571905133943,2
+Healthcare,"Email,SSN",969616,Private,US,653,Low,0.12176191112527479,1
+Government,"Address,Email",4203271,SME,UK,653,High,0.5061418628402441,1
+Finance,SSN,7575587,Non-profit,India,287,High,0.5644410906788825,2
+Finance,"Address,Credit Card",9923462,SME,US,983,High,0.1706647585499984,2
+Government,Address,1620715,Non-profit,US,101,High,0.22080262978563914,1
+Government,"SSN,Address",7440103,Public,India,519,High,0.41412975252892703,2
+Government,SSN,4258341,Non-profit,Canada,246,Medium,0.2598132087450342,1
+Finance,"Address,Password,Credit Card",9759681,Private,Canada,213,Low,0.8015371118829896,2
+Government,Email,2608411,SME,Canada,794,Medium,0.15004866469398426,0
+Retail,"Address,Email",7597585,Public,EU,397,Low,0.9553346865039283,0
+Healthcare,Credit Card,4415473,Private,EU,956,Low,0.8251321959287038,2
+Finance,"Credit Card,Email,Full Name",6017854,SME,Canada,467,Low,0.7374337687214856,2
+Healthcare,"Email,Password,SSN",6355986,Public,Canada,435,High,0.01210847523488745,2
+Government,Address,5216622,Non-profit,UK,563,High,0.4121309302627716,1
+Government,"SSN,Credit Card",1990968,Non-profit,US,329,Medium,0.6673503980464284,1
+Tech,Full Name,7271518,Private,EU,778,Low,0.12523357043282712,0
+Tech,"Credit Card,Email",982883,Private,India,522,High,0.11080796217980704,2
+Finance,"Full Name,Email,Password",8182883,Private,US,626,Medium,0.2737913075141065,0
+Retail,Full Name,979836,Non-profit,EU,544,Medium,0.861369996363436,0
+Healthcare,Password,7881317,SME,UK,736,High,0.32005983252098347,1
+Tech,Password,7320764,Non-profit,UK,283,Medium,0.2135113663106719,0
+Tech,"Address,SSN,Password",2165412,Public,India,703,Medium,0.5650219928590161,1
+Government,"Email,Password",2972783,Private,EU,656,Low,0.74171206151293,0
+Tech,SSN,3912146,Public,EU,405,Medium,0.615985450260179,1
+Tech,"Credit Card,Password",517409,Private,UK,209,Medium,0.2024805601652374,1
+Finance,Email,3938270,Private,India,101,Medium,0.36830953050684834,0
+Government,"Full Name,Credit Card",8075037,SME,Canada,202,Medium,0.16688511785487092,1
+Retail,Email,2166251,Public,India,728,Low,0.5799837874281313,0
+Retail,"SSN,Full Name",3568675,Non-profit,US,319,Medium,0.14899973614924344,1
+Government,"SSN,Address",5511493,Non-profit,US,183,Low,0.08860042967961723,1
+Retail,Email,8334100,Public,US,198,High,0.11833619092338732,1
+Retail,"Full Name,Password,Address",5290730,Public,India,625,Medium,0.8316970436757735,0
+Government,"Email,Credit Card",6222714,Private,India,302,Medium,0.8727302504846018,2
+Government,Address,2867757,Private,UK,638,High,0.9039133302603747,1
+Tech,Password,3652387,SME,UK,569,High,0.9226230580877897,1
+Healthcare,SSN,9803630,Non-profit,UK,270,Medium,0.271949726128631,1
+Finance,Password,659003,Private,EU,875,Low,0.34592044750169426,0
+Finance,SSN,6763126,SME,Canada,426,Medium,0.4187933190741614,1
+Healthcare,Credit Card,9989400,Non-profit,India,857,Low,0.6085272726964666,1
+Healthcare,Password,92006,Private,US,327,Medium,0.5612227882825249,0
+Healthcare,Password,5421712,Non-profit,US,529,Medium,0.08172534574677826,0
+Finance,Credit Card,9961559,Public,EU,842,Medium,0.8619869084042723,2
+Tech,SSN,7371683,Non-profit,EU,611,High,0.7862781993840331,2
+Government,"SSN,Full Name",5385935,Public,UK,604,Medium,0.23879621138153928,1
+Healthcare,"Address,Full Name",1727199,Private,India,968,Low,0.39072836561361324,0
+Tech,"Address,Full Name",9339770,Public,India,779,Medium,0.09403610443426635,0
+Retail,Email,6182422,Non-profit,EU,554,Medium,0.7932613504382544,0
+Tech,SSN,372616,SME,US,520,Low,0.7326352347008328,2
+Tech,Full Name,6224754,Private,US,575,Low,0.9841103190364978,0
+Government,"SSN,Password",7338694,Non-profit,India,837,Low,0.0930304864600272,1
+Retail,SSN,4415084,Non-profit,Canada,476,Low,0.29648978128331527,1
+Finance,"Email,Address",5689238,SME,UK,457,Low,0.2543219811783167,0
+Tech,"SSN,Password",1407368,Public,India,692,Medium,0.3479414115821666,1
+Finance,"Credit Card,Full Name",6889260,SME,India,862,High,0.2539748745720247,2
+Healthcare,Full Name,1154224,SME,UK,1,High,0.27927608845441043,1
+Tech,"Email,Credit Card",8832924,Private,UK,654,Low,0.7660647765353026,2
+Tech,Full Name,810178,Non-profit,India,603,Medium,0.4470555438064254,0
+Retail,Credit Card,5780277,Non-profit,UK,881,Low,0.4214440415792474,1
+Finance,"Credit Card,Full Name",7819114,Private,India,713,Low,0.962810357074026,2
+Healthcare,"Email,Full Name,Password",2678747,Private,Canada,829,Low,0.24189382825883898,0
+Healthcare,Email,4320453,Public,UK,68,Medium,0.6678046832264065,0
+Healthcare,"Address,Password,Email",3332106,Non-profit,EU,469,High,0.6588250701400705,1
+Retail,Email,7741616,Public,US,324,High,0.8292867993167555,1
+Healthcare,Full Name,1551184,Non-profit,EU,820,Low,0.17058191155709002,0
+Government,"Email,Password,Full Name",2771742,Non-profit,UK,540,Medium,0.7867503351544369,0
+Tech,"Password,SSN",6041502,Public,US,584,High,0.4069719096342639,2
+Healthcare,"Address,Password",4855042,SME,India,380,Medium,0.9715326909010507,0
+Government,Full Name,9259415,Public,UK,824,Low,0.5165726284459791,0
+Healthcare,"Full Name,Email",8223502,Public,Canada,945,Medium,0.39679684708631646,0
+Healthcare,Password,1501948,Non-profit,India,935,High,0.8742225246851758,1
+Government,"Email,Credit Card,SSN",5558805,Public,US,168,High,0.41102107526554577,2
+Government,Email,8313934,SME,EU,453,Low,0.636401370183407,0
+Government,"Address,Password,Full Name",5282091,Private,US,639,Medium,0.09228479207325724,0
+Retail,Full Name,1373070,Private,Canada,105,Medium,0.36191999083786497,0
+Tech,Credit Card,8495630,SME,India,84,Medium,0.12055841640369025,1
+Finance,SSN,685029,SME,India,235,Low,0.08439238054454234,1
+Finance,Email,1362303,Public,UK,277,Medium,0.8518412368739476,0
+Retail,"Credit Card,Password,Email",1898501,SME,UK,866,High,0.4501233611819322,2
+Retail,"Full Name,Address,Email",329821,SME,UK,929,High,0.5116813865815117,1
+Retail,Email,5721622,SME,India,669,Medium,0.6458223862864843,0
+Retail,"Credit Card,SSN,Full Name",5753613,SME,Canada,392,Medium,0.8417233617446761,2
+Retail,"Password,Email",5218092,Private,India,579,High,0.13578904706393713,1
+Finance,"SSN,Email,Full Name",3879450,Private,India,125,High,0.48785119719240644,2
+Finance,Credit Card,6300492,Non-profit,UK,786,Low,0.9840131632104643,2
+Government,"Password,Email,Full Name",2334679,Private,UK,69,Low,0.47787844802224244,0
+Government,"Email,SSN",3080042,Private,EU,416,Low,0.19462383670487193,1
+Healthcare,Email,7984939,Non-profit,US,604,High,0.1391967013456955,1
+Tech,Address,7134456,Non-profit,UK,850,Medium,0.5693773611822828,0
+Finance,"Email,Password,SSN",240779,Private,India,64,High,0.909454610937242,2
+Tech,"Password,Address",6217074,Non-profit,UK,517,Low,0.6807558929604856,0
+Healthcare,"Full Name,Password",7466106,Private,UK,748,Medium,0.5887315221313199,0
+Finance,"Credit Card,Full Name",1231746,Non-profit,US,499,Medium,0.7257164632199491,2
+Government,"Full Name,SSN",6714070,SME,Canada,163,High,0.10926421030962141,2
+Retail,Password,9025327,Non-profit,India,443,Low,0.5104324890042322,0
+Government,"Credit Card,SSN,Password",4837917,Private,EU,320,Medium,0.6444702771210337,1
+Retail,"Full Name,Address",1827525,Non-profit,India,19,Medium,0.6768212988573956,0
+Healthcare,"Email,Full Name,Credit Card",9427944,Non-profit,Canada,141,Low,0.8219266359399297,2
+Healthcare,"Full Name,Address,Email",2847230,Public,EU,942,Medium,0.40754303103243084,0
+Tech,"Address,Email,Full Name",8608009,Public,Canada,83,High,0.8689442522791451,1
+Finance,SSN,2858281,Private,EU,13,High,0.21111247116613618,2
+Finance,"Credit Card,Full Name,SSN",9043832,Public,Canada,781,Low,0.21462807325880284,1
+Tech,Full Name,563621,Private,EU,484,Medium,0.07177580622651303,0
+Finance,"Password,Full Name",3899190,Private,UK,205,High,0.7753461504031356,1
+Finance,"Password,SSN,Credit Card",8658768,SME,US,591,Low,0.00013469300448532007,1
+Finance,SSN,5135544,Non-profit,EU,776,Low,0.3403707463057627,1
+Retail,Email,4397650,Non-profit,US,923,Medium,0.31334791758514313,0
+Retail,"Credit Card,Email",9956951,SME,UK,691,Low,0.11602268134816929,1
+Finance,Full Name,286622,Private,Canada,917,High,0.6663854135782065,1
+Healthcare,"Full Name,Email,Address",2465722,Non-profit,UK,293,Medium,0.10480806499757211,0
+Retail,Address,6760291,Non-profit,US,13,Medium,0.5520693646533779,0
+Retail,"Password,Credit Card,Address",119581,SME,US,100,Low,0.7540230349283823,2
+Government,"Address,Full Name",8314157,SME,UK,149,Medium,0.1992152748940531,0
+Retail,Email,9180253,Private,EU,565,High,0.8354802257421944,1
+Government,Password,738954,Public,India,111,Medium,0.5309376784120938,0
+Retail,Full Name,7564493,Public,UK,119,High,0.21980534882319003,1
+Retail,"Full Name,Address",2693794,Non-profit,US,674,Low,0.2655828329586061,0
+Government,Credit Card,1448947,SME,India,373,Low,0.9741944438163571,2
+Tech,Credit Card,4143535,Public,India,644,High,0.7101354317980658,2
+Government,"Full Name,Address",4955582,SME,EU,516,Medium,0.9902088935876214,0
+Government,"Full Name,Address",2236883,Non-profit,EU,441,Medium,0.8471944390335817,0
+Tech,Full Name,735275,Non-profit,UK,971,High,0.8098601873605862,1
+Retail,"Email,Full Name",2964944,Private,EU,794,Low,0.930606804846537,0
+Retail,Address,2593316,Private,Canada,558,Low,0.6209085902177081,0
+Finance,"Credit Card,SSN",7247813,Private,Canada,520,Low,0.04997902865967874,1
+Healthcare,Credit Card,6929655,SME,India,252,High,0.9811437317918219,2
+Healthcare,"Credit Card,Address,Password",5367645,Private,EU,390,High,0.7321226068429558,2
+Government,"Credit Card,Email",3202473,Private,Canada,362,Medium,0.718331175372004,2
+Healthcare,"Address,Full Name,Email",6451219,Public,Canada,74,Low,0.3769855419262801,0
+Retail,"SSN,Address",9049935,Private,India,790,Low,0.245807439306153,1
+Government,"Address,Password,Email",6285725,SME,India,546,High,0.4946751895912833,1
+Healthcare,Full Name,1966730,Non-profit,US,359,High,0.2755479392194834,1
+Healthcare,"Email,Password",6621241,SME,US,114,Low,0.19159294573482577,0
+Government,"Address,Credit Card,SSN",9157484,Private,US,401,Medium,0.8667703545060003,2
+Government,Address,8435610,Public,India,588,Medium,0.8396596557087903,0
+Government,"Credit Card,Password,Address",9315387,Non-profit,EU,628,Low,0.5911303032585165,1
+Healthcare,"Full Name,Password,SSN",9763681,Non-profit,India,421,Low,0.40941207181701833,1
+Tech,"Password,Address,SSN",4468223,Private,UK,835,Medium,0.875883083517057,2
+Government,"Credit Card,SSN,Email",3315344,Public,Canada,761,Medium,0.3621762547987283,1
+Healthcare,"Credit Card,Email",6331034,Private,UK,988,Medium,0.7317247365642129,2
+Retail,"Credit Card,Email,Password",9233689,Private,Canada,537,High,0.2714385776342002,2
+Healthcare,"Full Name,SSN",3411580,SME,US,272,High,0.4144697155393433,2
+Finance,"Credit Card,SSN",6008509,Public,US,836,High,0.7144241640712422,2
+Government,Email,921114,SME,US,489,High,0.8275063198732212,1
+Tech,"Credit Card,Full Name",3669280,Public,EU,763,Low,0.19524060295649204,1
+Government,"Email,Password",7246136,Non-profit,US,76,High,0.4353242214552362,1
+Healthcare,Credit Card,7542586,Non-profit,UK,419,Medium,0.703699779629051,2
+Finance,Address,9413528,SME,India,193,Low,0.7184539473225501,0
+Government,"Email,SSN",8653233,Public,UK,95,High,0.31654966526787,2
+Tech,Credit Card,1882297,SME,UK,993,Low,0.019795658347254386,1
+Government,"Address,Email,SSN",8671304,Public,US,924,Medium,0.6055047666158765,1
+Tech,Full Name,7558845,Public,India,450,Medium,0.3739210470128136,0
+Retail,Address,1569146,SME,Canada,760,Low,0.32525390592455194,0
+Finance,Password,6696233,Private,EU,325,Medium,0.5554954241058602,0
+Finance,"Email,Address",60778,Private,EU,345,High,0.2685337560676073,0
+Retail,"Full Name,SSN",1012930,Public,UK,987,Low,0.09206698608247543,1
+Retail,"SSN,Address,Email",4325660,Private,India,134,High,0.5636599710287622,2
+Healthcare,Full Name,8670441,Public,UK,65,High,0.10590580440375763,1
+Finance,Email,7080701,SME,EU,414,Low,0.05048894441240792,0
+Healthcare,Email,4448395,Non-profit,US,650,Low,0.8398016066644267,0
+Finance,"Password,Full Name",9839074,Public,US,924,High,0.25871164215544096,1
+Government,"Address,Credit Card,Full Name",45816,Non-profit,US,41,Medium,0.700867635861432,1
+Government,"Address,Email,Credit Card",5863835,Non-profit,US,366,Low,0.07714516853958187,1
+Finance,"SSN,Credit Card,Address",4281650,SME,EU,606,High,0.8384918338430248,2
+Tech,"Address,SSN,Credit Card",8237781,SME,India,494,Medium,0.4274956503567592,1
+Government,"Credit Card,Email",5418755,Public,Canada,649,Medium,0.7873870267523329,2
+Government,"SSN,Address",6923981,Private,UK,626,High,0.9362806214689267,2
+Retail,"Credit Card,Full Name",1138411,Private,Canada,875,Medium,0.028311274402667785,1
+Retail,"Address,Full Name,Credit Card",9243213,Private,Canada,925,Low,0.786522382390847,2
+Retail,Credit Card,3818042,Non-profit,UK,69,Low,0.309806875322469,1
+Retail,"Address,Password,Credit Card",1850395,SME,US,749,High,0.2160601162447664,2
+Government,"Password,Full Name",5648183,Public,US,213,Low,0.3927307432714162,0
+Tech,Address,6718526,Public,UK,471,High,0.41451606481679226,1
+Healthcare,SSN,4704855,Non-profit,Canada,401,High,0.001992135219070268,2
+Finance,SSN,9909981,Public,US,638,High,0.7324138648126686,2
+Tech,"SSN,Full Name",5273225,Public,EU,540,High,0.24535231416621106,2
+Tech,"Email,SSN",2892912,Non-profit,US,958,Low,0.5409050038380808,1
+Finance,"Credit Card,Password,Address",7739866,Public,US,930,Low,0.5325040664159818,1
+Government,Credit Card,2867457,Public,Canada,325,Medium,0.8956747776187787,2
+Finance,Password,7904402,Public,India,765,High,0.5606782949389499,1
+Government,"Password,Address,SSN",3382915,Public,US,93,Low,0.874170682157026,2
+Healthcare,"Address,Full Name,SSN",8914613,Public,India,659,Medium,0.4045686564040174,1
+Tech,"Password,Address,Email",1494551,Private,UK,751,Low,0.7430815396313801,0
+Retail,Password,4023261,Non-profit,UK,960,Low,0.5590592849466022,0
+Government,"SSN,Full Name,Credit Card",9911330,Non-profit,UK,507,High,0.656729484721608,2
+Tech,"SSN,Full Name,Credit Card",9224048,SME,UK,482,Low,0.1036785807342765,1
+Healthcare,Password,9539342,SME,EU,500,Low,0.014628258877675715,0
+Tech,Full Name,559981,Public,EU,401,High,0.6054117575075872,1
+Government,"Password,Full Name",1954341,Private,UK,682,Low,0.716397111958099,0
+Tech,SSN,6823603,Private,UK,395,High,0.5579274451507007,2
+Finance,"Full Name,SSN",6299941,SME,US,384,Medium,0.6923589224610581,1
+Tech,"Address,Credit Card",7297991,SME,Canada,378,Medium,0.2187156129979273,1
+Retail,"Full Name,Credit Card,SSN",5736630,SME,UK,869,Low,0.4323462264033473,1
+Healthcare,Email,4869923,SME,EU,688,Medium,0.4289849318408905,0
+Tech,"SSN,Password,Credit Card",8208623,Non-profit,US,182,Low,0.06725591396736785,1
+Tech,"Address,Email,SSN",7784874,Public,India,675,High,0.04035082685969971,2
+Government,Email,6541180,Non-profit,India,926,High,0.08022224645571407,1
+Government,"Full Name,Credit Card,Password",6185377,Non-profit,India,208,Low,0.8644332468683641,2
+Finance,"Email,Password,Full Name",3813010,Private,EU,573,High,0.5788401680355926,1
+Tech,"Full Name,Credit Card,SSN",3000610,Public,India,661,Medium,0.6495089297074473,1
+Healthcare,"Full Name,Address",7041906,Public,EU,155,High,0.863641421296616,1
+Tech,Email,7832038,Public,US,182,Medium,0.5546877097800863,0
+Healthcare,"Full Name,Address,Email",6877913,Non-profit,US,93,Medium,0.16972842857692316,0
+Retail,"Address,Email",7506191,Private,UK,222,Medium,0.5359350788521182,0
+Finance,"Credit Card,Password",8387369,SME,EU,587,High,0.05198935197770749,2
+Government,"Full Name,Email",1265134,SME,Canada,955,High,0.6834537774075089,1
+Tech,Credit Card,6601430,Non-profit,US,264,High,0.8473879305713737,2
+Retail,"Password,Email,Address",5447441,Private,Canada,915,Medium,0.38559759251333336,0
+Finance,"SSN,Address,Password",2298905,Private,EU,928,High,0.14727556355209093,2
+Tech,Full Name,1039218,Private,Canada,862,Medium,0.25646306101676597,0
+Healthcare,Address,9712781,Non-profit,EU,31,High,0.7066755336776999,1
+Government,"Full Name,SSN",1036408,Public,EU,825,High,0.05697872699736828,2
+Finance,Password,598904,Non-profit,EU,271,High,0.538022705363903,1
+Government,Full Name,4773945,Public,US,447,Medium,0.8382304210818006,0
+Healthcare,"Full Name,Address,SSN",4304677,SME,Canada,877,Low,0.8178563056550295,2
+Tech,Password,1856797,SME,UK,551,Low,0.7416026194517855,0
+Tech,"Password,Full Name",1318621,Private,Canada,422,High,0.5712604699370973,1
+Healthcare,"SSN,Credit Card",4638370,SME,US,827,High,0.5732231944495915,2
+Government,"Email,Address",2332348,Private,UK,487,High,0.2632473465180112,1
+Government,Full Name,5551560,Public,Canada,273,Medium,0.2370847085173401,0
+Tech,Credit Card,448244,Non-profit,Canada,497,Low,0.7024883415884688,2
+Finance,"Credit Card,Full Name",3458521,Public,EU,781,High,0.030463686308960125,2
+Government,"Email,Address,Full Name",8769201,SME,Canada,471,Medium,0.5511599619163721,0
+Retail,Email,2822839,Public,UK,481,Low,0.11159299995724747,0
+Healthcare,"Full Name,Email,Password",2674705,Private,India,139,High,0.1254862967991507,1
+Healthcare,Password,6760991,Private,EU,614,Low,0.7494260059808087,0
+Tech,"Email,Full Name",749692,Non-profit,EU,63,High,0.6370947008244425,1
+Tech,SSN,1946537,Private,Canada,371,Medium,0.27746467972495403,1
+Tech,"Address,Password",6854878,SME,India,186,High,0.14225523977681542,1
+Tech,Full Name,2022835,SME,EU,900,Medium,0.06180846068922263,0
+Healthcare,"Address,Email,Password",8133162,Private,EU,73,Medium,0.6475164648433631,0
+Finance,"Credit Card,SSN,Email",3943863,Public,India,460,Low,0.6635235939134523,1
+Finance,"SSN,Full Name,Password",5919806,SME,US,246,Low,0.7297119064974222,2
+Tech,"Password,Email",6306236,Private,Canada,481,Medium,0.682153161561635,0
+Finance,"Full Name,SSN",1474300,SME,US,890,Low,0.35513164775381256,1
+Tech,"Full Name,Address,SSN",8271562,Private,India,552,Medium,0.5605798090010486,1
+Retail,Address,6195868,Non-profit,Canada,56,High,0.9805682270607236,1
+Government,Full Name,2090319,SME,India,30,High,0.5322918759514544,1
+Retail,"SSN,Address,Credit Card",3504548,Public,UK,890,Medium,0.259670838950414,1
+Finance,Address,4942412,Non-profit,US,833,Low,0.5776317543444226,0
+Finance,Full Name,4315896,Public,EU,653,Low,0.834590952595272,0
+Government,"Credit Card,SSN",7725826,Public,US,415,Low,0.20424675891216748,1
+Retail,"Address,Credit Card",514953,Private,Canada,986,Medium,0.16121881197512256,1
+Finance,"Address,Password",8780788,Non-profit,UK,887,High,0.6127958355365104,1
+Tech,"Email,Address,Full Name",4344699,SME,India,928,Medium,0.8336440104751723,0
+Government,Credit Card,123019,Public,EU,128,Medium,0.27809951506635644,1
+Retail,"Full Name,Password,Email",1821908,Private,India,758,High,0.7314863597031158,1
+Healthcare,"SSN,Address,Password",3052622,Private,Canada,313,High,0.0913741048604092,2
+Finance,"Credit Card,Email",1086610,Private,Canada,663,Low,0.008059103342119789,1
+Finance,Email,2051053,SME,EU,146,High,0.4840205725094041,1
+Healthcare,Full Name,1560657,Non-profit,India,401,High,0.39515529747230504,1
+Healthcare,"Address,Credit Card,SSN",8797015,Non-profit,India,973,High,0.780189268482995,2
+Healthcare,"Credit Card,Password,Full Name",4423888,Public,EU,83,Low,0.22267607912308496,1
+Retail,"Password,Full Name,Email",757079,Non-profit,US,586,Medium,0.7242325476119492,0
+Finance,"Full Name,Credit Card",2660786,Non-profit,Canada,405,Medium,0.9746905960485515,2
+Healthcare,"Full Name,Password",1415474,SME,US,755,Medium,0.8579550909150572,0
+Tech,"Email,Full Name",7644374,SME,EU,76,Low,0.5662150157526166,0
+Finance,"Email,SSN",6241327,Non-profit,UK,12,Low,0.832363539660995,2
+Healthcare,"Password,Email,Address",3054380,Private,UK,796,Medium,0.33745427896422897,0
+Retail,Credit Card,1495139,Public,Canada,797,High,0.48439118560084926,2
+Retail,"Address,Password,Credit Card",2777374,SME,Canada,660,Low,0.2681743677449133,1
+Retail,"Credit Card,Password",5522452,Non-profit,EU,653,High,0.6415044812562517,2
+Government,"Email,Full Name",7569370,Non-profit,UK,239,High,0.8260646845482855,1
+Healthcare,"SSN,Address",4723340,Private,EU,836,Low,0.9897564134093346,2
+Government,"Address,Full Name",3082362,Private,India,441,Low,0.8661015453778347,0
+Tech,"SSN,Credit Card,Address",6806697,SME,US,864,Medium,0.02353249441409877,1
+Tech,SSN,701270,Private,UK,607,Low,0.8899133763628625,2
+Retail,SSN,3897937,SME,UK,108,High,0.12595519637935826,2
+Finance,"SSN,Email,Credit Card",2113368,Private,EU,817,Medium,0.5753591731290986,1
+Retail,"Password,Email",4072867,Private,US,845,Low,0.6522353531324407,0
+Government,"Password,Address",686338,Public,EU,160,Medium,0.5941418627564575,0
+Retail,Address,8891872,Private,UK,39,Medium,0.4263983568016225,0
+Retail,"Credit Card,Full Name",5547510,SME,Canada,156,Low,0.024684157224584613,1
+Government,"SSN,Password",1463603,Private,UK,685,Medium,0.5254703073558932,1
+Government,Address,4777415,Public,India,400,High,0.9242870707946612,1
+Government,"Email,Password,SSN",5694014,Private,Canada,711,Medium,0.13457626710410775,1
+Retail,Full Name,1597246,SME,India,206,High,0.8912000730636024,1
+Government,"Full Name,Email,Address",5063581,Private,Canada,251,High,0.8987878897373477,1
+Government,"Password,Full Name",8667712,SME,US,724,High,0.08103861046505678,1
+Tech,SSN,2935317,Non-profit,US,895,Medium,0.4764612712393995,1
+Healthcare,SSN,1707930,Public,India,188,High,0.6666170848793723,2
+Retail,Full Name,8527508,Non-profit,Canada,909,Low,0.28454138567693377,0
+Retail,"Credit Card,SSN,Password",2362331,SME,EU,858,High,0.47849107010718916,2
+Tech,Full Name,64014,Non-profit,UK,207,High,0.06669388140544885,0
+Tech,"SSN,Credit Card",8746386,Non-profit,UK,742,Low,0.6136379029893838,1
+Healthcare,"SSN,Full Name,Address",1803502,Non-profit,Canada,324,Low,0.7004317991565039,2
+Retail,"Address,Credit Card,Email",9590455,Public,Canada,601,Low,0.7021074541137926,2
+Healthcare,"Email,Full Name",4547925,Private,India,348,Medium,0.5504717771029405,0
+Government,"Address,SSN,Full Name",8094212,Non-profit,US,164,Medium,0.1619230066322137,1
+Retail,Email,1981407,Public,India,358,Medium,0.6139794562733938,0
+Government,"Address,SSN",102894,Private,US,722,Low,0.1514323143699633,1
+Finance,SSN,2090632,Public,UK,949,Medium,0.03808630059931928,1
+Retail,"Full Name,Password,SSN",6356421,Private,US,189,High,0.11647784967333707,2
+Tech,"SSN,Email",7596853,Public,EU,156,Low,0.14346945701802005,1
+Tech,"Address,Email,Password",5272513,SME,US,644,Medium,0.08018675681211329,0
+Tech,"SSN,Password",574881,Private,EU,749,Medium,0.7220660642037853,2
+Tech,Password,3476488,Private,Canada,524,Medium,0.617931559846298,0
+Healthcare,"Email,Address",2090706,Private,Canada,271,Medium,0.6439565794476135,0
+Government,"SSN,Address",1731283,Private,Canada,186,Low,0.8353725302842461,2
+Finance,"Full Name,Address,SSN",7314367,Private,EU,172,High,0.6314587925830206,2
+Healthcare,"Address,Email,Credit Card",8811381,Non-profit,UK,224,High,0.6256507894272765,2
+Healthcare,"Credit Card,Email",9080860,SME,India,330,High,0.6665219766930349,2
+Government,"Credit Card,Full Name,SSN",1516554,Private,UK,623,Medium,0.5117074471147008,1
+Tech,"Address,SSN,Full Name",3622420,SME,Canada,195,Low,0.5578736756600732,1
+Government,Credit Card,6282328,Public,UK,1,Medium,0.9459708898455993,2
+Healthcare,Password,9407105,Private,US,420,Low,0.059105820875654524,0
+Government,"Credit Card,Password,Address",191285,SME,EU,315,High,0.6704343337969175,2
+Tech,"Password,Email,Address",5588757,Public,EU,323,Medium,0.5993597250421656,0
+Government,Address,2745686,Private,EU,970,High,0.11236448194898563,1
+Retail,"Address,Credit Card,SSN",5051058,Non-profit,India,999,Low,0.6872955625825176,1
+Government,Address,5173886,SME,India,850,High,0.2726506473124847,1
+Retail,"Address,Email,Full Name",6606949,Public,Canada,410,High,0.13998737672176287,1
+Tech,"SSN,Password",6313379,Public,UK,439,High,0.5717893159359805,2
+Finance,Password,8799834,SME,India,875,High,0.5890200909809116,1
+Government,"Address,Password,Credit Card",8359827,Private,India,303,High,0.35483185554316266,2
+Finance,"Email,Full Name,Credit Card",9650976,Non-profit,Canada,90,Low,0.488177675310814,1
+Retail,Password,8544144,Private,US,58,Medium,0.41551406306206595,0
+Tech,SSN,293007,Non-profit,Canada,355,Low,0.09142199181713817,1
+Finance,Email,8777381,Public,UK,153,Low,0.4945211251204079,0
+Tech,"Full Name,Credit Card",9756672,SME,India,841,Low,0.327420958733448,1
+Healthcare,"Address,Password",1287188,Private,Canada,634,Medium,0.6154207798208354,0
+Tech,"Password,Credit Card,SSN",3663097,SME,UK,381,Low,0.6048394293625812,1
+Retail,"Credit Card,Password,Email",1601720,SME,India,889,Low,0.45851856218701537,1
+Retail,"Password,Full Name,Credit Card",3676049,Public,EU,189,High,0.13292804270798264,2
+Tech,"Credit Card,Password,Full Name",8165962,Public,Canada,298,Low,0.20945576950951106,1
+Government,Password,2131118,Private,UK,791,High,0.9765610233229043,1
+Government,"Address,Credit Card,SSN",1072192,Non-profit,EU,788,High,0.1307173235897573,2
+Finance,Credit Card,2361901,Non-profit,EU,99,Medium,0.20658101622178082,1
+Retail,SSN,9180279,SME,US,324,High,0.7512789243737669,2
+Tech,"Full Name,Credit Card,Email",7201262,Private,India,305,Low,0.9032481050951305,2
+Tech,"Full Name,SSN",7238310,Public,Canada,7,High,0.785083657239757,2
+Retail,Credit Card,151653,Public,US,686,High,0.5105704087285036,2
+Tech,"SSN,Address",5298340,Private,India,602,Low,0.682652605044199,1
+Tech,"Email,Address,SSN",8229736,Public,UK,35,High,0.6383505774204318,2
+Government,"Credit Card,Full Name,Email",2512019,Non-profit,US,123,High,0.6766446348198475,2
+Healthcare,"Email,Address",2739384,Non-profit,Canada,560,High,0.7093888218243862,1
+Tech,"Email,SSN",6563865,Private,EU,335,High,0.9614166196420495,2
+Finance,"Credit Card,Address,Email",4413903,SME,Canada,928,Medium,0.9115147258658508,2
+Government,Full Name,4350025,Private,Canada,927,Low,0.41586133940794756,0
+Tech,"Password,Credit Card",6943263,Private,Canada,340,Low,0.4107092453916662,1
+Tech,Full Name,4284664,SME,EU,503,Medium,0.9308240749901141,0
+Finance,"Email,Credit Card",7692332,SME,India,617,Low,0.20424210636842888,1
+Government,"Credit Card,Full Name",5415229,SME,EU,439,Low,0.12036357620998606,1
+Healthcare,"Password,Email",7908386,SME,US,284,Medium,0.11060359887316085,0
+Retail,"SSN,Credit Card",4593087,SME,US,13,Medium,0.4522024791035387,1
+Healthcare,Credit Card,9012698,Private,EU,866,Medium,0.03769772491485279,1
+Finance,"Password,Credit Card",8856603,Private,India,797,Low,0.5346609230755238,1
+Healthcare,"SSN,Full Name,Address",5984359,SME,India,934,Low,0.9513968619791061,2
+Healthcare,"Full Name,Email,Credit Card",8019205,Public,India,212,Medium,0.49295697165586005,1
+Healthcare,"Full Name,Credit Card",8023417,Non-profit,EU,273,Medium,0.3204012861402149,1
+Healthcare,"Email,SSN,Full Name",8863264,SME,EU,803,Medium,0.19012876631870568,1
+Retail,Email,3726530,Public,Canada,528,High,0.8539428821418529,1
+Finance,Full Name,9450146,Non-profit,UK,693,High,0.5037083870840707,1
+Finance,"SSN,Password",7373801,Private,EU,125,Low,0.503345130606154,1
+Healthcare,Password,7554925,Public,US,279,High,0.2739880994699718,1
+Retail,"Address,Credit Card,Full Name",6842023,Non-profit,US,69,Low,0.5036886093282389,1
+Finance,Credit Card,2620222,Public,EU,609,Low,0.5311094963375276,1
+Tech,"Address,Credit Card",5168373,SME,EU,583,Medium,0.5964670754135437,1
+Retail,Password,6509526,Private,India,960,Low,0.526082518417403,0
+Tech,SSN,2097419,Private,Canada,271,Low,0.683870124909032,1
+Finance,Address,4870236,Private,US,429,Medium,0.29797723549584376,0
+Healthcare,Password,9251109,SME,US,836,Low,0.11148768783878193,0
+Finance,"Full Name,Address",7157406,Public,EU,877,Low,0.1954580003683999,0
+Retail,Password,8638872,Public,UK,338,High,0.7379277689988003,1
+Tech,Email,7378426,Private,UK,538,Low,0.691416057513152,0
+Retail,Credit Card,1958792,SME,US,696,High,0.7251111599333161,2
+Healthcare,"Full Name,Address,SSN",9091822,Private,UK,912,Low,0.7448250755299131,2
+Healthcare,Address,6502211,Private,UK,336,High,0.7493694366449569,1
+Tech,"Credit Card,Password",6768315,Non-profit,India,436,Low,0.39577767966043076,1
+Finance,"Full Name,Password",2055048,Public,EU,748,Medium,0.5109707430450621,0
+Retail,"Address,Full Name",4194616,Private,UK,130,High,0.938714635374035,1
+Retail,"Full Name,Address",8738925,Public,UK,278,Medium,0.32784283788581825,0
+Tech,"SSN,Email",8110074,Private,UK,155,Low,0.08813443097669149,1
+Tech,Credit Card,823564,Public,India,93,Medium,0.21174586205241952,1
+Government,Address,1986404,Non-profit,EU,652,Medium,0.5275879732721657,0
+Finance,Full Name,8564645,Non-profit,India,769,High,0.600583196987136,1
+Government,"Password,Credit Card",2813753,Public,India,642,Low,0.7211323573568237,2
+Government,"Credit Card,Email,Full Name",5639663,Private,India,636,Low,0.7280122577961974,2
+Government,Full Name,932253,Private,Canada,854,Low,0.13684516658635681,0
+Retail,"Full Name,Password,Credit Card",6686941,Public,UK,86,Medium,0.9205358851025547,2
+Finance,"Address,Full Name",1677850,Private,Canada,248,Medium,0.6141862443190114,0
+Healthcare,"Password,Full Name,Address",6216241,Private,US,180,Medium,0.06194651857898792,0
+Finance,Address,3372484,Non-profit,US,213,Medium,0.26240837648930193,0
+Healthcare,SSN,2554589,Private,Canada,542,Low,0.09949466887296465,1
+Retail,SSN,4307080,Non-profit,Canada,808,Low,0.28520580268041407,1
+Tech,"Credit Card,SSN",2871581,SME,US,140,Medium,0.056224294850972245,1
+Finance,Password,4221242,Public,India,90,High,0.10236708458320931,1
+Retail,"Address,SSN",5553612,Private,UK,258,High,0.6831142857230466,2
+Finance,"Email,Full Name",9382260,Public,India,330,Low,0.27155045517748566,0
+Finance,"Address,SSN,Password",2054262,SME,UK,853,Medium,0.47415794587907967,1
+Tech,"Email,Credit Card",6113240,Non-profit,Canada,663,High,0.2035348738868964,2
+Government,"Password,Address,SSN",2204531,Private,Canada,256,Low,0.08670656759564022,1
+Retail,Full Name,1732041,Private,EU,845,High,0.9413343927869017,1
+Finance,"Credit Card,Address",1340462,SME,US,200,Low,0.9294034838491538,2
+Finance,"Credit Card,Email,Password",6509850,Private,UK,4,High,0.6427774134799279,2
+Retail,Full Name,4167289,Non-profit,India,510,High,0.6535867700444199,1
+Finance,Email,1533337,Non-profit,UK,682,Low,0.28924390281966816,0
+Healthcare,"Address,Full Name,Password",9836351,Non-profit,EU,758,High,0.01666047124421599,1
+Retail,Email,1651224,SME,India,811,Medium,0.8568353497231763,0
+Healthcare,"Address,Email",5915063,SME,UK,926,High,0.6971662542903504,1
+Finance,Address,1351339,Non-profit,UK,415,Medium,0.8264646094921829,0
+Government,"Email,Address,Password",2822105,Public,Canada,403,Medium,0.6150646298578113,0
+Retail,"Address,Email,SSN",4651100,SME,India,546,Medium,0.3430267125900244,1
+Finance,"Credit Card,Email",3619313,Private,India,444,High,0.5215509839109671,2
+Healthcare,Credit Card,9945840,Public,Canada,58,Low,0.18879402777344445,1
+Retail,SSN,736053,SME,US,446,Low,0.7919930334057097,2
+Retail,"Address,SSN",145454,Private,India,533,High,0.05723669351680938,2
+Retail,"Password,Email",7322105,Non-profit,US,605,High,0.40496858737618846,1
+Healthcare,Full Name,9618959,Non-profit,US,639,Low,0.5104601313464413,0
+Retail,SSN,9812141,Non-profit,Canada,973,Low,0.9095953911109443,2
+Healthcare,SSN,5547686,Private,EU,315,Low,0.014196634471723701,1
+Finance,"Email,Full Name,SSN",8906808,Non-profit,UK,424,Low,0.055706836115245184,1
+Healthcare,Email,9161899,Non-profit,Canada,146,Medium,0.9902851705849413,0
+Retail,"Email,Address",5133928,Non-profit,UK,265,High,0.03238913777599506,1
+Retail,Credit Card,37160,Public,US,109,Low,0.23599660590923754,0
+Tech,"SSN,Password,Full Name",9126805,SME,India,732,Medium,0.6543464596528576,1
+Healthcare,Password,4080430,SME,EU,508,Medium,0.26248500790059104,0
+Healthcare,"Credit Card,Address,Email",9607541,SME,UK,167,Low,0.8890121901109594,2
+Finance,"Password,Full Name,Email",6185398,SME,US,1,High,0.3156332153671523,1
+Retail,"SSN,Password",9182563,SME,EU,450,Medium,0.5224968088905885,1
+Retail,"Full Name,Address",4901318,Non-profit,UK,503,High,0.6768722758275765,1
+Finance,"SSN,Credit Card",7638547,Non-profit,EU,357,Medium,0.30966887040129254,1
+Tech,"Full Name,SSN",714391,Public,Canada,376,Medium,0.12564349241231398,1
+Healthcare,"Address,SSN",5682868,Non-profit,Canada,536,Medium,0.9764565294354102,2
+Tech,"Address,Email,Full Name",7571095,Private,India,479,Low,0.7777279100677931,0
+Retail,"Credit Card,SSN",1436367,Public,India,849,Low,0.9929434657829072,2
+Government,"SSN,Email",1435730,Non-profit,India,227,Medium,0.9839063638971636,2
+Government,"Email,Password,Credit Card",1319155,Public,EU,353,Low,0.751798163586933,2
+Government,"SSN,Credit Card,Address",9801518,Public,EU,874,Medium,0.4446276579139047,1
+Tech,Credit Card,974215,SME,US,738,Medium,0.4461704378126965,1
+Retail,"Credit Card,Address,Email",3201090,Private,EU,214,Low,0.4386490184359845,1
+Healthcare,Password,8960601,Non-profit,Canada,999,Medium,0.6389630219732846,0
+Government,Credit Card,2594449,Non-profit,UK,82,High,0.1633544497431565,2
+Tech,"Address,Password",6525367,Non-profit,Canada,375,Low,0.12908619514246178,0
+Retail,Credit Card,4188694,Public,India,550,Low,0.9429827840711357,2
+Finance,Full Name,4803738,Non-profit,UK,894,High,0.7890961116487567,1
+Government,"Full Name,Address,Credit Card",1895420,Non-profit,EU,603,High,0.6809532914035762,2
+Tech,Email,7140608,Non-profit,UK,963,High,0.36229349000020483,1
+Finance,"Password,SSN",4783337,Private,UK,230,Low,0.9468801963410236,2
+Finance,"Address,Credit Card",2942616,Non-profit,EU,389,Medium,0.8168902895041683,2
+Government,Password,4152951,Public,Canada,259,High,0.8908321482896335,1
+Tech,SSN,2184525,Private,US,907,Low,0.5505706345413642,1
+Government,"SSN,Password,Email",2337798,Private,US,605,Low,0.09135324272355583,1
+Finance,"Password,Email",9943357,Non-profit,US,744,Low,0.0174982139873886,0
+Retail,"Email,Password",3331263,Public,EU,541,High,0.2604031087879084,1
+Retail,"SSN,Credit Card,Password",3946123,Public,India,58,Medium,0.30581351128366396,1
+Healthcare,Full Name,2181019,Public,Canada,67,Medium,0.5787564763599993,0
+Government,"SSN,Credit Card",6556851,Private,Canada,404,High,0.9503070137361812,2
+Retail,Email,9336411,Public,US,495,High,0.7122202051771587,1
+Tech,"Address,Password",5001738,SME,UK,484,High,0.6459278930230393,1
+Healthcare,"Credit Card,Full Name",6343211,Non-profit,Canada,483,Low,0.9840894639665142,2
+Finance,"Credit Card,Address",9977122,Non-profit,India,716,High,0.8787465236769298,2
+Healthcare,Full Name,1639004,SME,UK,333,Low,0.469059744390119,0
+Tech,"Email,Full Name",4590369,Non-profit,US,325,High,0.13032043317233588,1
+Tech,Password,9103869,Private,Canada,612,High,0.01767004479543388,1
+Government,"Address,Credit Card",1546288,Non-profit,US,101,Medium,0.6917776391419823,1
+Tech,Credit Card,1392538,SME,EU,755,Low,0.7806993041716287,2
+Government,"Full Name,Email",1139422,SME,India,389,Low,0.09834492159021313,0
+Finance,"Password,Credit Card,Email",6099915,SME,EU,9,Medium,0.9122082367815256,2
+Government,"Full Name,Credit Card",9881233,Public,Canada,260,Medium,0.4577438171662134,1
+Healthcare,"SSN,Credit Card,Email",8959825,SME,Canada,874,Medium,0.9126050268831104,2
+Retail,"Password,Credit Card",2598979,SME,Canada,520,Medium,0.7951102825267247,2
+Government,"Password,Credit Card,Address",9459242,Private,EU,204,Low,0.8159557894152066,2
+Healthcare,Full Name,4126186,Private,UK,537,High,0.16653851349727,1
+Retail,"Password,Credit Card,Full Name",7300243,SME,UK,47,Medium,0.24370821190434266,1
+Government,"SSN,Password",8971922,Non-profit,US,162,Low,0.500033915569608,1
+Tech,Credit Card,4380845,Non-profit,UK,698,Low,0.8865954415023983,2
+Healthcare,"Address,SSN",7605323,SME,UK,558,Medium,0.27714435187335984,1
+Finance,"Password,SSN,Address",8818518,Public,India,276,Low,0.6643393666056823,1
+Tech,"Full Name,SSN,Email",9750181,Non-profit,EU,682,Low,0.4226866196574257,1
+Healthcare,Email,7677431,Non-profit,EU,864,Low,0.44018032869719315,0
+Government,Password,7844227,Public,India,791,Low,0.48790019527930184,0
+Finance,Full Name,420503,Public,US,422,Medium,0.9167560031187467,0
+Finance,"Credit Card,Full Name",6698947,Private,US,759,Medium,0.24581858702257464,1
+Finance,"Full Name,SSN,Address",2038398,SME,EU,601,Low,0.45870511566753824,1
+Finance,Credit Card,3454708,Private,India,186,Medium,0.12523002562874674,1
+Tech,"SSN,Credit Card,Full Name",9496231,Public,India,323,Medium,0.9658366688075836,2
+Retail,Credit Card,808040,Non-profit,UK,575,Low,0.8924690939520117,2
+Government,Credit Card,9209163,Non-profit,EU,174,Low,0.23899768021155132,1
+Retail,"Credit Card,Full Name,Address",3291303,SME,India,770,High,0.9979774555582603,2
+Tech,"SSN,Address",1130775,Public,Canada,323,Medium,0.30891772284376606,1
+Healthcare,"Email,Password",7905617,Non-profit,UK,356,Low,0.6723482676428648,0
+Tech,"SSN,Email",9705385,SME,Canada,393,Low,0.9522600783623237,2
+Tech,"Full Name,Address,Password",449934,Private,Canada,115,High,0.5026301156212535,1
+Healthcare,"Credit Card,Address",7312460,Public,EU,389,Low,0.9031906907227857,2
+Retail,"Password,Address,SSN",3933613,Public,US,323,Low,0.5365256083934482,1
+Government,Email,6016346,Non-profit,UK,606,Low,0.5849308939787217,0
+Government,Full Name,8030598,Public,US,200,Medium,0.6692657958436578,0
+Finance,Credit Card,3768263,Private,UK,649,Medium,0.015920267262798604,1
+Finance,Full Name,3121452,Private,US,330,Medium,0.12680179912676004,0
+Retail,"SSN,Email",4850617,Public,Canada,782,High,0.5061398526946443,2
+Healthcare,Credit Card,2289013,Public,UK,158,High,0.7968615702761911,2
+Government,"Credit Card,Full Name",5449608,SME,Canada,950,Low,0.9177726524944395,2
+Tech,Full Name,269116,Non-profit,India,400,Medium,0.17053804889822588,0
+Healthcare,"SSN,Address,Full Name",6950666,Public,Canada,690,High,0.3773484772303116,2
+Healthcare,Full Name,9728579,Public,Canada,934,High,0.48927926105160313,1
+Healthcare,"Password,Credit Card,Address",5992342,Non-profit,Canada,26,Low,0.19819638642166815,1
+Finance,"Address,Credit Card,SSN",3620047,SME,EU,496,Low,0.5832761971390966,1
+Tech,SSN,2715660,Private,US,508,High,0.9891253191087334,2
+Retail,"Full Name,Credit Card",53066,Non-profit,India,799,Low,0.7867230147335408,1
+Retail,"Email,SSN",4172364,Public,Canada,626,High,0.07748362655548269,2
+Finance,"SSN,Password,Full Name",2937598,Non-profit,EU,883,High,0.47132179410506836,2
+Finance,"Address,Credit Card,Email",6438885,Private,EU,995,Low,0.9461868939912612,2
+Retail,"Email,SSN,Address",5006332,Private,India,15,High,0.6656505006259598,2
+Government,"SSN,Password",4974064,Public,India,419,Low,0.6495429586036605,1
+Finance,Email,945353,Private,India,396,Low,0.3316578441770175,0
+Government,Password,305543,Private,India,344,Medium,0.2568300377251852,0
+Government,"SSN,Full Name",5391656,Private,UK,844,Low,0.9550631871262365,2
+Retail,"SSN,Credit Card,Address",2471562,SME,Canada,42,High,0.33721249040628576,2
+Finance,"Credit Card,Email",9955657,Private,EU,441,Low,0.7984535050511905,2
+Retail,"Full Name,SSN,Email",1195737,Private,UK,490,Medium,0.3549312009680162,1
+Healthcare,"Full Name,Email,Password",4123990,Private,EU,916,High,0.6442130159896179,1
+Tech,"SSN,Credit Card,Password",1248752,SME,India,210,Low,0.16678733518367417,1
+Finance,Email,9030750,Non-profit,India,616,Medium,0.40032986841075824,0
+Tech,"SSN,Email,Address",2660232,SME,EU,339,Medium,0.5196850311503769,1
+Government,SSN,4092701,Private,India,763,Low,0.9408799063414847,2
+Finance,Credit Card,2901203,Non-profit,Canada,758,Low,0.8436805296649776,2
+Retail,"Email,SSN,Address",4873691,Public,Canada,785,Medium,0.5354649496569541,1
+Finance,"Credit Card,Address",1882397,SME,EU,281,High,0.35018652433196107,2
+Finance,"Email,SSN",9801354,Public,Canada,219,Medium,0.5259465769014594,1
+Retail,"Full Name,Credit Card,Email",7989597,SME,Canada,9,Low,0.9334131270234548,2
+Government,Password,6066925,SME,India,121,Low,0.5457496797794357,0
+Healthcare,"Full Name,Password,Credit Card",7901171,Private,US,689,Low,0.9789195561198998,2
+Retail,"SSN,Credit Card,Password",1151311,Public,UK,253,Medium,0.6648179907162709,1
+Tech,SSN,297412,Non-profit,US,570,Low,0.9993362799835043,2
+Retail,"SSN,Address,Credit Card",8152496,Public,EU,333,High,0.20905812878086616,2
+Healthcare,Credit Card,488707,SME,India,655,High,0.5035135112979966,2
+Healthcare,"Address,Email",3941063,SME,India,665,Low,0.7181017379560225,0
+Government,"Credit Card,SSN,Address",7717492,SME,India,857,High,0.24665644684477783,2
+Tech,"SSN,Credit Card",9470309,SME,US,52,High,0.6337540871903363,2
+Healthcare,"SSN,Email",6363473,Public,US,576,High,0.796285682942801,2
+Finance,Address,3893825,Non-profit,UK,444,High,0.39605447743546673,1
+Healthcare,"Address,Password,SSN",927097,Non-profit,EU,236,High,0.1373033751416044,2
+Finance,"Password,Credit Card",2265719,SME,US,96,Medium,0.5908045335179158,1
+Tech,"Password,Full Name",7711611,Public,US,314,High,0.8741689214820684,1
+Tech,"Password,SSN,Credit Card",5507933,SME,US,799,High,0.5516879678064617,2
+Finance,"Password,Full Name",1733141,SME,US,701,High,0.2303950715145644,1
+Retail,"Password,Address",2888569,Public,UK,219,High,0.2613973165603949,1
+Healthcare,"Full Name,SSN,Credit Card",808400,Private,EU,996,Low,0.6220091888089806,1
+Retail,Credit Card,9598010,Non-profit,EU,692,High,0.42437202605363467,2
+Healthcare,SSN,8401944,SME,Canada,293,High,0.02583897222001119,2
+Finance,Address,9264114,Public,UK,35,High,0.28676687755788366,1
+Retail,Credit Card,6866999,Public,UK,290,High,0.09087653836964837,2
+Government,"Address,SSN",9940139,Non-profit,Canada,706,Low,0.18690729645011817,1
+Government,Email,8958541,SME,Canada,229,Medium,0.23260386214875595,0
+Tech,"Address,Credit Card",3347386,Private,India,669,High,0.45994195129396276,2
+Tech,"Email,Password",768128,Public,US,627,Medium,0.1444364841550776,0
+Retail,"Password,Email,Credit Card",7021480,SME,India,466,Low,0.7130142918617408,2
+Tech,Password,8034076,Public,Canada,153,Medium,0.5769361233448397,0
+Government,"Password,Address",5608414,Public,EU,951,High,0.005864727887161303,1
+Retail,Email,8400122,Public,EU,79,Medium,0.08661976085469403,0
+Finance,"Email,Credit Card",7863148,Private,Canada,411,Low,0.4539588330478598,1
+Tech,"Full Name,Credit Card,Address",1351093,SME,UK,684,Low,0.9019095717488887,2
+Healthcare,Email,8869577,Private,EU,363,Medium,0.8996005947632358,0
+Retail,"Full Name,Address,Credit Card",5088365,Public,EU,22,Low,0.1996697380406467,1
+Government,"Full Name,SSN,Address",2998493,Non-profit,EU,193,Medium,0.1716781950432169,1
+Retail,"Address,SSN",2628014,Non-profit,UK,564,High,0.6657652402653673,2
+Finance,Address,8446180,Public,EU,700,Medium,0.7563560547436343,0
+Tech,"Email,SSN,Full Name",1901302,Public,UK,604,Medium,0.18955550853694048,1
+Healthcare,"Password,Credit Card",4676431,SME,EU,43,Medium,0.14977713168090268,1
+Finance,Credit Card,5755068,SME,Canada,471,Low,0.756789222902397,2
+Retail,"Address,Password",8062792,SME,UK,453,High,0.06325340889867959,1
+Government,SSN,3276072,Public,India,947,High,0.30936856208001284,2
+Government,Full Name,3261802,SME,EU,187,Medium,0.21778080176756853,0
+Finance,"Credit Card,Full Name",2871524,Private,EU,130,Low,0.5712129177515172,1
+Retail,"Credit Card,Password,Address",1007152,SME,Canada,979,Low,0.0985468514129424,1
+Healthcare,"Full Name,SSN",4487856,Private,India,48,Medium,0.24363856934558292,1
+Government,SSN,8109196,Public,US,192,Medium,0.7865834708315065,2
+Government,Address,859811,Private,India,505,Medium,0.34459659572697177,0
+Retail,Password,7794404,Non-profit,EU,176,Low,0.7642515980693955,0
+Healthcare,"Password,Credit Card,Address",1265008,SME,India,441,Low,0.28740253384548253,1
+Healthcare,"Address,Email,Full Name",8602462,Private,US,60,Low,0.28045506476005533,0
+Tech,"Password,Credit Card",5163425,Private,UK,420,Low,0.8812975456140917,2
+Finance,SSN,618423,Non-profit,EU,101,Low,0.31271329514145807,1
+Finance,"Address,Credit Card",5270262,SME,UK,317,Medium,0.7783392290675587,2
+Finance,"Credit Card,Full Name",178216,Public,US,133,High,0.28557961623863637,2
+Government,"Password,Credit Card,Full Name",5018226,SME,EU,992,High,0.5354133355114677,2
+Healthcare,"Full Name,Password,Address",269602,Private,Canada,710,Medium,0.0545118899108592,0
+Tech,Credit Card,550656,Non-profit,US,982,High,0.8001526483917506,2
+Finance,"SSN,Password,Credit Card",8481287,Private,UK,1,Low,0.2899247626330286,1
+Finance,SSN,178476,Private,India,166,High,0.6704466652825093,2
+Tech,Full Name,9525338,Non-profit,EU,759,Low,0.5990110442135675,0
+Retail,"Email,Credit Card",7637805,Non-profit,Canada,843,Medium,0.9920747645913562,2
+Tech,"Full Name,Address,Credit Card",4769424,SME,Canada,729,Medium,0.3063987983619578,1
+Healthcare,Email,1592711,Private,EU,456,High,0.4346781483164702,1
+Finance,"Full Name,Password",8448680,Public,EU,439,High,0.8544550831854034,1
+Tech,"Password,Email",9332137,Non-profit,Canada,681,High,0.47704822517935463,1
+Retail,"Password,Credit Card,Full Name",8678177,SME,EU,186,Medium,0.4217742419361259,1
+Government,"SSN,Email,Address",2193848,SME,US,654,High,0.3771787917842435,2
+Government,Email,2977877,Non-profit,UK,648,High,0.5312010468195962,1
+Retail,"Email,SSN,Password",2986032,SME,UK,841,Low,0.7219831469516448,2
+Finance,"Credit Card,SSN",9927354,Public,Canada,77,Medium,0.5693346319072251,1
+Finance,"Credit Card,Password",4867940,SME,UK,143,Low,0.7632949119972816,2
+Government,"Credit Card,Full Name",3536443,SME,India,177,High,0.37509940531834995,2
+Healthcare,"Full Name,Credit Card,Password",6380022,Private,UK,510,High,0.8425545014651813,2
+Healthcare,SSN,8974541,Private,US,246,High,0.16747049055004248,2
+Healthcare,"Address,Full Name",5276463,Public,US,866,Low,0.3032081937596749,0
+Government,Email,4746920,Private,India,102,Medium,0.9285077519437785,0
+Finance,"Credit Card,Address,Full Name",2267598,Non-profit,US,731,Low,0.18677252823112933,1
+Healthcare,Email,9898442,Non-profit,Canada,887,Medium,0.20823180860821444,0
+Tech,Full Name,9003006,Non-profit,India,469,Low,0.9025421148429531,0
+Tech,"Password,Address,Full Name",5310068,SME,Canada,719,High,0.732700183870807,1
+Retail,Full Name,6818123,SME,US,365,High,0.8361186155450426,1
+Finance,"Address,Email",4176252,Public,India,320,Low,0.15061095306851913,0
+Healthcare,"Address,Password,Full Name",9696674,SME,Canada,389,Low,0.929870482293879,0
+Healthcare,"Password,Full Name",3744757,Private,US,346,Medium,0.4601171832033255,0
+Finance,"Email,SSN,Password",8073590,Non-profit,EU,898,High,0.9244942827740529,2
+Healthcare,"Address,Password,SSN",2946759,Public,US,346,Low,0.008998657283255773,1
+Retail,"SSN,Address,Password",1219284,SME,India,187,Medium,0.3098471167532799,1
+Healthcare,"Email,Password,Full Name",866630,SME,EU,831,Low,0.8355717050906487,0
+Finance,"Password,Credit Card,Full Name",8560531,Non-profit,EU,54,High,0.0669910943958476,2
+Finance,Full Name,5725827,Private,Canada,631,High,0.4080404616028166,1
+Government,Email,5011281,Public,UK,791,High,0.7728805774635181,1
+Retail,"Address,SSN",637431,Private,US,569,Medium,0.1723492141449633,1
+Finance,"SSN,Password,Full Name",8707406,Non-profit,EU,747,Low,0.1974488170911317,1
+Healthcare,Address,5307175,Non-profit,UK,802,Low,0.7199595393694795,0
+Government,Full Name,6133446,Public,EU,192,High,0.822760243032332,1
+Tech,"Password,Email",3336705,Private,UK,637,High,0.43850801669897,1
+Tech,Full Name,6204690,SME,India,787,Low,0.7497257467835433,0
+Tech,"SSN,Password",6192081,Public,US,580,Low,0.7800840237349648,2
+Government,"Credit Card,Address",1724480,Public,EU,712,High,0.11305296783451013,2
+Finance,"Email,Address",5659307,Public,Canada,819,High,0.9324439783773508,1
+Finance,"Password,SSN,Credit Card",1691792,Non-profit,Canada,887,High,0.40663652688497043,2
+Retail,"Credit Card,Address",1656464,SME,India,203,Low,0.7147023163822577,2
+Retail,"Credit Card,Full Name,Email",7280995,Public,EU,342,Low,0.859324951070476,2
+Retail,Full Name,3905840,Non-profit,UK,60,Low,0.613170360743117,0
+Finance,Full Name,800717,Private,India,167,High,0.5353708726383943,1
+Healthcare,Full Name,6912957,Non-profit,EU,187,Medium,0.25403101779898596,0
+Finance,Address,2553192,Private,Canada,726,High,0.07924960612992882,1
+Tech,"Address,Password",9407751,Private,EU,560,Medium,0.8750086997439702,0
+Government,Credit Card,9011139,Public,Canada,383,Low,0.5040700797484243,1
+Healthcare,Password,7528872,Public,US,672,Medium,0.9782654635294741,0
+Healthcare,"Address,Full Name,Email",3601200,SME,US,956,Medium,0.27470503280714365,0
+Healthcare,Password,2989088,Private,UK,977,Medium,0.1514576224004145,0
+Finance,"Address,Credit Card,Email",4589156,SME,EU,65,Low,0.24599974030679517,1
+Healthcare,"Full Name,Email",3896090,Non-profit,EU,61,Medium,0.2363365902687512,0
+Retail,"Email,Credit Card",3206677,Public,EU,80,High,0.9219874759651726,2
+Retail,"Address,Full Name,Email",9222750,Non-profit,US,493,High,0.2677743146041175,1
+Healthcare,"Email,SSN",5138956,Private,US,547,Low,0.16844055113191525,1
+Retail,"Credit Card,Password,Address",1561121,Non-profit,UK,449,High,0.8496001749824581,2
+Healthcare,"Email,Password",6776996,SME,India,2,Medium,0.6332689173374889,0
+Tech,"Address,Password",1898459,Public,India,7,Low,0.6838767411633063,0
+Finance,Credit Card,4248328,Private,India,417,Medium,0.4238081851735742,1
+Government,"Full Name,Email",2159714,Private,India,817,Low,0.06560076494502953,0
+Retail,"SSN,Email,Credit Card",8238881,SME,US,657,High,0.4241850557459762,2
+Government,Address,316315,Non-profit,Canada,625,Medium,0.6162540405708125,0
+Government,"Email,SSN",2238699,Non-profit,US,620,High,0.055109639940666755,2
+Finance,"Credit Card,Address,Full Name",4979234,SME,US,643,High,0.2107066650749062,2
+Government,Password,8137537,SME,US,782,Medium,0.6447567265900929,0
+Tech,"Email,Credit Card,Address",5387452,Private,US,122,High,0.6769767523110285,2
+Tech,Address,750045,Non-profit,US,790,Medium,0.6109594994322547,0
+Tech,"Password,Address",4188442,Private,US,673,Low,0.33616025774451985,0
+Healthcare,"Address,Password",4496433,Public,Canada,387,High,0.3429665197000782,1
+Finance,Address,2792671,Public,India,573,High,0.10935590310947885,1
+Government,Full Name,8215491,Public,UK,132,Medium,0.9715163568041392,0
+Healthcare,Password,4017899,Non-profit,EU,161,Low,0.18593364087438458,0
+Government,SSN,3994611,Public,EU,841,High,0.32460879809694465,2
+Finance,SSN,1361764,Non-profit,EU,481,Medium,0.5476161006537471,1
+Government,"Credit Card,Email",851122,Public,Canada,167,Medium,0.8307673885947606,2
+Healthcare,Address,4018641,Public,EU,733,Medium,0.4589697180653488,0
+Healthcare,"Email,SSN",2495903,SME,US,735,Low,0.44959890600773733,1
+Healthcare,"SSN,Password,Address",4921791,Private,India,37,High,0.720616290663715,2
+Government,"Password,Address,Full Name",9353819,SME,US,10,Medium,0.22377838627097624,0
+Retail,Full Name,54010,Public,US,9,Low,0.7056593338739465,0
+Retail,Address,2620909,Public,Canada,443,Medium,0.9975825929459724,0
+Healthcare,"SSN,Email,Password",5709824,Private,Canada,695,High,0.1766823141763052,2
+Government,"Full Name,Password,Credit Card",1734391,Non-profit,US,647,Medium,0.31318205070363514,1
+Healthcare,"Full Name,Email",9586296,Public,India,345,Low,0.8610333999722404,0
+Government,Full Name,9316889,SME,UK,393,Low,0.40610998050255787,0
+Government,"Address,Email,Full Name",5852361,Private,India,197,Medium,0.8827816996264968,0
+Finance,Address,7273268,SME,US,610,High,0.26269330988000517,1
+Government,"Password,Email",8436969,SME,EU,757,High,0.07324560410739012,1
+Government,"Email,Password,Full Name",1845348,Public,India,254,High,0.7261894838621051,1
+Government,Credit Card,9351351,Public,EU,266,Low,0.34233408246099073,1
+Government,SSN,5474024,Non-profit,India,579,High,0.5796324582018182,2
+Tech,Full Name,6665677,SME,US,413,Medium,0.7383512771211947,0
+Tech,"Email,Address,SSN",4243154,Non-profit,Canada,90,Low,0.27725841634918613,1
+Healthcare,SSN,9818539,Non-profit,UK,339,High,0.006525410428886991,2
+Tech,"Password,Credit Card,Email",9130773,Private,EU,624,High,0.9541316415710726,2
+Tech,"Full Name,Password",4864099,Non-profit,US,296,Medium,0.5670327835012275,0
+Finance,"Email,Full Name",7768227,SME,UK,843,Low,0.8101400907454612,0
+Government,SSN,9418327,SME,Canada,56,Medium,0.805857705334062,2
+Tech,"Password,Full Name",9516968,SME,US,588,Low,0.8153546238555615,0
+Retail,"Credit Card,Password",1912128,Public,EU,70,Medium,0.19644131522278585,1
+Government,"Email,Address,Full Name",2106777,SME,India,441,Low,0.719022820433601,0
+Government,"Password,Email",9900510,Private,India,101,High,0.7495994411207623,1
+Government,Password,5547811,Non-profit,India,302,Medium,0.500297874393992,0
+Government,Full Name,8671441,Non-profit,India,308,Low,0.0007168587065797816,0
+Healthcare,"Full Name,Email,Password",3194796,Public,EU,845,High,0.11530109033904934,1
+Government,"SSN,Password,Full Name",2802818,Non-profit,EU,377,High,0.056515690796757334,2
+Retail,"Email,Full Name",3045410,SME,EU,353,High,0.9059439679262645,1
+Tech,"Credit Card,Full Name,Password",4368209,Private,Canada,995,Medium,0.9295830945975689,2
+Tech,Password,5371015,SME,EU,735,Medium,0.8765604907887176,0
+Healthcare,"Password,Address,Credit Card",8216869,Non-profit,EU,525,High,0.13174379963196414,2
+Government,"Credit Card,Full Name,SSN",5046416,Private,EU,233,High,0.7902599039416938,2
+Tech,"Credit Card,SSN,Password",5548239,Public,India,619,High,0.0553323871633461,2
+Finance,Full Name,8928377,SME,US,135,Medium,0.8392079530394589,0
+Tech,"Full Name,Credit Card,Email",2693205,Public,EU,368,Medium,0.6472222833978555,1
+Retail,"Credit Card,SSN",3716799,SME,India,543,Low,0.8226479271938894,2
+Tech,"Email,Credit Card",4224138,SME,Canada,502,High,0.8487675852813142,2
+Government,"Full Name,Email",7356554,Private,US,307,High,0.26911975263801036,1
+Government,"Address,Email,Full Name",1049278,SME,India,696,Medium,0.7324414591304492,0
+Healthcare,"Email,Password,Full Name",6260225,Non-profit,Canada,235,Low,0.4109606080359033,0
+Healthcare,"Email,SSN,Full Name",2799658,Public,EU,667,Low,0.7725225917625445,2
+Healthcare,"Address,Email",5432159,Non-profit,US,439,High,0.5097570669008714,1
+Government,Credit Card,2467704,Public,UK,685,Medium,0.9918928573196418,2
+Finance,"Credit Card,SSN,Address",3675777,Non-profit,India,870,High,0.9137650033037986,2
+Retail,"Full Name,SSN,Credit Card",2243019,Public,UK,423,Low,0.12851566844411644,1
+Government,"SSN,Credit Card",9379778,Private,India,949,Medium,0.01892764051146345,1
+Finance,"Email,Password,Credit Card",5311825,Public,Canada,221,High,0.688292998427255,2
+Retail,"Credit Card,Email",1132614,Public,Canada,716,High,0.31484115540873536,2
+Healthcare,"SSN,Address",9396448,Private,UK,665,Medium,0.3034962317890152,1
+Tech,Full Name,1909151,SME,UK,514,High,0.03971120757224722,1
+Healthcare,"Address,Email",5552093,SME,EU,902,High,0.2720025737309897,1
+Retail,SSN,2452603,Private,Canada,361,High,0.406082132559771,2
+Government,Address,3982048,Public,US,959,Low,0.09896862340870682,0
+Finance,"Full Name,SSN,Credit Card",3229409,Private,EU,783,High,0.4509865026483437,2
+Government,"Full Name,Email,Address",9930464,Non-profit,US,569,High,0.693169360253846,1
+Government,Address,4499907,Non-profit,UK,180,Medium,0.39672760046838584,0
+Government,Full Name,9838907,Private,EU,75,Medium,0.7154362032765404,0
+Finance,Address,5749777,Public,US,727,High,0.1418443976169852,1
+Healthcare,"Email,Full Name",7353182,Non-profit,EU,336,Medium,0.8626751629457258,0
+Retail,"Address,Credit Card",4328219,Private,Canada,700,Medium,0.11346219170657401,1
+Retail,"Password,SSN,Full Name",2322991,Non-profit,UK,668,High,0.9623007491122398,2
+Healthcare,"Password,Address",1898465,SME,India,42,Low,0.48272838747678337,0
+Retail,"Full Name,Address,Password",5169949,Public,EU,407,Low,0.6791583457435568,0
+Healthcare,Credit Card,718884,SME,India,354,Low,0.567128707532373,1
+Government,"Password,SSN",8519074,SME,Canada,265,Low,0.5389808744501206,1
+Finance,"Credit Card,Address",1547557,Public,Canada,378,Medium,0.3037238516318258,1
+Tech,"Credit Card,Address,Email",6212715,SME,India,560,High,0.18125025555155194,2
+Finance,"Address,SSN",7112905,Public,US,297,Low,0.3763118169549976,1
+Tech,"Credit Card,Email",7643897,Private,India,823,High,0.6380927257964524,2
+Healthcare,Email,7500455,Public,India,83,Low,0.9958023677799186,0
+Retail,Credit Card,6601713,Non-profit,UK,838,Low,0.6951964597032112,1
+Finance,"Credit Card,Password",6443399,SME,India,480,Medium,0.0028421536639724465,1
+Healthcare,"Password,Credit Card",5073237,Public,US,319,Low,0.30541349854275135,1
+Finance,"Password,Email,SSN",2821377,SME,India,378,High,0.2951088601842853,2
+Finance,Password,8684790,Public,EU,739,Low,0.35954314452000347,0
+Tech,"SSN,Credit Card,Full Name",312416,Public,Canada,256,Medium,0.44276495686189454,1
+Government,"SSN,Password,Credit Card",6047946,Public,EU,626,Medium,0.41174766759024317,1
+Government,"Email,Credit Card,Password",550666,SME,UK,412,Medium,0.010670127006162766,1
+Retail,Address,2443367,Public,India,570,High,0.8168779858937828,1
+Finance,"Email,Password,Full Name",955227,Private,EU,334,High,0.06964586774826564,1
+Finance,Password,2452550,Public,US,749,Low,0.17929623526004845,0
+Healthcare,"Full Name,SSN,Credit Card",4112932,Private,EU,525,High,0.4471605045306636,2
+Retail,"Email,Password",7697124,SME,UK,867,Low,0.6444231696298166,0
+Finance,"Credit Card,Address",8527013,SME,Canada,972,Low,0.20113654259037728,1
+Tech,"Credit Card,SSN,Email",4911673,Private,Canada,826,Medium,0.9457846462409557,2
+Retail,"Full Name,Credit Card,Email",2704934,Non-profit,UK,487,Low,0.6962214361212724,1
+Healthcare,"Credit Card,Email",4871807,SME,Canada,868,High,0.11099481392181065,2
+Government,"Password,SSN",6526438,SME,India,529,Medium,0.607959350832342,1
+Finance,"SSN,Email,Address",3884424,Non-profit,UK,584,High,0.09805784856245758,2
+Government,"Full Name,Address",3661880,SME,India,235,Low,0.5308590342884758,0
+Tech,Password,6425788,SME,EU,348,Medium,0.9678623511632131,0
+Healthcare,"Full Name,Email",7491526,Private,US,719,Medium,0.5807371397973519,0
+Finance,"Email,SSN",6717487,Non-profit,EU,589,Low,0.5871328015842009,1
+Retail,Full Name,6965587,Non-profit,Canada,902,High,0.7462543451462883,1
+Tech,Full Name,2555293,Private,Canada,381,Medium,0.3563666377550566,0
+Government,"SSN,Credit Card",4526605,Non-profit,US,196,High,0.997131894158366,2
+Tech,"SSN,Full Name,Address",7651311,SME,India,208,Low,0.14986279888655163,1
+Government,"Address,SSN",8878241,SME,India,891,Low,0.001579421077911869,1
+Healthcare,Full Name,4762631,SME,UK,718,Low,0.45009526859085935,0
+Tech,"Email,Full Name,Credit Card",9254656,Private,Canada,44,Medium,0.26132839594090185,1
+Healthcare,"Email,Credit Card",7372191,SME,US,826,High,0.8433733206750055,2
+Government,"Address,Credit Card,Password",838876,Private,Canada,231,High,0.5201807365667597,2
+Tech,"Password,Full Name",9280719,Non-profit,Canada,990,Medium,0.5225728202618095,0
+Finance,Password,411275,Public,India,172,Low,0.09148295792964711,0
+Government,Password,769976,SME,Canada,477,Medium,0.18583205556534255,0
+Retail,"Email,Address",8307946,SME,India,847,High,0.2806355798765158,1
+Finance,"Credit Card,SSN",3381795,Private,Canada,337,Low,0.8840752963101848,2
+Tech,"Address,Password,SSN",6119225,Non-profit,UK,527,Low,0.16277610102536877,1
+Retail,"SSN,Credit Card",457195,Public,Canada,488,Low,0.9095554284372025,2
+Government,"Email,Full Name,Credit Card",3702339,Public,UK,565,Medium,0.8781151969857014,2
+Retail,SSN,8224269,SME,UK,655,Medium,0.8457085817167271,2
+Government,"Credit Card,SSN,Email",2764049,SME,EU,575,High,0.25699173531094754,2
+Healthcare,Password,3891026,Non-profit,Canada,938,Low,0.3145815465462273,0
+Healthcare,SSN,7250602,Private,Canada,710,High,0.32880180457845365,2
+Retail,Address,785514,Public,UK,256,High,0.46354783925892185,1
+Finance,Email,2154883,Non-profit,UK,856,High,0.6554534564935641,1
+Government,"Email,Address,Credit Card",4249949,Public,India,495,Medium,0.4970893093507971,1
+Finance,"Password,Full Name,SSN",7431037,Non-profit,India,105,Low,0.15481575487173527,1
+Healthcare,"Credit Card,Password,Email",2289786,Private,UK,410,High,0.5114810467883832,2
+Government,Email,3271514,Private,UK,572,Medium,0.7997627427952397,0
+Healthcare,"Credit Card,Address",8083668,Private,India,619,High,0.9470402781443592,2
+Tech,"Credit Card,Full Name,SSN",8630348,SME,Canada,457,Low,0.4963989216770842,1
+Government,"Full Name,Password,Address",5222995,SME,EU,162,Low,0.4489117225927901,0
+Retail,"Password,Credit Card,Full Name",4829626,Private,India,187,Low,0.4979763025873932,1
+Finance,"Email,SSN,Credit Card",8742073,Private,India,540,Medium,0.13593274736732064,1
+Retail,"SSN,Address,Credit Card",819706,SME,US,668,High,0.14383447099031088,2
+Retail,Email,4229021,Private,UK,467,Medium,0.08693956069225417,0
+Government,"Full Name,Password,Address",7046472,SME,EU,156,Medium,0.00592406545400237,0
+Finance,"Email,SSN,Password",9103683,Public,EU,598,Medium,0.23725436365713726,1
+Retail,SSN,5971653,Non-profit,Canada,738,Medium,0.6641257392833504,1
+Government,"Address,SSN,Full Name",1590291,Public,UK,165,Low,0.8236592509839739,2
+Government,"Address,Full Name",7100312,SME,EU,188,High,0.17608928794385392,1
+Finance,Full Name,1435636,Public,UK,803,High,0.2821555840361393,1
+Finance,Address,9780138,Public,India,761,High,0.7078806952365353,1
+Retail,Full Name,113035,Private,US,982,High,0.019610532474253595,1
+Government,"Password,Full Name",9369140,Public,US,913,High,0.2547205004575489,1
+Tech,"SSN,Email",5885724,SME,EU,261,Low,0.2785679532056594,1
+Retail,"Password,SSN,Address",9684484,Non-profit,Canada,618,High,0.18492601877281745,2
+Tech,"Address,Password",7681223,SME,UK,20,Medium,0.5003336556760224,0
+Finance,Credit Card,1941711,Private,UK,615,Medium,0.5521608269710124,1
+Retail,"Credit Card,Password",4916782,Non-profit,UK,289,Low,0.7093142948034834,2
+Government,"Address,Email,SSN",2648765,Private,EU,848,High,0.3854210997298786,2
+Government,"Address,Email",7156738,Private,EU,383,Low,0.04188039383877551,0
+Government,Password,8903284,Private,UK,478,Low,0.8762923485239374,0
+Retail,"SSN,Address",6569056,SME,Canada,778,Low,0.5255793740622418,1
+Government,"Full Name,Password,Email",9035660,Non-profit,UK,942,Low,0.4542278238068692,0
+Tech,"SSN,Full Name",2801212,Non-profit,India,28,Low,0.6918468799459682,1
+Finance,"Address,SSN,Email",6779105,Non-profit,India,315,High,0.33300763305224423,2

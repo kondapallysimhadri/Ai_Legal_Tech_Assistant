@@ -1,0 +1,153 @@
+2026-05-06 10:47:33,772 [INFO] ============================================================
+2026-05-06 10:47:33,773 [INFO] 🚀 PRODUCTION DATA PIPELINE v2.0
+2026-05-06 10:47:33,779 [INFO] ============================================================
+2026-05-06 10:47:35,102 [INFO] 📊 Current total records: 462
+2026-05-06 10:47:35,103 [INFO] 🎯 Need 538 more records to reach 1000
+2026-05-06 10:47:39,514 [INFO] 
+========================================
+2026-05-06 10:47:39,519 [INFO] 📡 SOURCE 1: ClaimDepot (50 pages)
+2026-05-06 10:47:39,519 [INFO] ========================================
+2026-05-06 10:47:40,562 [INFO] 🌐 [ClaimDepot] Page 3 (attempt 1)
+2026-05-06 10:47:40,573 [INFO] 🌐 [ClaimDepot] Page 1 (attempt 1)
+2026-05-06 10:47:40,786 [INFO] 🌐 [ClaimDepot] Page 2 (attempt 1)
+2026-05-06 10:47:40,796 [INFO] 🌐 [ClaimDepot] Page 4 (attempt 1)
+2026-05-06 10:47:41,018 [INFO] 🌐 [ClaimDepot] Page 5 (attempt 1)
+2026-05-06 10:47:59,949 [INFO] 🌐 [ClaimDepot] Page 6 (attempt 1)
+2026-05-06 10:48:23,097 [INFO] 🌐 [ClaimDepot] Page 7 (attempt 1)
+2026-05-06 10:48:38,259 [INFO] 🌐 [ClaimDepot] Page 8 (attempt 1)
+2026-05-06 10:48:38,708 [INFO] 🌐 [ClaimDepot] Page 9 (attempt 1)
+2026-05-06 10:48:39,698 [INFO] 🌐 [ClaimDepot] Page 10 (attempt 1)
+2026-05-06 10:48:48,281 [INFO] 🌐 [ClaimDepot] Page 11 (attempt 1)
+2026-05-06 10:49:07,615 [INFO] 🌐 [ClaimDepot] Page 12 (attempt 1)
+2026-05-06 10:49:23,733 [INFO] 🌐 [ClaimDepot] Page 13 (attempt 1)
+2026-05-06 10:49:24,103 [INFO] 🌐 [ClaimDepot] Page 14 (attempt 1)
+2026-05-06 10:49:26,118 [INFO] 🌐 [ClaimDepot] Page 15 (attempt 1)
+2026-05-06 10:49:44,356 [INFO] 🌐 [ClaimDepot] Page 16 (attempt 1)
+2026-05-06 10:49:46,907 [INFO] 🌐 [ClaimDepot] Page 17 (attempt 1)
+2026-05-06 10:50:02,409 [INFO] 🌐 [ClaimDepot] Page 18 (attempt 1)
+2026-05-06 10:50:03,349 [INFO] 🌐 [ClaimDepot] Page 19 (attempt 1)
+2026-05-06 10:50:04,878 [INFO] 🌐 [ClaimDepot] Page 20 (attempt 1)
+2026-05-06 10:50:10,752 [INFO] 🌐 [ClaimDepot] Page 21 (attempt 1)
+2026-05-06 10:50:34,634 [INFO] 🌐 [ClaimDepot] Page 22 (attempt 1)
+2026-05-06 10:50:35,598 [INFO] 🌐 [ClaimDepot] Page 23 (attempt 1)
+2026-05-06 10:50:36,000 [INFO] 🌐 [ClaimDepot] Page 24 (attempt 1)
+2026-05-06 10:50:38,288 [INFO] 🌐 [ClaimDepot] Page 25 (attempt 1)
+2026-05-06 10:50:49,786 [INFO] 🌐 [ClaimDepot] Page 26 (attempt 1)
+2026-05-06 10:50:50,357 [INFO] 🌐 [ClaimDepot] Page 27 (attempt 1)
+2026-05-06 10:50:53,296 [INFO] 🌐 [ClaimDepot] Page 28 (attempt 1)
+2026-05-06 10:50:59,746 [INFO] 🌐 [ClaimDepot] Page 29 (attempt 1)
+2026-05-06 10:51:05,050 [INFO] 🌐 [ClaimDepot] Page 30 (attempt 1)
+2026-05-06 10:51:05,817 [INFO] 🌐 [ClaimDepot] Page 31 (attempt 1)
+2026-05-06 10:51:06,848 [INFO] 🌐 [ClaimDepot] Page 32 (attempt 1)
+2026-05-06 10:51:16,915 [INFO] 🌐 [ClaimDepot] Page 33 (attempt 1)
+2026-05-06 10:51:24,628 [INFO] 🌐 [ClaimDepot] Page 34 (attempt 1)
+2026-05-06 10:51:25,331 [INFO] 🌐 [ClaimDepot] Page 35 (attempt 1)
+2026-05-06 10:51:31,841 [INFO] 🌐 [ClaimDepot] Page 36 (attempt 1)
+2026-05-06 10:51:35,349 [INFO] 🌐 [ClaimDepot] Page 37 (attempt 1)
+2026-05-06 10:51:42,023 [INFO] 🌐 [ClaimDepot] Page 39 (attempt 1)
+2026-05-06 10:51:42,027 [INFO] 🌐 [ClaimDepot] Page 38 (attempt 1)
+2026-05-06 10:51:42,052 [WARNING] ⚠️ [ClaimDepot] Page 39 attempt 1 failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.claimdepot.com/settlements?page=39
+Call log:
+  - navigating to "https://www.claimdepot.com/settlements?page=39", waiting until "domcontentloaded"
+
+2026-05-06 10:51:42,058 [WARNING] ⚠️ [ClaimDepot] Page 38 attempt 1 failed: Page.goto: net::ERR_INTERNET_DISCONNECTED at https://www.claimdepot.com/settlements?page=38
+Call log:
+  - navigating to "https://www.claimdepot.com/settlements?page=38", waiting until "domcontentloaded"
+
+2026-05-06 10:51:44,159 [INFO] 🌐 [ClaimDepot] Page 39 (attempt 2)
+2026-05-06 10:51:44,166 [INFO] 🌐 [ClaimDepot] Page 38 (attempt 2)
+2026-05-06 10:52:06,087 [INFO] 🌐 [ClaimDepot] Page 40 (attempt 1)
+2026-05-06 10:52:19,600 [INFO] 🌐 [ClaimDepot] Page 41 (attempt 1)
+2026-05-06 10:52:23,535 [INFO] 🌐 [ClaimDepot] Page 42 (attempt 1)
+2026-05-06 10:52:24,822 [INFO] 🌐 [ClaimDepot] Page 43 (attempt 1)
+2026-05-06 10:52:32,899 [INFO] 🌐 [ClaimDepot] Page 44 (attempt 1)
+2026-05-06 10:52:39,317 [INFO] 🌐 [ClaimDepot] Page 45 (attempt 1)
+2026-05-06 10:52:39,746 [INFO] 🌐 [ClaimDepot] Page 46 (attempt 1)
+2026-05-06 10:52:40,277 [INFO] 🌐 [ClaimDepot] Page 47 (attempt 1)
+2026-05-06 10:52:48,545 [INFO] 🌐 [ClaimDepot] Page 48 (attempt 1)
+2026-05-06 10:52:51,819 [INFO] 🌐 [ClaimDepot] Page 49 (attempt 1)
+2026-05-06 10:52:57,648 [INFO] 🌐 [ClaimDepot] Page 50 (attempt 1)
+2026-05-06 10:53:28,029 [INFO] 📦 ClaimDepot total: 910 raw records
+2026-05-06 10:53:28,030 [INFO] 
+========================================
+2026-05-06 10:53:28,031 [INFO] 📡 SOURCE 2: TopClassActions (30 pages)
+2026-05-06 10:53:28,032 [INFO] ========================================
+2026-05-06 10:53:28,381 [INFO] 🌐 [TopClassActions] Page 1 (attempt 1)
+2026-05-06 10:53:28,399 [INFO] 🌐 [TopClassActions] Page 3 (attempt 1)
+2026-05-06 10:53:28,416 [INFO] 🌐 [TopClassActions] Page 4 (attempt 1)
+2026-05-06 10:53:28,488 [INFO] 🌐 [TopClassActions] Page 2 (attempt 1)
+2026-05-06 10:53:28,555 [INFO] 🌐 [TopClassActions] Page 5 (attempt 1)
+2026-05-06 10:53:31,640 [INFO] 🌐 [TopClassActions] Page 6 (attempt 1)
+2026-05-06 10:53:31,872 [INFO] 🌐 [TopClassActions] Page 7 (attempt 1)
+2026-05-06 10:53:32,038 [INFO] 🌐 [TopClassActions] Page 10 (attempt 1)
+2026-05-06 10:53:32,048 [INFO] 🌐 [TopClassActions] Page 8 (attempt 1)
+2026-05-06 10:53:32,307 [INFO] 🌐 [TopClassActions] Page 9 (attempt 1)
+2026-05-06 10:53:34,387 [INFO] 🌐 [TopClassActions] Page 11 (attempt 1)
+2026-05-06 10:53:35,059 [INFO] 🌐 [TopClassActions] Page 13 (attempt 1)
+2026-05-06 10:53:35,201 [INFO] 🌐 [TopClassActions] Page 14 (attempt 1)
+2026-05-06 10:53:35,252 [INFO] 🌐 [TopClassActions] Page 12 (attempt 1)
+2026-05-06 10:53:35,322 [INFO] 🌐 [TopClassActions] Page 15 (attempt 1)
+2026-05-06 10:53:37,282 [INFO] 🌐 [TopClassActions] Page 16 (attempt 1)
+2026-05-06 10:53:38,010 [INFO] 🌐 [TopClassActions] Page 17 (attempt 1)
+2026-05-06 10:53:38,020 [INFO] 🌐 [TopClassActions] Page 18 (attempt 1)
+2026-05-06 10:53:38,030 [INFO] 🌐 [TopClassActions] Page 20 (attempt 1)
+2026-05-06 10:53:38,237 [INFO] 🌐 [TopClassActions] Page 19 (attempt 1)
+2026-05-06 10:53:40,306 [INFO] 🌐 [TopClassActions] Page 21 (attempt 1)
+2026-05-06 10:53:40,836 [INFO] 🌐 [TopClassActions] Page 22 (attempt 1)
+2026-05-06 10:53:41,228 [INFO] 🌐 [TopClassActions] Page 23 (attempt 1)
+2026-05-06 10:53:41,265 [INFO] 🌐 [TopClassActions] Page 24 (attempt 1)
+2026-05-06 10:53:41,455 [INFO] 🌐 [TopClassActions] Page 25 (attempt 1)
+2026-05-06 10:53:43,036 [INFO] 🌐 [TopClassActions] Page 26 (attempt 1)
+2026-05-06 10:53:43,766 [INFO] 🌐 [TopClassActions] Page 27 (attempt 1)
+2026-05-06 10:53:43,862 [INFO] 🌐 [TopClassActions] Page 28 (attempt 1)
+2026-05-06 10:53:44,342 [INFO] 🌐 [TopClassActions] Page 29 (attempt 1)
+2026-05-06 10:53:44,416 [INFO] 🌐 [TopClassActions] Page 30 (attempt 1)
+2026-05-06 10:53:46,954 [INFO] 📦 TopClassActions total: 0 raw records
+2026-05-06 10:53:46,954 [INFO] 
+========================================
+2026-05-06 10:53:46,955 [INFO] 📡 SOURCE 3: ClassAction.org (20 pages)
+2026-05-06 10:53:46,955 [INFO] ========================================
+2026-05-06 10:53:47,377 [INFO] 🌐 [ClassAction.org] Page 3 (attempt 1)
+2026-05-06 10:53:47,400 [INFO] 🌐 [ClassAction.org] Page 1 (attempt 1)
+2026-05-06 10:53:47,426 [INFO] 🌐 [ClassAction.org] Page 4 (attempt 1)
+2026-05-06 10:53:47,445 [INFO] 🌐 [ClassAction.org] Page 2 (attempt 1)
+2026-05-06 10:53:47,466 [INFO] 🌐 [ClassAction.org] Page 5 (attempt 1)
+2026-05-06 10:53:57,557 [INFO] 🌐 [ClassAction.org] Page 6 (attempt 1)
+2026-05-06 10:53:57,724 [INFO] 🌐 [ClassAction.org] Page 7 (attempt 1)
+2026-05-06 10:53:59,191 [INFO] 🌐 [ClassAction.org] Page 8 (attempt 1)
+2026-05-06 10:54:00,032 [INFO] 🌐 [ClassAction.org] Page 9 (attempt 1)
+2026-05-06 10:54:00,468 [INFO] 🌐 [ClassAction.org] Page 10 (attempt 1)
+2026-05-06 10:54:05,976 [INFO] 🌐 [ClassAction.org] Page 11 (attempt 1)
+2026-05-06 10:54:07,777 [INFO] 🌐 [ClassAction.org] Page 12 (attempt 1)
+2026-05-06 10:54:09,160 [INFO] 🌐 [ClassAction.org] Page 13 (attempt 1)
+2026-05-06 10:54:10,299 [INFO] 🌐 [ClassAction.org] Page 14 (attempt 1)
+2026-05-06 10:54:11,778 [INFO] 🌐 [ClassAction.org] Page 15 (attempt 1)
+2026-05-06 10:54:18,579 [INFO] 🌐 [ClassAction.org] Page 16 (attempt 1)
+2026-05-06 10:54:18,858 [INFO] 🌐 [ClassAction.org] Page 17 (attempt 1)
+2026-05-06 10:54:20,204 [INFO] 🌐 [ClassAction.org] Page 18 (attempt 1)
+2026-05-06 10:54:21,789 [INFO] 🌐 [ClassAction.org] Page 19 (attempt 1)
+2026-05-06 10:54:23,086 [INFO] 🌐 [ClassAction.org] Page 20 (attempt 1)
+2026-05-06 10:54:31,513 [INFO] 📦 ClassAction.org total: 0 raw records
+2026-05-06 10:54:31,851 [INFO] 
+============================================================
+2026-05-06 10:54:31,851 [INFO] 📊 TOTAL RAW SCRAPED: 910
+2026-05-06 10:54:31,851 [INFO] ============================================================
+2026-05-06 10:54:31,851 [INFO] 
+🧹 Cleaning & enriching records...
+2026-05-06 10:54:31,947 [INFO] ✅ Cleaned: 910 records
+2026-05-06 10:54:31,948 [INFO] 🔍 After dedup: 610 unique records (removed 300 dupes)
+2026-05-06 10:54:31,949 [INFO] 
+💾 Inserting into MongoDB Atlas...
+2026-05-06 10:55:24,827 [INFO] ✅ Breaches inserted: 514
+2026-05-06 10:55:24,829 [INFO] ✅ Cases inserted: 508
+2026-05-06 10:55:24,891 [INFO] 
+============================================================
+2026-05-06 10:55:24,892 [INFO] 📊 FINAL TOTAL RECORDS IN DB: 1484
+2026-05-06 10:55:24,892 [INFO] ============================================================
+2026-05-06 10:55:24,932 [INFO] 
+🔎 VERIFICATION:
+2026-05-06 10:55:24,979 [INFO]   Sample: Purdue Pharma Opioid Settlement Delayed | Severity: None | Jurisdiction: None
+2026-05-06 10:55:24,979 [INFO]   Sample: Alpha Baking Co. $1.05 Million Data Breach Settlement | Severity: None | Jurisdiction: None
+2026-05-06 10:55:24,979 [INFO]   Sample: Funko Inc. $5.4 Million Securities Class Action Settlement | Severity: None | Jurisdiction: None
+2026-05-06 10:55:24,980 [INFO] 
+🎉 TARGET REACHED! 1484 >= 1000

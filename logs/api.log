@@ -16387,3 +16387,17 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 19:31:55,457 - apscheduler.scheduler - INFO - Scheduler started
 2026-05-26 19:32:02,389 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.3798s
 2026-05-26 19:32:02,486 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.4771s
+2026-05-26 19:45:11,477 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-05-26 19:45:22,246 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-26 19:45:22,247 - apscheduler.scheduler - INFO - Added job "run_pipeline" to job store "default"
+2026-05-26 19:45:22,247 - apscheduler.scheduler - INFO - Scheduler started
+2026-05-26 19:45:31,424 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.8111s
+2026-05-26 19:45:31,527 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.9795s
+2026-05-26 19:45:57,476 - ML_API - INFO - Request: GET /cases/6a1301f9fad8066f0f8226a9 | Status: 200 | Time: 0.3489s
+2026-05-26 19:45:58,527 - ML_API - INFO - Request: OPTIONS /predict | Status: 200 | Time: 0.0009s
+2026-05-26 19:45:58,546 - ML_API - INFO - Prediction made | Input: {'breach_type': 'Data Breach', 'data_exposed': 'Data Breach', 'records_affected': 1000, 'company_type': 'Lumio Dental Data Breach Exposes Sensitive Personal and Health Information', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'medium', 'past_case_similarity_score': 0.75} | Result: Possibly Eligible | Confidence: 0.41
+2026-05-26 19:45:58,548 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0059s
+2026-05-26 19:46:05,920 - ML_API - INFO - Request: POST /api/privacy/analyze | Status: 200 | Time: 0.0941s
+2026-05-26 19:46:09,591 - ML_API - INFO - Prediction made | Input: {'breach_type': 'finance', 'data_exposed': 'SSN', 'records_affected': 500000, 'company_type': 'bank', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'high', 'past_case_similarity_score': 0.85} | Result: Highly Eligible | Confidence: 0.99
+2026-05-26 19:46:09,593 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0073s
+2026-05-26 19:46:17,291 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 3.2060s

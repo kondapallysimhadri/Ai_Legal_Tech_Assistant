@@ -16416,3 +16416,6 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-05-26 19:59:44,192 - ML_API - INFO - Prediction made | Input: {'breach_type': 'Data Breach', 'data_exposed': 'Data Breach', 'records_affected': 1000, 'company_type': 'Lumio Dental Data Breach Exposes Sensitive Personal and Health Information', 'jurisdiction': 'US', 'time_since_breach': 30, 'user_impact_level': 'medium', 'past_case_similarity_score': 0.75} | Result: Possibly Eligible | Confidence: 0.41
 2026-05-26 19:59:44,197 - ML_API - INFO - Request: POST /predict | Status: 200 | Time: 0.0181s
 2026-05-26 19:59:54,840 - ML_API - INFO - Request: POST /chatbot | Status: 200 | Time: 2.5613s
+2026-05-26 20:01:53,341 - ML_API - INFO - Request: GET / | Status: 200 | Time: 0.0045s
+2026-05-26 20:01:54,360 - ML_API - INFO - Request: GET /cases | Status: 200 | Time: 0.2546s
+2026-05-26 20:01:54,382 - ML_API - INFO - Request: GET /stats | Status: 200 | Time: 0.1708s

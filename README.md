@@ -2,11 +2,9 @@
 
 AI-powered Legal Intelligence Platform built using FastAPI, React, RAG, Machine Learning, and MongoDB.
 
-Live Demo:  
-:contentReference[oaicite:0]{index=0}
+Live Demo: https://ai-legal-tech-assistant.onrender.com/
 
 GitHub Repository:  
-:contentReference[oaicite:1]{index=1}
 
 ---
 

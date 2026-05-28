@@ -390,7 +390,7 @@ GitHub:
 :contentReference[oaicite:3]{index=3}
 
 LinkedIn:  
-:contentReference[oaicite:4]{index=4}
+:https://www.linkedin.com/in/kondapally-simhadri/
 
 ---
 

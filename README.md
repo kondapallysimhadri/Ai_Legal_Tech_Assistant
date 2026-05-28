@@ -387,7 +387,7 @@ Aspiring Data Scientist & AI Developer
 ### Connect With Me
 
 GitHub:  
-:contentReference[oaicite:3]{index=3}
+: https://github.com/kondapallysimhadri
 
 LinkedIn:  
 :https://www.linkedin.com/in/kondapally-simhadri/

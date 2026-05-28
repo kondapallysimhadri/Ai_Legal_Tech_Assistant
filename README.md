@@ -298,7 +298,7 @@ This project is deployed on Render.
 
 Live URL:
 
-:contentReference[oaicite:2]{index=2}
+:https://ai-legal-tech-assistant.onrender.com/
 
 ---
 
@@ -323,20 +323,32 @@ Render automatically:
 - Live legal intelligence dashboard
 - Real-time breach cards
 
+- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 43 33 PM" src="https://github.com/user-attachments/assets/277b3ea8-5883-4e2e-a63a-00a9a11978d7" />
+
+
 ## Privacy Intelligence
 - AI privacy analysis
 - Exposure scoring
+- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 02 PM" src="https://github.com/user-attachments/assets/435c1bf8-8810-491b-8f54-6ef654fe5d54" />
+-<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 17 PM" src="https://github.com/user-attachments/assets/35261a96-778d-409e-9d49-d557f1dc44ed" />
 
 ## AI Decision Engine
 - ML-powered eligibility prediction
+- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 43 PM" src="https://github.com/user-attachments/assets/631083ce-8988-420d-a86f-ecedf2205fa7" />
+-<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 02 PM" src="https://github.com/user-attachments/assets/9bff2e25-68f4-42d9-ada8-ea7508a4fe99" />
+-<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 23 PM" src="https://github.com/user-attachments/assets/e718794b-12a5-4821-b6f2-0a9c84e02b8d" />
 
 ## AI Legal Assistant
 - RAG-based chatbot
+- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 39 PM" src="https://github.com/user-attachments/assets/2b22c2e0-953d-4638-b447-5443e11e184c" />
 
 ## Claim Workflow
 - Document collection
 - Registry submission
 - Claim portal integration
+- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 46 08 PM" src="https://github.com/user-attachments/assets/e4057114-471d-494d-9e82-2b65994107da" />
+-<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 46 44 PM" src="https://github.com/user-attachments/assets/4abdcf75-312d-436e-af47-121121d265f3" />
+-<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 47 17 PM" src="https://github.com/user-attachments/assets/764a2f96-7635-4d69-99c6-67b57844498f" />
 
 ---
 
@@ -387,7 +399,7 @@ Aspiring Data Scientist & AI Developer
 ### Connect With Me
 
 GitHub:  
-: https://github.com/kondapallysimhadri
+:https://github.com/kondapallysimhadri
 
 LinkedIn:  
 :https://www.linkedin.com/in/kondapally-simhadri/

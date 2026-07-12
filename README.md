@@ -1,41 +1,61 @@
 # ⚖️ AI Legal Claim Assistant
 
-AI-powered Legal Intelligence Platform built using FastAPI, React, RAG, Machine Learning, and MongoDB.
+**AI-powered LegalTech MVP for legal intelligence, retrieval-assisted AI interaction, claim decision support, and guided legal workflows.**
 
-Live Demo: https://ai-legal-tech-assistant.onrender.com/
+🌐 **Live Demo:** https://ai-legal-tech-assistant.onrender.com/
 
-GitHub Repository:  https://github.com/kondapallysimhadri
+👨‍💻 **Developer:** Simhadri Kondapally
+
+---
+
+## 🚀 Overview
+
+AI Legal Claim Assistant is an engineering MVP that demonstrates how AI-assisted workflows, legal intelligence data, backend APIs, and structured decision-support systems can be integrated into a practical LegalTech product.
+
+The platform allows users to:
+
+- Explore data breach and legal intelligence
+- Analyse privacy and exposure information
+- Interact with an AI-assisted legal workflow
+- Explore claim eligibility decision-support flows
+- Review structured assessment information
+- Navigate guided claim workflows
+
+The primary engineering goal is to build an integrated AI product rather than an isolated chatbot or notebook-based machine learning demonstration.
 
 ---
 
-# 🚀 Overview
+## ✨ Core Product Capabilities
 
-AI Legal Claim Assistant is a production-style AI platform that helps users:
+### 🔍 Legal Intelligence
 
-- Analyze real-world data breaches
-- Predict legal claim eligibility
-- Search legal intelligence databases
-- Receive AI-generated legal guidance
-- Explore breach analytics and privacy intelligence
-- Access AI-powered claim workflows
+Explore breach and legal intelligence information through a searchable application interface.
 
-The platform combines:
+### 🔐 Privacy Intelligence
 
-- ⚡ FastAPI Backend
-- ⚛️ React Frontend
-- 🧠 Machine Learning Models
-- 🔍 RAG (Retrieval-Augmented Generation)
-- 📊 Privacy Intelligence Dashboard
-- 🤖 AI Legal Assistant Chatbot
-- 🗄️ MongoDB Integration
-- ☁️ Render Cloud Deployment
+Analyse privacy exposure information and display structured risk-oriented insights.
+
+### 🧠 AI Decision Support
+
+Demonstrates a structured claim eligibility decision-support workflow using application logic, case context, AI-assisted enrichment, and fallback behaviour.
+
+### 🤖 AI Legal Assistant
+
+Provides retrieval-assisted AI interaction for legal and data-breach-related information.
+
+### 📄 Guided Claim Workflow
+
+Demonstrates a structured workflow for claim guidance, document preparation, and claim navigation.
+
+### 📊 Intelligence Dashboard
+
+Presents breach information, legal intelligence, and application insights through an interactive user interface.
 
 ---
-# ✨ Features
 
 # 🏗️ System Architecture
 
-The AI Legal Claim Assistant is structured as a multi-component AI application that separates the user interface, backend API layer, AI workflows, machine learning services, retrieval logic, and data storage.
+The application separates the frontend, backend API layer, retrieval workflows, decision-support logic, AI services, and data systems.
 
 ```text
                          ┌──────────────────────┐
@@ -52,19 +72,19 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
                                     │
                                     ▼
                          ┌──────────────────────┐
-                         │   FastAPI Backend    │
-                         │   Application Layer  │
+                         │   Backend API Layer  │
+                         │   FastAPI Services   │
                          └──────────┬───────────┘
                                     │
               ┌─────────────────────┼─────────────────────┐
               │                     │                     │
               ▼                     ▼                     ▼
    ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐
-   │   RAG Pipeline    │ │ ML Decision Engine│ │  Claim Workflow   │
+   │Retrieval Workflow │ │ Decision Support  │ │  Claim Workflow   │
    │                   │ │                   │ │                   │
-   │ Legal Retrieval   │ │ Eligibility Model │ │ Breach Analysis   │
-   │ Context Selection │ │ Risk Prediction   │ │ Document Guidance │
-   │ AI Assistance     │ │ Confidence Output │ │ Claim Navigation  │
+   │ Legal Retrieval   │ │ Eligibility Flow  │ │ Breach Analysis   │
+   │ Context Selection │ │ Case Assessment   │ │ Document Guidance │
+   │ AI Assistance     │ │ Structured Output │ │ Claim Navigation  │
    └─────────┬─────────┘ └─────────┬─────────┘ └─────────┬─────────┘
              │                     │                     │
              └─────────────────────┼─────────────────────┘
@@ -75,7 +95,7 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
                         │                     │
                         │ AI-assisted Insights│
                         │ Guidance Workflows  │
-                        │ Response Generation │
+                        │ Response Processing │
                         └──────────┬───────────┘
                                    │
                     ┌──────────────┼──────────────┐
@@ -92,499 +112,74 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
 
 ## Architecture Flow
 
-1. **User Interaction**  
-   Users interact with the LegalTech platform through the React-based frontend.
-
-2. **Frontend Application**  
-   The frontend provides legal intelligence search, privacy analysis, eligibility prediction, AI assistance, and claim workflow interfaces.
-
-3. **FastAPI Backend**  
-   REST API endpoints receive application requests and route them to the appropriate AI, retrieval, machine learning, or workflow component.
-
-4. **RAG Pipeline**  
-   The retrieval workflow searches relevant legal intelligence and provides contextual information for AI-assisted responses.
-
-5. **ML Decision Engine**  
-   The machine learning service evaluates claim-related inputs and produces eligibility predictions, confidence information, and decision-support outputs.
-
-6. **Claim Workflow**  
-   The claim workflow connects breach information, eligibility analysis, document guidance, and claim navigation.
-
-7. **AI Engine**  
-   AI-assisted workflows combine retrieved context and application logic to generate legal information and user guidance.
-
-8. **Data Layer**  
-   MongoDB and project datasets support application data, legal intelligence records, breach information, and workflow operations.
+1. Users interact with the React-based LegalTech interface.
+2. Frontend requests are sent to backend API services.
+3. Backend workflows process application and user context.
+4. Retrieval workflows identify relevant legal intelligence.
+5. Decision-support workflows structure claim assessment information.
+6. Claim workflows guide users through application processes.
+7. AI-assisted services support context processing and guidance.
+8. MongoDB and project datasets support application and legal intelligence data.
 
 ## Architectural Design Goals
 
-- Separation of frontend and backend responsibilities
-- Modular AI and machine learning workflows
-- API-driven component communication
-- Independent RAG and prediction services
+- Clear frontend and backend separation
+- API-driven application workflows
+- Modular AI-assisted services
+- Independent retrieval and decision-support concerns
 - Extensible legal intelligence workflows
 - Cloud-deployable application architecture
 
-> **Current Status:** This repository represents an AI LegalTech MVP and engineering portfolio product. Production legal deployment would require additional authentication, role-based access control, retrieval evaluation, security hardening, legal data validation, observability, and privacy governance.
-
-# 🚦 Project Status & Production Readiness
-
-## Current Status
-
-**Project Stage: MVP / Engineering Portfolio Product**
-
-The AI Legal Claim Assistant is a functional LegalTech MVP designed to demonstrate the integration of AI-assisted workflows, legal intelligence interfaces, backend APIs, retrieval-oriented architecture, decision-support workflows, and claim guidance.
-
-The project currently demonstrates the end-to-end structure of an AI-powered legal assistance product.
-
-### Implemented MVP Capabilities
-
-- React-based LegalTech user interface
-- FastAPI backend API integration
-- Legal intelligence and breach information workflows
-- Privacy intelligence interface
-- AI-assisted legal interaction
-- Structured chatbot workflow
-- Claim eligibility decision-support flow
-- AI-assisted case enrichment
-- Confidence-style assessment outputs
-- Claim guidance workflow
-- Application data integration
-- Environment-based AI configuration
-- Fallback behaviour when AI services are unavailable
-- Cloud deployment workflow
-- Product screenshots and technical documentation
-
 ---
-
-## What This Project Demonstrates
-
-This repository is intended to demonstrate engineering experience across:
-
-```text
-AI Product Engineering
-        │
-        ├── Frontend Application
-        ├── Backend APIs
-        ├── AI Service Integration
-        ├── Retrieval-Oriented Workflows
-        ├── Decision Support
-        ├── Legal Intelligence Data
-        ├── Claim Workflows
-        └── Cloud Deployment
-```
-
-The primary engineering goal is to explore how AI capabilities can be integrated into a larger application workflow rather than building an isolated chatbot or notebook-based machine learning demonstration.
-
----
-
-## Current Limitations
-
-The current implementation is an MVP and has several limitations that should be addressed before production or real-world legal use.
-
-### Retrieval & RAG
-
-The current retrieval-assisted workflow does not yet represent a fully evaluated production vector RAG system.
-
-Production development would require:
-
-- Document ingestion pipelines
-- Legal document parsing
-- Configurable text chunking
-- Embedding generation
-- Dedicated vector database integration
-- Semantic retrieval
-- Metadata filtering
-- Retrieval reranking
-- Source citation generation
-- Retrieval evaluation
-- Groundedness and hallucination testing
-
-### Decision Intelligence
-
-The current eligibility workflow is a decision-support prototype and should not be interpreted as a legally validated eligibility determination system.
-
-Production development would require:
-
-- Legally reviewed eligibility rules
-- Validated datasets
-- Reproducible model training
-- Feature engineering pipelines
-- Probability calibration
-- Bias and fairness testing
-- Explainability validation
-- Decision audit logs
-- Human legal review
-
-### Security & Identity
-
-The MVP requires additional security engineering before handling sensitive legal or personal information.
-
-Required production controls include:
-
-- Authentication
-- Role-based access control
-- Secure session management
-- API authorization
-- Secrets management
-- Data encryption
-- Input validation
-- Rate limiting
-- Security logging
-- Dependency vulnerability monitoring
-
-### Privacy & Governance
-
-A production LegalTech system would require formal privacy and data governance controls.
-
-This includes:
-
-- Data minimization
-- Data retention policies
-- User consent workflows
-- Personal data classification
-- Access auditing
-- Data deletion workflows
-- Privacy impact assessment
-- Jurisdiction-specific compliance review
-
-### Reliability & Observability
-
-Production deployment would require:
-
-- Centralized application logging
-- Error monitoring
-- AI request tracing
-- Retrieval tracing
-- Model and prompt version tracking
-- Performance monitoring
-- Availability monitoring
-- Automated health checks
-- Incident response processes
-
----
-
-## Production Readiness Roadmap
-
-```text
-Current MVP
-    │
-    ▼
-Authentication & RBAC
-    │
-    ▼
-Production RAG Pipeline
-    │
-    ▼
-Source-Grounded Responses
-    │
-    ▼
-Retrieval Evaluation
-    │
-    ▼
-Validated Decision Framework
-    │
-    ▼
-Security Hardening
-    │
-    ▼
-Privacy & Data Governance
-    │
-    ▼
-Observability & Audit Logging
-    │
-    ▼
-Human Legal Review Workflow
-    │
-    ▼
-Production Readiness Assessment
-```
-
-The project should undergo technical, security, privacy, and legal review before being considered for production legal decision workflows.
-
----
-
-## Legal & AI Disclaimer
-
-This project is an **AI engineering MVP and portfolio product**.
-
-It is designed to demonstrate LegalTech product architecture, AI integration, retrieval-oriented workflows, and decision-support concepts.
-
-The application does **not provide legal advice**, does **not replace a qualified legal professional**, and should not be used as the sole basis for legal or claim decisions.
-
-AI-generated outputs may be incomplete, inaccurate, or contextually incorrect.
-
-> Human legal review and validated legal data sources are required before any production legal decision use.
-
-
-
-# 🧠 AI Decision Support Architecture
-
-The AI Legal Claim Assistant includes a decision-support workflow designed to analyse claim-related information and present structured eligibility guidance.
-
-The current MVP combines application rules, case context, AI-assisted analysis, and fallback decision logic to demonstrate how a legal eligibility workflow can be structured inside an AI product.
-
-```text
-                       User Claim Information
-                                  │
-                                  ▼
-                    ┌────────────────────────┐
-                    │   Eligibility Request  │
-                    │                        │
-                    │ Breach Information     │
-                    │ User-Provided Context  │
-                    │ Case Information       │
-                    └────────────┬───────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │   FastAPI Backend      │
-                    │      /predict          │
-                    └────────────┬───────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │ Input Processing Layer │
-                    │                        │
-                    │ Request Validation     │
-                    │ Context Preparation    │
-                    │ Case Data Processing   │
-                    └────────────┬───────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │ Decision Support Layer │
-                    │                        │
-                    │ Application Logic      │
-                    │ Case Context           │
-                    │ AI-Assisted Analysis   │
-                    │ Fallback Logic         │
-                    └────────────┬───────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │ Structured Assessment  │
-                    │                        │
-                    │ Eligibility Status     │
-                    │ Confidence Indicator   │
-                    │ Reasoning / Context    │
-                    │ Suggested Actions      │
-                    └────────────┬───────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │   React Application    │
-                    │                        │
-                    │ Eligibility Interface  │
-                    │ Risk Visualization     │
-                    │ User Guidance          │
-                    └────────────────────────┘
-```
-
-## Decision Workflow
-
-### 1. Claim Context Collection
-
-The application collects claim-related and case-related information required by the eligibility workflow.
-
-The broader product design considers factors such as:
-
-- Breach context
-- Exposed information
-- User impact
-- Case information
-- Claim-related context
-- Available legal intelligence
-
-### 2. Backend Processing
-
-The frontend sends the eligibility request to the backend decision-support workflow.
-
-The backend prepares application and case context for assessment.
-
-### 3. Decision Support
-
-The current MVP demonstrates a structured decision-support layer combining:
-
-- Application logic
-- Available case context
-- AI-assisted case enrichment
-- Fallback assessment logic
-
-The system is designed to return structured information that can be consumed by the frontend.
-
-### 4. Structured Assessment
-
-The decision workflow can present outputs such as:
-
-- Eligibility status
-- Confidence indicator
-- Assessment context
-- AI-assisted reasoning
-- Suggested next actions
-
-### 5. User Guidance
-
-Assessment results are displayed through the product interface to help users understand the workflow and identify possible next steps.
-
----
-
-## Current Decision Engine Status
-
-The current implementation should be treated as an **MVP decision-support prototype**.
-
-It demonstrates:
-
-- Eligibility workflow integration
-- Backend decision logic
-- Structured assessment outputs
-- AI-assisted case enrichment
-- Confidence-style indicators
-- Fallback behaviour when AI services are unavailable
-- Frontend decision visualisation
-
-The current repository does **not claim to provide a legally validated or production-grade claim eligibility prediction model**.
-
-A production implementation would require:
-
-- A legally reviewed eligibility rule framework
-- Validated training or evaluation datasets
-- Explicit feature engineering
-- Reproducible model training pipelines
-- Model versioning
-- Calibration of probability outputs
-- Bias and fairness analysis
-- Explainability validation
-- Decision audit logs
-- Human legal review
-- Continuous model monitoring
-
-> Decision outputs in this project are informational and demonstrate AI product architecture. They should not be interpreted as legal determinations or legal advice.
-
----
-
-## Production Decision Intelligence Evolution
-
-```text
-Validated Claim Data
-          │
-          ▼
-   Data Quality Checks
-          │
-          ▼
-    Feature Engineering
-          │
-          ▼
-  Eligibility Rule Engine
-          │
-          ├──────────────────┐
-          │                  │
-          ▼                  ▼
- Predictive Model     Legal Policy Rules
-          │                  │
-          └─────────┬────────┘
-                    │
-                    ▼
-          Decision Orchestration
-                    │
-                    ▼
-          Explainability Layer
-                    │
-                    ▼
-         Human Review Workflow
-                    │
-                    ▼
-       Auditable Decision Output
-```
-
-The long-term architecture separates predictive modelling from legal policy rules and introduces explainability, human review, and auditability before production decision use.
-
 
 # 🔍 Retrieval & AI Assistance Architecture
 
-The Legal Assistant is designed around a retrieval-assisted workflow for using relevant legal intelligence as context during user interactions.
-
-The current MVP focuses on the separation of **legal information retrieval, contextual selection, application logic, and AI-assisted response workflows**.
+The Legal Assistant uses a retrieval-assisted workflow designed to connect user questions with relevant legal and breach intelligence.
 
 ```text
-                         User Question
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │  React Chat UI      │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │  /chatbot API       │
-                   │  FastAPI Backend    │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │ Query Processing    │
-                   │                     │
-                   │ User Input Handling │
-                   │ Query Preparation   │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │ Legal Intelligence  │
-                   │ Retrieval Layer     │
-                   │                     │
-                   │ Breach Information  │
-                   │ Legal Records       │
-                   │ Case Context        │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │ Context Selection   │
-                   │                     │
-                   │ Relevant Legal Data │
-                   │ Breach Context      │
-                   │ Workflow Context    │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │ AI Assistance Layer │
-                   │                     │
-                   │ Context Processing  │
-                   │ Guidance Logic      │
-                   │ Response Workflow   │
-                   └──────────┬──────────┘
-                              │
-                              ▼
-                   ┌─────────────────────┐
-                   │ User Response       │
-                   │                     │
-                   │ Legal Information   │
-                   │ Suggested Actions   │
-                   │ Guidance            │
-                   └─────────────────────┘
+                    User Question
+                          │
+                          ▼
+                 React Assistant UI
+                          │
+                          ▼
+                    Backend API
+                          │
+                          ▼
+                   Query Processing
+                          │
+                          ▼
+              Legal Intelligence Retrieval
+                          │
+                          ▼
+                   Context Selection
+                          │
+                          ▼
+                 AI Assistance Layer
+                          │
+                          ▼
+                Informational Response
 ```
 
 ## Retrieval Workflow
 
 ### 1. User Query
 
-The user submits a legal or data-breach-related question through the AI Legal Assistant interface.
+The user submits a legal or data-breach-related question.
 
 ### 2. API Processing
 
-The frontend sends the request to the FastAPI `/chatbot` endpoint, which acts as the backend interface for the assistant workflow.
+The application sends the request to the backend assistant workflow.
 
 ### 3. Query Processing
 
-The application processes the incoming question and prepares it for the legal intelligence retrieval workflow.
+The incoming question is processed and prepared for contextual retrieval.
 
 ### 4. Legal Intelligence Retrieval
 
-The retrieval layer searches available project data and legal intelligence sources for information relevant to the user's question.
+Available project data and legal intelligence are searched for relevant information.
 
-The current project focuses on legal and breach-related context such as:
+Current contextual areas include:
 
 - Data breach information
 - Legal case records
@@ -594,25 +189,23 @@ The current project focuses on legal and breach-related context such as:
 
 ### 5. Context Selection
 
-Relevant application and legal intelligence context is selected for the response workflow.
+Relevant legal and application context is selected for the response workflow.
 
-The goal is to reduce generic responses by using information connected to the user's legal or breach-related question.
+### 6. AI-Assisted Processing
 
-### 6. AI-Assisted Response Workflow
-
-The AI assistance layer combines retrieved context with application logic to produce informational guidance and suggested next actions.
+The AI assistance layer combines available context with application logic to produce informational guidance.
 
 ### 7. Response Delivery
 
-The generated response is returned through the backend API and displayed in the React-based Legal Assistant interface.
+The response is returned to the frontend and displayed through the Legal Assistant interface.
 
 ---
 
-## Current RAG Status
+## Current Retrieval Status
 
-This project represents an **MVP retrieval-assisted legal AI workflow**.
+The current implementation represents an **MVP retrieval-assisted legal AI workflow**.
 
-The current implementation demonstrates the architectural separation between:
+It demonstrates architectural separation between:
 
 - User interaction
 - API processing
@@ -621,21 +214,7 @@ The current implementation demonstrates the architectural separation between:
 - AI assistance
 - Response delivery
 
-A production-grade RAG implementation would extend this architecture with:
-
-- Document ingestion pipelines
-- Document parsing and cleaning
-- Configurable chunking strategies
-- Embedding generation
-- Dedicated vector database storage
-- Semantic vector retrieval
-- Metadata filtering
-- Retrieval reranking
-- Source citations
-- Retrieval quality evaluation
-- Hallucination and groundedness evaluation
-
-> The current system should be treated as an AI LegalTech MVP and engineering prototype rather than a production legal advice system.
+The current system does not claim to be a fully evaluated production vector RAG platform.
 
 ---
 
@@ -675,300 +254,522 @@ Legal Documents / Case Data
  Grounded Answer + Sources
 ```
 
-The production roadmap is intended to evolve the current retrieval-assisted workflow into a fully evaluated, vector-based RAG architecture with source-grounded responses and retrieval-quality monitoring.
+A production implementation would additionally require retrieval evaluation, metadata filtering, source citations, groundedness testing, and hallucination monitoring.
 
 ---
 
-# 🛠️ Tech Stack
+# 🧠 AI Decision Support Architecture
+
+The application includes a structured decision-support workflow for demonstrating claim eligibility assessment.
+
+```text
+                 User Claim Information
+                           │
+                           ▼
+                  Eligibility Request
+                           │
+                           ▼
+                 Backend Processing
+                           │
+                           ▼
+                Context Preparation
+                           │
+                           ▼
+                Decision Support Layer
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+          ▼                ▼                ▼
+ Application Logic    Case Context    AI Enrichment
+          │                │                │
+          └────────────────┼────────────────┘
+                           │
+                           ▼
+                 Structured Assessment
+                           │
+                           ▼
+                   React Interface
+```
+
+## Decision Workflow
+
+### 1. Claim Context Collection
+
+The application processes claim and case-related information.
+
+The broader product workflow considers:
+
+- Breach context
+- Exposed information
+- User impact
+- Case information
+- Claim context
+- Available legal intelligence
+
+### 2. Backend Processing
+
+Application and case context are prepared for the assessment workflow.
+
+### 3. Decision Support
+
+The MVP combines:
+
+- Application logic
+- Available case context
+- AI-assisted case enrichment
+- Fallback assessment behaviour
+
+### 4. Structured Assessment
+
+The interface can present:
+
+- Eligibility status
+- Confidence-style indicators
+- Assessment context
+- AI-assisted reasoning
+- Suggested next actions
+
+### 5. User Guidance
+
+Structured assessment information is displayed through the product interface.
+
+---
+
+## Current Decision Engine Status
+
+The current implementation is an **MVP decision-support prototype**.
+
+It demonstrates:
+
+- Eligibility workflow integration
+- Backend decision logic
+- Structured assessment outputs
+- AI-assisted case enrichment
+- Confidence-style indicators
+- Fallback behaviour
+- Frontend decision visualisation
+
+The repository does **not claim to provide a legally validated or production-grade claim eligibility prediction model**.
+
+Decision outputs are informational and demonstrate AI product architecture.
+
+---
+
+## Production Decision Intelligence Evolution
+
+```text
+Validated Claim Data
+          │
+          ▼
+   Data Quality Checks
+          │
+          ▼
+    Feature Engineering
+          │
+          ▼
+  Eligibility Rule Engine
+          │
+          ├──────────────────┐
+          │                  │
+          ▼                  ▼
+ Predictive Model     Legal Policy Rules
+          │                  │
+          └─────────┬────────┘
+                    │
+                    ▼
+          Decision Orchestration
+                    │
+                    ▼
+          Explainability Layer
+                    │
+                    ▼
+         Human Review Workflow
+                    │
+                    ▼
+       Auditable Decision Output
+```
+
+A production decision system would require legally reviewed rules, validated datasets, calibrated outputs, explainability validation, audit logging, fairness analysis, and human legal review.
+
+---
+
+# 🛠️ Technology Stack
 
 ## Frontend
+
 - React.js
 - Vite
 - Tailwind CSS
 - Framer Motion
 - Lucide React
 
----
-
 ## Backend
+
+- Python
 - FastAPI
-- Python 3.11
 - Uvicorn
+- REST APIs
 
----
+## AI & Decision Support
 
-## AI / ML
+- Google Gemini API
+- AI-assisted case enrichment
+- Retrieval-assisted legal workflows
+- Structured decision-support logic
 - Scikit-learn
 - Pandas
 - NumPy
-- ML Prediction Engine
-- RAG Pipeline
 
----
+## Data
 
-## Database
 - MongoDB
-
----
+- Legal intelligence datasets
+- Breach and case information
 
 ## Deployment
+
 - Render
-- GitHub Actions Workflow
-- Cloud Deployment Pipeline
+- GitHub
+- Cloud deployment workflow
 
 ---
 
 # 📁 Project Structure
 
-```bash
-ai_legal_assistant/
+```text
+Ai_Legal_Tech_Assistant/
 │
-├── frontend/                 # React Frontend
-├── ml_service/               # ML prediction services
-├── rag/                      # RAG chatbot pipeline
-├── models/                   # ML models
-├── data/                     # Legal datasets
-├── scripts/                  # Utility scripts
-├── logs/                     # Application logs
+├── api/                 # API components
+├── data/                # Legal and application datasets
+├── frontend/            # React frontend
+├── logs/                # Application logs
+├── ml_service/          # Decision-support services
+├── models/              # Model-related resources
+├── rag/                 # Retrieval-assisted workflow
+├── scripts/             # Utility scripts
+├── src/                 # Application source components
 │
-├── ai_engine.py              # AI engine logic
-├── scraper.py                # Data scraping pipeline
-├── db_connected.py           # MongoDB connection
-├── requirements.txt          # Python dependencies
-├── runtime.txt               # Runtime configuration
-├── README.md                 # Project documentation
-│
-└── .env                      # Environment variables
+├── ai_engine.py         # AI-assisted enrichment logic
+├── db_connected.py      # Database integration
+├── scraper.py           # Data collection workflow
+├── requirements.txt     # Python dependencies
+├── runtime.txt          # Runtime configuration
+├── ROADMAP.md           # Product roadmap
+├── USER_GUIDE.md        # User documentation
+└── README.md            # Project documentation
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Local Setup
 
-## 1️⃣ Clone Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/kondapallysimhadri/Ai_Legal_Tech_Assistant.git
 ```
 
----
-
-## 2️⃣ Move Into Project
+## 2. Enter the Project
 
 ```bash
 cd Ai_Legal_Tech_Assistant
 ```
 
----
-
-## 3️⃣ Create Virtual Environment
+## 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate:
+### macOS / Linux
 
-### Mac/Linux
 ```bash
 source venv/bin/activate
 ```
 
 ### Windows
+
 ```bash
 venv\Scripts\activate
 ```
 
----
-
-## 4️⃣ Install Backend Dependencies
+## 4. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 5️⃣ Install Frontend Dependencies
+## 5. Install Frontend Dependencies
 
 ```bash
 cd frontend
 npm install
 ```
 
----
-
-# ▶️ Running the Project
-
-## Backend
+## 6. Run the Frontend
 
 ```bash
-uvicorn ai_engine:app --reload
-```
-
-Runs on:
-```bash
-http://localhost:8000
-```
-
----
-
-## Frontend
-
-```bash
-cd frontend
 npm run dev
 ```
 
-Runs on:
-```bash
+The frontend development server is typically available at:
+
+```text
 http://localhost:5173
 ```
 
----
-
-# 🌐 API Endpoints
-
-## Cases API
-```bash
-GET /cases
-```
-
-Returns legal case intelligence data.
+> Backend execution depends on the active API entry point and deployment configuration in the repository. Review the API and runtime configuration before starting backend services locally.
 
 ---
 
-## Stats API
-```bash
-GET /stats
-```
+# 🌐 API Workflows
 
-Returns:
-- total cases
-- breaches
-- vector statistics
+The product architecture includes workflows for:
 
----
+### Legal Case Intelligence
 
-## Predict Eligibility
-```bash
-POST /predict
-```
+Retrieves available legal and breach intelligence data.
 
-Machine learning claim prediction.
+### Application Statistics
 
----
+Returns application-level intelligence and dataset statistics.
 
-## AI Chatbot
-```bash
-POST /chatbot
-```
+### Eligibility Decision Support
 
-AI Legal Assistant interaction endpoint.
+Processes claim context and returns structured decision-support information.
+
+### AI Legal Interaction
+
+Supports AI-assisted legal information and workflow interaction.
+
+> API routes and runtime behaviour may evolve as the MVP architecture is refactored.
 
 ---
 
 # ☁️ Deployment
 
-This project is deployed on Render.
+The project is publicly demonstrated through Render.
 
-## Deployment Features
-- Automatic GitHub deployment
-- Continuous Integration
-- Cloud hosting
-- Public production URL
+**Live Demo:**
 
-Live URL:
+https://ai-legal-tech-assistant.onrender.com/
 
-:https://ai-legal-tech-assistant.onrender.com/
+The current deployment is intended for MVP demonstration and portfolio evaluation.
+
+It should not be treated as a production legal decision platform.
 
 ---
 
-# 🔄 Deployment Workflow
-
-```bash
-git add .
-git commit -m "update"
-git push origin main
-```
-
-Render automatically:
-- Detects changes
-- Builds application
-- Deploys latest version
-
----
-
-# 📸 Screenshots
+# 📸 Product Screenshots
 
 ## Homepage
-- Live legal intelligence dashboard
-- Real-time breach cards
 
-- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 43 33 PM" src="https://github.com/user-attachments/assets/277b3ea8-5883-4e2e-a63a-00a9a11978d7" />
+- Legal intelligence dashboard
+- Breach intelligence cards
 
+<img width="1440" height="900" alt="Legal Intelligence Homepage" src="https://github.com/user-attachments/assets/277b3ea8-5883-4e2e-a63a-00a9a11978d7" />
 
 ## Privacy Intelligence
-- AI privacy analysis
-- Exposure scoring
-- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 02 PM" src="https://github.com/user-attachments/assets/435c1bf8-8810-491b-8f54-6ef654fe5d54" />
--<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 17 PM" src="https://github.com/user-attachments/assets/35261a96-778d-409e-9d49-d557f1dc44ed" />
 
-## AI Decision Engine
-- ML-powered eligibility prediction
-- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 44 43 PM" src="https://github.com/user-attachments/assets/631083ce-8988-420d-a86f-ecedf2205fa7" />
--<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 02 PM" src="https://github.com/user-attachments/assets/9bff2e25-68f4-42d9-ada8-ea7508a4fe99" />
--<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 23 PM" src="https://github.com/user-attachments/assets/e718794b-12a5-4821-b6f2-0a9c84e02b8d" />
+- AI-assisted privacy analysis
+- Exposure-oriented scoring interface
+
+<img width="1440" height="900" alt="Privacy Intelligence" src="https://github.com/user-attachments/assets/435c1bf8-8810-491b-8f54-6ef654fe5d54" />
+
+<img width="1440" height="900" alt="Privacy Risk Analysis" src="https://github.com/user-attachments/assets/35261a96-778d-409e-9d49-d557f1dc44ed" />
+
+## AI Decision Support
+
+- AI-assisted eligibility decision-support workflow
+
+<img width="1440" height="900" alt="Decision Support Interface" src="https://github.com/user-attachments/assets/631083ce-8988-420d-a86f-ecedf2205fa7" />
+
+<img width="1440" height="900" alt="Eligibility Assessment" src="https://github.com/user-attachments/assets/9bff2e25-68f4-42d9-ada8-ea7508a4fe99" />
+
+<img width="1440" height="900" alt="Decision Assessment Output" src="https://github.com/user-attachments/assets/e718794b-12a5-4821-b6f2-0a9c84e02b8d" />
 
 ## AI Legal Assistant
-- RAG-based chatbot
-- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 45 39 PM" src="https://github.com/user-attachments/assets/2b22c2e0-953d-4638-b447-5443e11e184c" />
+
+- Retrieval-assisted AI legal interaction
+
+<img width="1440" height="900" alt="AI Legal Assistant" src="https://github.com/user-attachments/assets/2b22c2e0-953d-4638-b447-5443e11e184c" />
 
 ## Claim Workflow
-- Document collection
-- Registry submission
-- Claim portal integration
-- <img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 46 08 PM" src="https://github.com/user-attachments/assets/e4057114-471d-494d-9e82-2b65994107da" />
--<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 46 44 PM" src="https://github.com/user-attachments/assets/4abdcf75-312d-436e-af47-121121d265f3" />
--<img width="1440" height="900" alt="Screenshot 2026-05-28 at 9 47 17 PM" src="https://github.com/user-attachments/assets/764a2f96-7635-4d69-99c6-67b57844498f" />
+
+- Document preparation workflow
+- Claim navigation
+- Structured claim-support interface
+
+<img width="1440" height="900" alt="Claim Workflow" src="https://github.com/user-attachments/assets/e4057114-471d-494d-9e82-2b65994107da" />
+
+<img width="1440" height="900" alt="Document Workflow" src="https://github.com/user-attachments/assets/4abdcf75-312d-436e-af47-121121d265f3" />
+
+<img width="1440" height="900" alt="Claim Navigation" src="https://github.com/user-attachments/assets/764a2f96-7635-4d69-99c6-67b57844498f" />
 
 ---
 
-# 🔐 Environment Variables
+# 🚦 Project Status & Production Readiness
 
-Create `.env` file:
+**Project Stage: MVP / Engineering Portfolio Product**
 
-```env
-MONGO_URI=your_mongodb_connection
-OPENAI_API_KEY=your_api_key
-SECRET_KEY=your_secret
+The current application demonstrates an end-to-end AI LegalTech product structure.
+
+## Implemented MVP Areas
+
+- React-based LegalTech interface
+- Backend application workflows
+- Legal and breach intelligence
+- Privacy intelligence interface
+- AI-assisted interaction
+- Retrieval-oriented workflows
+- Claim decision-support flow
+- AI-assisted case enrichment
+- Structured assessment outputs
+- Claim guidance workflows
+- Data integration
+- AI service fallback behaviour
+- Cloud demonstration deployment
+
+---
+
+# ⚠️ Current Limitations
+
+## Retrieval
+
+The current system is not a fully evaluated production vector RAG implementation.
+
+Production development requires:
+
+- Document ingestion
+- Parsing and cleaning
+- Chunking strategies
+- Embedding generation
+- Vector database integration
+- Semantic retrieval
+- Metadata filtering
+- Reranking
+- Source citations
+- Retrieval evaluation
+- Groundedness testing
+
+## Decision Intelligence
+
+The current eligibility workflow is a prototype decision-support system.
+
+Production development requires:
+
+- Legally reviewed eligibility rules
+- Validated datasets
+- Reproducible training pipelines
+- Probability calibration
+- Bias and fairness analysis
+- Explainability validation
+- Decision audit logs
+- Human legal review
+
+## Security
+
+Additional production controls would include:
+
+- Authentication
+- Role-based access control
+- API authorization
+- Secure secrets management
+- Data encryption
+- Rate limiting
+- Security logging
+- Dependency monitoring
+
+## Privacy & Governance
+
+A real LegalTech deployment would require:
+
+- Data minimization
+- Consent workflows
+- Data retention policies
+- Personal data classification
+- Access auditing
+- Data deletion workflows
+- Privacy impact assessments
+- Jurisdiction-specific legal review
+
+## Reliability & Observability
+
+Production deployment would require:
+
+- Centralized logging
+- Error monitoring
+- AI request tracing
+- Retrieval tracing
+- Prompt and model version tracking
+- Performance monitoring
+- Availability monitoring
+- Automated health checks
+
+---
+
+# 📈 Production Roadmap
+
+```text
+Current MVP
+    │
+    ▼
+Authentication & RBAC
+    │
+    ▼
+Production Vector RAG
+    │
+    ▼
+Source-Grounded Responses
+    │
+    ▼
+Retrieval Evaluation
+    │
+    ▼
+Validated Decision Framework
+    │
+    ▼
+Security Hardening
+    │
+    ▼
+Privacy & Data Governance
+    │
+    ▼
+Observability & Audit Logging
+    │
+    ▼
+Human Legal Review
+    │
+    ▼
+Production Readiness Assessment
 ```
 
 ---
 
-# 📈 Future Improvements
+# 🎯 Potential Use Cases
 
-- JWT Authentication
-- Real LLM Integration
-- Pinecone Vector DB
-- PDF Upload Analysis
-- Admin Dashboard
-- Payment Gateway
-- User Claim Tracking
-- Docker Deployment
-- CI/CD Pipelines
-- Real-time Scraping Automation
+- Legal intelligence applications
+- Privacy risk analysis
+- Data breach monitoring
+- AI-assisted legal information workflows
+- Claim eligibility decision support
+- LegalTech product research
+- AI document intelligence
+- Legal workflow automation
 
 ---
 
-# 🎯 Use Cases
+# ⚖️ Legal & AI Disclaimer
 
-- Legal Intelligence Platforms
-- Privacy Risk Analysis
-- Data Breach Monitoring
-- AI Legal Guidance
-- Claim Eligibility Prediction
-- Legal Tech Research
+This project is an **AI engineering MVP and portfolio product**.
+
+It demonstrates LegalTech product architecture, AI integration, retrieval-oriented workflows, and decision-support concepts.
+
+The application does **not provide legal advice**, does **not replace a qualified legal professional**, and should not be used as the sole basis for legal or claim decisions.
+
+AI-generated outputs may be incomplete, inaccurate, or contextually incorrect.
+
+> Human legal review and validated legal data sources are required before production legal decision use.
 
 ---
 
@@ -976,15 +777,10 @@ SECRET_KEY=your_secret
 
 ## Simhadri Kondapally
 
-Aspiring Data Scientist & AI Developer
+**AI Engineer focused on LLM applications, retrieval-assisted AI systems, and AI product engineering.**
 
-### Connect With Me
-
-GitHub:  
-:https://github.com/kondapallysimhadri
-
-LinkedIn:  
-:https://www.linkedin.com/in/kondapally-simhadri/
+- LinkedIn: https://www.linkedin.com/in/kondapally-simhadri/
+- GitHub: https://github.com/kondapallysimhadri
 
 ---
 
@@ -994,16 +790,10 @@ This project is licensed under the MIT License.
 
 ---
 
-# ⭐ Support
+<p align="center">
+  <strong>AI Engineering + LegalTech</strong>
+</p>
 
-If you like this project:
-
-⭐ Star the repository  
-🍴 Fork the project  
-🚀 Share with others
-
----
-
-# 🧠 AI + Legal Tech + Machine Learning
-
-Building the future of intelligent legal assistance.
+<p align="center">
+  Building practical AI systems around intelligence, retrieval, and real-world workflows.
+</p>

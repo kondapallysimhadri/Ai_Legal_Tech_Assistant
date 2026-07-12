@@ -38,7 +38,7 @@ class AILegalIntelligence:
 
     async def enrich_case(self, case_data: dict):
 
-        if not self.model:
+        if not self.client:
             return self.get_fallback_enrichment(case_data)
 
         prompt = f"""

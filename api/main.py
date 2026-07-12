@@ -338,122 +338,173 @@ class SearchInput(BaseModel):
 
 @app.post("/search")
 async def search_cases(search_input: SearchInput):
-
     query = search_input.query.strip()
+
     if not query:
         return {
+            "query": query,
             "results": [],
             "total_matches": 0,
             "ai_overview": "Please enter a search term.",
         }
 
     try:
-        return {
-            "results": [],
-            "total_matches": 0,
-            "ai_overview": "Semantic search temporarily disabled.",
-        }
-    except Exception as e:
-        print(f"⚠️ Vector Model Error: {e}")
-        return {
-            "results": [],
-            "total_matches": 0,
-            "ai_overview": "Semantic search engine is currently offline.",
+        search_query = {
+            "$or": [
+                {"title": {"$regex": query, "$options": "i"}},
+                {"content_preview": {"$regex": query, "$options": "i"}},
+                {"enrichment": {"$regex": query, "$options": "i"}},
+            ]
         }
 
-    try:
-
-        all_cases = list(db["vector_embeddings"].find({}))
-        import numpy as np
-
-        query_vec = np.array(query_embedding)
-        query_norm = np.linalg.norm(query_vec)
-
-        scored_cases = []
-        for c in all_cases:
-            if "embedding" in c:
-                doc_vec = np.array(c["embedding"])
-                doc_norm = np.linalg.norm(doc_vec)
-                if query_norm > 0 and doc_norm > 0:
-                    sim = np.dot(query_vec, doc_vec) / (query_norm * doc_norm)
-                    scored_cases.append((sim, c))
-
-        scored_cases.sort(key=lambda x: x[0], reverse=True)
-
-        top_matches = [c for sim, c in scored_cases[:15] if sim > 0.15]
-    except Exception as e:
-        print(f"⚠️ Vector Calculation Error: {e}")
-        top_matches = []
-
-    results = []
-    for c in top_matches:
-        c_id = str(c.get("_id"))
-        enrichment_str = c.get("enrichment", "{}")
-        try:
-            import json
-
-            if "```json" in enrichment_str:
-                enrichment_str = enrichment_str.split("```json")[1].split("```")[0]
-            enrichment = json.loads(enrichment_str)
-        except Exception:
-            enrichment = {}
-
-        company = enrichment.get("company", c.get("title", "Unknown Company"))
-        title = c.get("title", company)
-        summary = enrichment.get("ai_summary", c.get("content_preview", ""))
-        raw_impact_level = enrichment.get("risk_level", "Medium")
-
-        results.append(
-            {
-                "id": c_id,
-                "title": title,
-                "company": company,
-                "summary": summary,
-                "description": c.get("content_preview", ""),
-                "source_url": c.get("source_url", ""),
-                "risk_level": raw_impact_level,
-                "impact_category": raw_impact_level,
-                "confidence": 92 if enrichment.get("eligibility") == "High" else 75,
-                "eligibility": enrichment.get("eligibility", "Moderate"),
-                "estimated_compensation": enrichment.get("estimated_payout", "Unknown"),
-                "deadline": enrichment.get("deadline", "Ongoing"),
-                "exposed_data": enrichment.get("category", "Data Breach"),
-                "success_probability": (
-                    85 if enrichment.get("eligibility") == "High" else 60
-                ),
-                "ai_insight": enrichment.get(
-                    "ai_reasoning", "Analysis indicates potential legal standing."
-                ),
-                "case_type": enrichment.get("category", "Data Breach"),
-                "source": c.get("metadata", {}).get("source", "Legal Intel"),
-            }
+        matched_cases = await asyncio.to_thread(
+            lambda: list(
+                db["vector_embeddings"]
+                .find(search_query)
+                .limit(15)
+            )
         )
 
-    ai_overview = "Semantic retrieval found relevant legal precedents."
-    if results and gemini_client:
-        try:
-            context = "\n".join(
-                [f"- {r['title']}: {r['summary']}" for r in results[:3]]
-            )
-            prompt = f"As a Legal AI Assistant, analyze these cases for the query '{query}' and provide a concise, professional executive summary of trends and settlement potential:\n{context}"
+        results = []
 
-            response = await asyncio.wait_for(
-                gemini_client.aio.models.generate_content(
-                    model="gemini-2.0-flash",
-                    contents=prompt,
+        for case in matched_cases:
+            enrichment_str = case.get("enrichment", "{}")
+
+            try:
+                if isinstance(enrichment_str, str):
+                    cleaned_enrichment = (
+                        enrichment_str
+                        .replace("```json", "")
+                        .replace("```", "")
+                        .strip()
+                    )
+                    enrichment = json.loads(cleaned_enrichment)
+                else:
+                    enrichment = enrichment_str or {}
+
+            except Exception:
+                enrichment = {}
+
+            company = enrichment.get(
+                "company",
+                case.get("title", "Unknown Company"),
+            )
+
+            title = case.get("title", company)
+
+            summary = enrichment.get(
+                "ai_summary",
+                case.get("content_preview", ""),
+            )
+
+            risk_level = enrichment.get("risk_level", "Medium")
+
+            results.append(
+                {
+                    "id": str(case.get("_id")),
+                    "title": title,
+                    "company": company,
+                    "summary": summary,
+                    "description": case.get("content_preview", ""),
+                    "source_url": case.get("source_url", ""),
+                    "risk_level": risk_level,
+                    "impact_category": risk_level,
+                    "eligibility": enrichment.get(
+                        "eligibility",
+                        "Moderate",
+                    ),
+                    "estimated_compensation": enrichment.get(
+                        "estimated_payout",
+                        "Unknown",
+                    ),
+                    "deadline": enrichment.get(
+                        "deadline",
+                        "Ongoing",
+                    ),
+                    "exposed_data": enrichment.get(
+                        "category",
+                        "Data Breach",
+                    ),
+                    "ai_insight": enrichment.get(
+                        "ai_reasoning",
+                        "Available legal intelligence matched the search query.",
+                    ),
+                    "case_type": enrichment.get(
+                        "category",
+                        "Data Breach",
+                    ),
+                    "source": case.get("metadata", {}).get(
+                        "source",
+                        "Legal Intel",
+                    ),
+                }
+            )
+
+        if not results:
+            return {
+                "query": query,
+                "total_matches": 0,
+                "results": [],
+                "ai_overview": (
+                    "No matching legal intelligence records were found."
                 ),
-                timeout=10.0,
-            )
-            ai_overview = response.text.strip()
-        except Exception as e:
-            print(f"⚠️ Search AI Overview fallback: {e}")
+            }
 
-    return {
-        "query": query,
-        "total_matches": len(results),
-        "results": results,
-        "ai_overview": ai_overview,
-    }
+        ai_overview = (
+            f"Found {len(results)} matching legal intelligence records."
+        )
+
+        if gemini_client:
+            try:
+                context = "\n".join(
+                    [
+                        f"- {result['title']}: {result['summary']}"
+                        for result in results[:3]
+                    ]
+                )
+
+                prompt = f"""
+                Analyse the following legal intelligence search results.
+
+                USER QUERY:
+                {query}
+
+                MATCHED RECORDS:
+                {context}
+
+                Provide a concise informational summary of the matched records.
+                Do not provide legal advice.
+                """
+
+                response = await asyncio.wait_for(
+                    gemini_client.aio.models.generate_content(
+                        model="gemini-2.0-flash",
+                        contents=prompt,
+                    ),
+                    timeout=10.0,
+                )
+
+                ai_overview = response.text.strip()
+
+            except Exception as exc:
+                print(f"Search AI overview fallback: {exc}")
+
+        return {
+            "query": query,
+            "total_matches": len(results),
+            "results": results,
+            "ai_overview": ai_overview,
+        }
+
+    except Exception as exc:
+        print(f"Search workflow error: {exc}")
+
+        return {
+            "query": query,
+            "results": [],
+            "total_matches": 0,
+            "ai_overview": "Search is temporarily unavailable.",
+        }
 
 
 @app.post("/predict", response_model=PredictionResponse)

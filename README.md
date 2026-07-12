@@ -31,6 +31,7 @@ The platform combines:
 - ☁️ Render Cloud Deployment
 
 ---
+# ✨ Features
 
 # 🏗️ System Architecture
 
@@ -125,6 +126,183 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
 - Cloud-deployable application architecture
 
 > **Current Status:** This repository represents an AI LegalTech MVP and engineering portfolio product. Production legal deployment would require additional authentication, role-based access control, retrieval evaluation, security hardening, legal data validation, observability, and privacy governance.
+
+# 🔍 Retrieval & AI Assistance Architecture
+
+The Legal Assistant is designed around a retrieval-assisted workflow for using relevant legal intelligence as context during user interactions.
+
+The current MVP focuses on the separation of **legal information retrieval, contextual selection, application logic, and AI-assisted response workflows**.
+
+```text
+                         User Question
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │  React Chat UI      │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │  /chatbot API       │
+                   │  FastAPI Backend    │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │ Query Processing    │
+                   │                     │
+                   │ User Input Handling │
+                   │ Query Preparation   │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │ Legal Intelligence  │
+                   │ Retrieval Layer     │
+                   │                     │
+                   │ Breach Information  │
+                   │ Legal Records       │
+                   │ Case Context        │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │ Context Selection   │
+                   │                     │
+                   │ Relevant Legal Data │
+                   │ Breach Context      │
+                   │ Workflow Context    │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │ AI Assistance Layer │
+                   │                     │
+                   │ Context Processing  │
+                   │ Guidance Logic      │
+                   │ Response Workflow   │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                   ┌─────────────────────┐
+                   │ User Response       │
+                   │                     │
+                   │ Legal Information   │
+                   │ Suggested Actions   │
+                   │ Guidance            │
+                   └─────────────────────┘
+```
+
+## Retrieval Workflow
+
+### 1. User Query
+
+The user submits a legal or data-breach-related question through the AI Legal Assistant interface.
+
+### 2. API Processing
+
+The frontend sends the request to the FastAPI `/chatbot` endpoint, which acts as the backend interface for the assistant workflow.
+
+### 3. Query Processing
+
+The application processes the incoming question and prepares it for the legal intelligence retrieval workflow.
+
+### 4. Legal Intelligence Retrieval
+
+The retrieval layer searches available project data and legal intelligence sources for information relevant to the user's question.
+
+The current project focuses on legal and breach-related context such as:
+
+- Data breach information
+- Legal case records
+- Settlement information
+- Enforcement-related data
+- Claim workflow context
+
+### 5. Context Selection
+
+Relevant application and legal intelligence context is selected for the response workflow.
+
+The goal is to reduce generic responses by using information connected to the user's legal or breach-related question.
+
+### 6. AI-Assisted Response Workflow
+
+The AI assistance layer combines retrieved context with application logic to produce informational guidance and suggested next actions.
+
+### 7. Response Delivery
+
+The generated response is returned through the backend API and displayed in the React-based Legal Assistant interface.
+
+---
+
+## Current RAG Status
+
+This project represents an **MVP retrieval-assisted legal AI workflow**.
+
+The current implementation demonstrates the architectural separation between:
+
+- User interaction
+- API processing
+- Legal intelligence retrieval
+- Context selection
+- AI assistance
+- Response delivery
+
+A production-grade RAG implementation would extend this architecture with:
+
+- Document ingestion pipelines
+- Document parsing and cleaning
+- Configurable chunking strategies
+- Embedding generation
+- Dedicated vector database storage
+- Semantic vector retrieval
+- Metadata filtering
+- Retrieval reranking
+- Source citations
+- Retrieval quality evaluation
+- Hallucination and groundedness evaluation
+
+> The current system should be treated as an AI LegalTech MVP and engineering prototype rather than a production legal advice system.
+
+---
+
+## Production RAG Evolution
+
+```text
+Legal Documents / Case Data
+             │
+             ▼
+     Document Ingestion
+             │
+             ▼
+      Parsing & Cleaning
+             │
+             ▼
+       Text Chunking
+             │
+             ▼
+     Embedding Generation
+             │
+             ▼
+       Vector Database
+             │
+             ▼
+      Semantic Retrieval
+             │
+             ▼
+         Reranking
+             │
+             ▼
+     Context Construction
+             │
+             ▼
+           LLM
+             │
+             ▼
+ Grounded Answer + Sources
+```
+
+The production roadmap is intended to evolve the current retrieval-assisted workflow into a fully evaluated, vector-based RAG architecture with source-grounded responses and retrieval-quality monitoring.
 
 ---
 

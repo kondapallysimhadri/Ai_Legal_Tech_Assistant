@@ -10,6 +10,6 @@ pydantic
 matplotlib
 python-dotenv
 pymongo
-google-generativeai
+google-genai
 chromadb
 sentence-transformers

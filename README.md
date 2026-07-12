@@ -32,68 +32,99 @@ The platform combines:
 
 ---
 
-# ✨ Features
+# 🏗️ System Architecture
 
-## 🏠 Homepage
-- Real-time legal intelligence dashboard
-- Live breach statistics
-- AI-powered search
-- Interactive case cards
+The AI Legal Claim Assistant is structured as a multi-component AI application that separates the user interface, backend API layer, AI workflows, machine learning services, retrieval logic, and data storage.
 
----
+```text
+                         ┌──────────────────────┐
+                         │        User          │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │    React Frontend    │
+                         │  Vite + Tailwind CSS │
+                         └──────────┬───────────┘
+                                    │
+                              REST API Requests
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │   FastAPI Backend    │
+                         │   Application Layer  │
+                         └──────────┬───────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                     │
+              ▼                     ▼                     ▼
+   ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐
+   │   RAG Pipeline    │ │ ML Decision Engine│ │  Claim Workflow   │
+   │                   │ │                   │ │                   │
+   │ Legal Retrieval   │ │ Eligibility Model │ │ Breach Analysis   │
+   │ Context Selection │ │ Risk Prediction   │ │ Document Guidance │
+   │ AI Assistance     │ │ Confidence Output │ │ Claim Navigation  │
+   └─────────┬─────────┘ └─────────┬─────────┘ └─────────┬─────────┘
+             │                     │                     │
+             └─────────────────────┼─────────────────────┘
+                                   │
+                                   ▼
+                        ┌──────────────────────┐
+                        │   AI Engine Layer    │
+                        │                     │
+                        │ AI-assisted Insights│
+                        │ Guidance Workflows  │
+                        │ Response Generation │
+                        └──────────┬───────────┘
+                                   │
+                    ┌──────────────┼──────────────┐
+                    │                             │
+                    ▼                             ▼
+         ┌────────────────────┐        ┌────────────────────┐
+         │      MongoDB       │        │ Legal Intelligence │
+         │                    │        │       Data         │
+         │ Application Data   │        │                    │
+         │ Legal Records      │        │ Breach Cases       │
+         │ Workflow Data      │        │ Settlement Data    │
+         └────────────────────┘        └────────────────────┘
+```
 
-## 🔒 Privacy Intelligence
-- Identity theft risk analysis
-- Exposure scoring
-- Privacy recommendations
-- AI-generated safety guidance
+## Architecture Flow
 
----
+1. **User Interaction**  
+   Users interact with the LegalTech platform through the React-based frontend.
 
-## 🧠 AI Decision Engine
-Machine Learning powered claim eligibility prediction using:
+2. **Frontend Application**  
+   The frontend provides legal intelligence search, privacy analysis, eligibility prediction, AI assistance, and claim workflow interfaces.
 
-- Breach type
-- Exposed data
-- Records affected
-- User impact
-- Similarity score
-- Jurisdiction
+3. **FastAPI Backend**  
+   REST API endpoints receive application requests and route them to the appropriate AI, retrieval, machine learning, or workflow component.
 
-Outputs:
-- Claim probability
-- Confidence score
-- AI legal insights
-- Action plan recommendations
+4. **RAG Pipeline**  
+   The retrieval workflow searches relevant legal intelligence and provides contextual information for AI-assisted responses.
 
----
+5. **ML Decision Engine**  
+   The machine learning service evaluates claim-related inputs and produces eligibility predictions, confidence information, and decision-support outputs.
 
-## ⚖️ AI Legal Assistant (RAG Chatbot)
-Production-style legal assistant capable of:
-- Searching legal database
-- Answering breach-related questions
-- Providing AI legal guidance
-- Retrieving relevant legal intelligence
+6. **Claim Workflow**  
+   The claim workflow connects breach information, eligibility analysis, document guidance, and claim navigation.
 
----
+7. **AI Engine**  
+   AI-assisted workflows combine retrieved context and application logic to generate legal information and user guidance.
 
-## 📄 Claim Submission Workflow
-Users can:
-- View breach details
-- Analyze eligibility
-- Collect documents
-- Access claim portals
-- Submit legal registry information
+8. **Data Layer**  
+   MongoDB and project datasets support application data, legal intelligence records, breach information, and workflow operations.
 
----
+## Architectural Design Goals
 
-## 📊 Legal Intelligence Database
-Includes:
-- Data breach cases
-- Settlement cases
-- Enforcement actions
-- AI-generated summaries
-- Legal metadata
+- Separation of frontend and backend responsibilities
+- Modular AI and machine learning workflows
+- API-driven component communication
+- Independent RAG and prediction services
+- Extensible legal intelligence workflows
+- Cloud-deployable application architecture
+
+> **Current Status:** This repository represents an AI LegalTech MVP and engineering portfolio product. Production legal deployment would require additional authentication, role-based access control, retrieval evaluation, security hardening, legal data validation, observability, and privacy governance.
 
 ---
 

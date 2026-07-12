@@ -137,14 +137,29 @@ function App() {
       }
       setEligibilityResult(data);
     } catch (err) {
-      console.error("Eligibility check failed", err);
-      setEligibilityResult({
-        prediction: "Likely Eligible",
-        confidence: 0.75,
-        explanation: ["We encountered a temporary connection issue.", "General case patterns suggest high eligibility."],
-        action_plan: ["Gather your documents.", "Check official status manually."],
-        rule_reason: "Offline Fallback"
-      });
+  console.error("Eligibility check failed", err);
+
+  setEligibilityResult({
+    prediction: "Assessment Unavailable",
+    confidence: 0,
+    success_probability: null,
+    calibrated: false,
+    uncertainty: "high",
+    explanation: [
+      "The eligibility service is temporarily unavailable.",
+      "No eligibility prediction was generated."
+    ],
+    action_plan: [
+      "Try the assessment again later.",
+      "Review official claim information or consult a qualified legal professional."
+    ],
+    is_rule_blocked: false,
+    rule_reason: "Service unavailable",
+    rule_override: null,
+    missing_fields: [],
+    disclaimer: "No AI eligibility assessment was generated."
+  });
+}
     } finally {
       setLoadingEligibility(false);
     }

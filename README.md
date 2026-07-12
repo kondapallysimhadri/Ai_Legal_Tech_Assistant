@@ -127,6 +127,197 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
 
 > **Current Status:** This repository represents an AI LegalTech MVP and engineering portfolio product. Production legal deployment would require additional authentication, role-based access control, retrieval evaluation, security hardening, legal data validation, observability, and privacy governance.
 
+# 🚦 Project Status & Production Readiness
+
+## Current Status
+
+**Project Stage: MVP / Engineering Portfolio Product**
+
+The AI Legal Claim Assistant is a functional LegalTech MVP designed to demonstrate the integration of AI-assisted workflows, legal intelligence interfaces, backend APIs, retrieval-oriented architecture, decision-support workflows, and claim guidance.
+
+The project currently demonstrates the end-to-end structure of an AI-powered legal assistance product.
+
+### Implemented MVP Capabilities
+
+- React-based LegalTech user interface
+- FastAPI backend API integration
+- Legal intelligence and breach information workflows
+- Privacy intelligence interface
+- AI-assisted legal interaction
+- Structured chatbot workflow
+- Claim eligibility decision-support flow
+- AI-assisted case enrichment
+- Confidence-style assessment outputs
+- Claim guidance workflow
+- Application data integration
+- Environment-based AI configuration
+- Fallback behaviour when AI services are unavailable
+- Cloud deployment workflow
+- Product screenshots and technical documentation
+
+---
+
+## What This Project Demonstrates
+
+This repository is intended to demonstrate engineering experience across:
+
+```text
+AI Product Engineering
+        │
+        ├── Frontend Application
+        ├── Backend APIs
+        ├── AI Service Integration
+        ├── Retrieval-Oriented Workflows
+        ├── Decision Support
+        ├── Legal Intelligence Data
+        ├── Claim Workflows
+        └── Cloud Deployment
+```
+
+The primary engineering goal is to explore how AI capabilities can be integrated into a larger application workflow rather than building an isolated chatbot or notebook-based machine learning demonstration.
+
+---
+
+## Current Limitations
+
+The current implementation is an MVP and has several limitations that should be addressed before production or real-world legal use.
+
+### Retrieval & RAG
+
+The current retrieval-assisted workflow does not yet represent a fully evaluated production vector RAG system.
+
+Production development would require:
+
+- Document ingestion pipelines
+- Legal document parsing
+- Configurable text chunking
+- Embedding generation
+- Dedicated vector database integration
+- Semantic retrieval
+- Metadata filtering
+- Retrieval reranking
+- Source citation generation
+- Retrieval evaluation
+- Groundedness and hallucination testing
+
+### Decision Intelligence
+
+The current eligibility workflow is a decision-support prototype and should not be interpreted as a legally validated eligibility determination system.
+
+Production development would require:
+
+- Legally reviewed eligibility rules
+- Validated datasets
+- Reproducible model training
+- Feature engineering pipelines
+- Probability calibration
+- Bias and fairness testing
+- Explainability validation
+- Decision audit logs
+- Human legal review
+
+### Security & Identity
+
+The MVP requires additional security engineering before handling sensitive legal or personal information.
+
+Required production controls include:
+
+- Authentication
+- Role-based access control
+- Secure session management
+- API authorization
+- Secrets management
+- Data encryption
+- Input validation
+- Rate limiting
+- Security logging
+- Dependency vulnerability monitoring
+
+### Privacy & Governance
+
+A production LegalTech system would require formal privacy and data governance controls.
+
+This includes:
+
+- Data minimization
+- Data retention policies
+- User consent workflows
+- Personal data classification
+- Access auditing
+- Data deletion workflows
+- Privacy impact assessment
+- Jurisdiction-specific compliance review
+
+### Reliability & Observability
+
+Production deployment would require:
+
+- Centralized application logging
+- Error monitoring
+- AI request tracing
+- Retrieval tracing
+- Model and prompt version tracking
+- Performance monitoring
+- Availability monitoring
+- Automated health checks
+- Incident response processes
+
+---
+
+## Production Readiness Roadmap
+
+```text
+Current MVP
+    │
+    ▼
+Authentication & RBAC
+    │
+    ▼
+Production RAG Pipeline
+    │
+    ▼
+Source-Grounded Responses
+    │
+    ▼
+Retrieval Evaluation
+    │
+    ▼
+Validated Decision Framework
+    │
+    ▼
+Security Hardening
+    │
+    ▼
+Privacy & Data Governance
+    │
+    ▼
+Observability & Audit Logging
+    │
+    ▼
+Human Legal Review Workflow
+    │
+    ▼
+Production Readiness Assessment
+```
+
+The project should undergo technical, security, privacy, and legal review before being considered for production legal decision workflows.
+
+---
+
+## Legal & AI Disclaimer
+
+This project is an **AI engineering MVP and portfolio product**.
+
+It is designed to demonstrate LegalTech product architecture, AI integration, retrieval-oriented workflows, and decision-support concepts.
+
+The application does **not provide legal advice**, does **not replace a qualified legal professional**, and should not be used as the sole basis for legal or claim decisions.
+
+AI-generated outputs may be incomplete, inaccurate, or contextually incorrect.
+
+> Human legal review and validated legal data sources are required before any production legal decision use.
+
+
+
 # 🧠 AI Decision Support Architecture
 
 The AI Legal Claim Assistant includes a decision-support workflow designed to analyse claim-related information and present structured eligibility guidance.

@@ -781,11 +781,16 @@ async def analyze_privacy(profile: UserProfileInput):
 
 
 try:
-    genai.configure(api_key=os.getenv("GEMINI_API_KEY", ""))
-    gemini_model = genai.GenerativeModel("gemini-1.5-flash")
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
+
+    gemini_client = (
+        genai.Client(api_key=gemini_api_key)
+        if gemini_api_key
+        else None
+    )
 except Exception as e:
     print(f"Gemini initialization failed: {e}")
-    gemini_model = None
+    gemini_client = None
 
 chat_memory = {}
 

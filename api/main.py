@@ -846,9 +846,13 @@ async def chatbot(chat_input: ChatInput):
         4. Mention this is guidance, not advice.
         """
 
-        if not gemini_model:
-            raise Exception("Gemini model not initialized")
-        response = gemini_model.generate_content(prompt)
+        if not gemini_client:
+            raise Exception("Gemini client not initialized")
+
+        response = gemini_client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
+        )
 
         answer = response.text
 

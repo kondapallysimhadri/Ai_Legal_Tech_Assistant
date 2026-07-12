@@ -123,7 +123,6 @@ class AILegalIntelligence:
             response.text if response else "I couldn't process that. Please try again."
         )
 
-e
 engine = AILegalIntelligence()
 
 def summarize_breach(description):

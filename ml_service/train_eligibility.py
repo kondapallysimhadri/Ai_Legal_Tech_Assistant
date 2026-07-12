@@ -98,10 +98,7 @@ def train_system():
     print(f"Best Params: {grid_search.best_params_}")
     print(classification_report(y_test, xgb_pred))
 
-    joblib.dump(best_xgb.named_steps["classifier"], "models/eligibility_model.pkl")
-    joblib.dump(best_xgb.named_steps["preprocessor"], "models/preprocessor.pkl")
-
-    joblib.dump(best_xgb, "models/full_pipeline.pkl")
+    joblib.dump(best_xgb, f"{MODEL_DIR}/eligibility_v1.pkl")
 
     print(f"✅ Model components saved to models/")
 

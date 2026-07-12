@@ -127,6 +127,188 @@ The AI Legal Claim Assistant is structured as a multi-component AI application t
 
 > **Current Status:** This repository represents an AI LegalTech MVP and engineering portfolio product. Production legal deployment would require additional authentication, role-based access control, retrieval evaluation, security hardening, legal data validation, observability, and privacy governance.
 
+# 🧠 AI Decision Support Architecture
+
+The AI Legal Claim Assistant includes a decision-support workflow designed to analyse claim-related information and present structured eligibility guidance.
+
+The current MVP combines application rules, case context, AI-assisted analysis, and fallback decision logic to demonstrate how a legal eligibility workflow can be structured inside an AI product.
+
+```text
+                       User Claim Information
+                                  │
+                                  ▼
+                    ┌────────────────────────┐
+                    │   Eligibility Request  │
+                    │                        │
+                    │ Breach Information     │
+                    │ User-Provided Context  │
+                    │ Case Information       │
+                    └────────────┬───────────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │   FastAPI Backend      │
+                    │      /predict          │
+                    └────────────┬───────────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │ Input Processing Layer │
+                    │                        │
+                    │ Request Validation     │
+                    │ Context Preparation    │
+                    │ Case Data Processing   │
+                    └────────────┬───────────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │ Decision Support Layer │
+                    │                        │
+                    │ Application Logic      │
+                    │ Case Context           │
+                    │ AI-Assisted Analysis   │
+                    │ Fallback Logic         │
+                    └────────────┬───────────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │ Structured Assessment  │
+                    │                        │
+                    │ Eligibility Status     │
+                    │ Confidence Indicator   │
+                    │ Reasoning / Context    │
+                    │ Suggested Actions      │
+                    └────────────┬───────────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │   React Application    │
+                    │                        │
+                    │ Eligibility Interface  │
+                    │ Risk Visualization     │
+                    │ User Guidance          │
+                    └────────────────────────┘
+```
+
+## Decision Workflow
+
+### 1. Claim Context Collection
+
+The application collects claim-related and case-related information required by the eligibility workflow.
+
+The broader product design considers factors such as:
+
+- Breach context
+- Exposed information
+- User impact
+- Case information
+- Claim-related context
+- Available legal intelligence
+
+### 2. Backend Processing
+
+The frontend sends the eligibility request to the backend decision-support workflow.
+
+The backend prepares application and case context for assessment.
+
+### 3. Decision Support
+
+The current MVP demonstrates a structured decision-support layer combining:
+
+- Application logic
+- Available case context
+- AI-assisted case enrichment
+- Fallback assessment logic
+
+The system is designed to return structured information that can be consumed by the frontend.
+
+### 4. Structured Assessment
+
+The decision workflow can present outputs such as:
+
+- Eligibility status
+- Confidence indicator
+- Assessment context
+- AI-assisted reasoning
+- Suggested next actions
+
+### 5. User Guidance
+
+Assessment results are displayed through the product interface to help users understand the workflow and identify possible next steps.
+
+---
+
+## Current Decision Engine Status
+
+The current implementation should be treated as an **MVP decision-support prototype**.
+
+It demonstrates:
+
+- Eligibility workflow integration
+- Backend decision logic
+- Structured assessment outputs
+- AI-assisted case enrichment
+- Confidence-style indicators
+- Fallback behaviour when AI services are unavailable
+- Frontend decision visualisation
+
+The current repository does **not claim to provide a legally validated or production-grade claim eligibility prediction model**.
+
+A production implementation would require:
+
+- A legally reviewed eligibility rule framework
+- Validated training or evaluation datasets
+- Explicit feature engineering
+- Reproducible model training pipelines
+- Model versioning
+- Calibration of probability outputs
+- Bias and fairness analysis
+- Explainability validation
+- Decision audit logs
+- Human legal review
+- Continuous model monitoring
+
+> Decision outputs in this project are informational and demonstrate AI product architecture. They should not be interpreted as legal determinations or legal advice.
+
+---
+
+## Production Decision Intelligence Evolution
+
+```text
+Validated Claim Data
+          │
+          ▼
+   Data Quality Checks
+          │
+          ▼
+    Feature Engineering
+          │
+          ▼
+  Eligibility Rule Engine
+          │
+          ├──────────────────┐
+          │                  │
+          ▼                  ▼
+ Predictive Model     Legal Policy Rules
+          │                  │
+          └─────────┬────────┘
+                    │
+                    ▼
+          Decision Orchestration
+                    │
+                    ▼
+          Explainability Layer
+                    │
+                    ▼
+         Human Review Workflow
+                    │
+                    ▼
+       Auditable Decision Output
+```
+
+The long-term architecture separates predictive modelling from legal policy rules and introduces explainability, human review, and auditability before production decision use.
+
+
 # 🔍 Retrieval & AI Assistance Architecture
 
 The Legal Assistant is designed around a retrieval-assisted workflow for using relevant legal intelligence as context during user interactions.

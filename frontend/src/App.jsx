@@ -159,7 +159,7 @@ function App() {
     missing_fields: [],
     disclaimer: "No AI eligibility assessment was generated."
   });
-}
+      
     } finally {
       setLoadingEligibility(false);
     }
